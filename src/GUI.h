@@ -42,6 +42,7 @@
 #include <nanogui/theme.h>
 #include <Eigen/Core>
 #include <Eigen/Dense>
+#include <functional>
 
 class ColorController {
 public:
@@ -60,24 +61,32 @@ class MeshList: public nanogui::PopupButton {
 public:
     // nanogui::PopupButton *pb;
     std::vector<nanogui::Button *> items;
+    std::vector<nanogui::Button *> delete_items;
+    std::vector<nanogui::Widget *> item_rows;
     std::vector<std::string> names;
     nanogui::Widget * toolbox;
     nanogui::Widget * parent;
     nanogui::Button *open_mesh;
     int selectedIndex;
+    std::function<void(int)> onDeleteRequest;
 
     MeshList(nanogui::Widget *parent, std::vector<std::string> item_names);
     nanogui::Button * addItem(const std::string item_name, int i);
+    void removeItem(int index);
+    void setDeleteCallback(std::function<void(int)> callback);
     virtual bool scrollEvent(const Eigen::Vector2i &p, const Eigen::Vector2f &rel) override;
 
 protected:
     Eigen::Vector2f cumulative_rel;
+    void selectItem(int index, bool close_popup);
 };
 
 class TexList: public nanogui::PopupButton {
 public:
     // nanogui::PopupButton *pb;
     std::vector<nanogui::Button *> items;
+    std::vector<nanogui::Button *> delete_items;
+    std::vector<nanogui::Widget *> item_rows;
     std::vector<std::string> names;
     nanogui::Widget * toolbox;
     nanogui::Widget * parent_window;
@@ -86,15 +95,19 @@ public:
     int selectedIndex;
     int* useTex_ptr;
     bool selectable;
+    std::function<void(int)> onDeleteRequest;
 
     TexList(nanogui::Widget *parent_window, nanogui::Widget *parent_button, std::vector<std::string> tex_names, int* useTex);
     nanogui::Button * addItem(const std::string item_name, int i, int* useTex);
+    void removeItem(int index);
+    void setDeleteCallback(std::function<void(int)> callback);
     void setSelectable(bool enabled);
     virtual bool mouseButtonEvent(const Eigen::Vector2i &p, int button, bool down, int modifiers) override;
     virtual bool scrollEvent(const Eigen::Vector2i &p, const Eigen::Vector2f &rel) override;
 
 protected:
     Eigen::Vector2f cumulative_rel;
+    void selectItem(int index, bool close_popup);
 };
 
 class Row {
@@ -111,9 +124,13 @@ class GUI {
 	public:
 		nanogui::Screen *screen = nullptr;
 		nanogui::Window *nanoguiWindow;
+		nanogui::Window *uploadWindow;
 		nanogui::ComboBox *render_mode;
         nanogui::ComboBox *texOrColor;
         nanogui::Button *b1;
+        nanogui::Button *cancel_upload;
+        nanogui::ProgressBar *upload_progress;
+        nanogui::Label *upload_stage_label;
         nanogui::IntBox<int>* tb;
         ColorController *cc;
         ColorController *cc2;
@@ -128,6 +145,9 @@ class GUI {
 
 		void nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, std::vector<std::string> tex_list, int* useTex);
         void combo_init(nanogui::ComboBox *combo_box);
+        void setUploadActive(bool active);
+        void setUploadProgress(float p);
+        void setUploadStage(const std::string &stage_text);
 };
 
 

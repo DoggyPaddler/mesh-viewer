@@ -2,6 +2,7 @@
 #define READOBJ_H
 
 #include <vector>
+#include <atomic>
 #include <Eigen/Core>
 #include "Face.h"
 
@@ -26,7 +27,9 @@ bool read_obj(
 		std::vector<Eigen::Vector3f> & V,
 		std::vector<Eigen::Vector3f> & N,
 		std::vector<Eigen::Vector2f> & TC,
-		std::vector<Face> & F);
+		std::vector<Face> & F,
+		std::atomic<float> *progress = nullptr,
+		std::atomic<bool> *cancel_requested = nullptr);
 
 void append(std::vector<int> f_,
 			int & cur_total_vertex,

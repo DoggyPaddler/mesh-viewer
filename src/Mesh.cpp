@@ -1,6 +1,79 @@
 #include "Mesh.h"
 #include <iostream>
 #include <map>
+#include <algorithm>
+#include <cmath>
+
+void Mesh::buildBoxProjectionVT(std::atomic<float> *progress, std::atomic<bool> *cancel_requested) {
+	if (vec_V.empty()) {
+		vec_TC.clear();
+		return;
+	}
+
+	Eigen::Vector3f min_v = vec_V[0];
+	Eigen::Vector3f max_v = vec_V[0];
+	for (int i = 1; i < (int)vec_V.size(); ++i) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			return;
+		}
+		min_v = min_v.cwiseMin(vec_V[i]);
+		max_v = max_v.cwiseMax(vec_V[i]);
+	}
+
+	const float eps = 1e-6f;
+	float range_x = std::max(max_v(0) - min_v(0), eps);
+	float range_y = std::max(max_v(1) - min_v(1), eps);
+	float range_z = std::max(max_v(2) - min_v(2), eps);
+
+	Eigen::MatrixXf normals;
+	per_vertex_normals(vec_V, vec_F, normals);
+
+	vec_TC.clear();
+	vec_TC.resize(vec_V.size(), Eigen::Vector2f::Zero());
+
+	for (int i = 0; i < (int)vec_V.size(); ++i) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			return;
+		}
+
+		Eigen::Vector3f abs_n = normals.row(i).cwiseAbs();
+		const Eigen::Vector3f &p = vec_V[i];
+
+		float u = 0.0f;
+		float v = 0.0f;
+		if (abs_n(0) >= abs_n(1) && abs_n(0) >= abs_n(2)) {
+			u = (p(2) - min_v(2)) / range_z;
+			v = (p(1) - min_v(1)) / range_y;
+		} else if (abs_n(1) >= abs_n(0) && abs_n(1) >= abs_n(2)) {
+			u = (p(0) - min_v(0)) / range_x;
+			v = (p(2) - min_v(2)) / range_z;
+		} else {
+			u = (p(0) - min_v(0)) / range_x;
+			v = (p(1) - min_v(1)) / range_y;
+		}
+
+		vec_TC[i] = Eigen::Vector2f(u, v);
+
+		if (progress != nullptr && (i % 2048 == 0)) {
+			float t = (float)i / std::max(1, (int)vec_V.size());
+			progress->store(0.70f + 0.12f * t);
+		}
+	}
+
+	for (int i = 0; i < (int)vec_F.size(); ++i) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			return;
+		}
+		vec_F[i]._tex_coord = Eigen::VectorXi::Zero(vec_F[i].num_vertex);
+		for (int j = 0; j < vec_F[i].num_vertex; ++j) {
+			vec_F[i]._tex_coord(j) = vec_F[i]._vertex(j);
+		}
+	}
+
+	if (progress != nullptr) {
+		progress->store(0.82f);
+	}
+}
 
 void Mesh::buildVN() {
 	int cur_num_vertex = 0;
@@ -73,8 +146,12 @@ void Mesh::buildTC() {
 		Eigen::Vector2f deltaUV1 = uv2 - uv1;
 		Eigen::Vector2f deltaUV2 = uv3 - uv1;
 
-		float f = 1/(deltaUV1(0) * deltaUV2(1) - deltaUV1(1) * deltaUV2(0));
-		Eigen::Vector3f tangt = (edge1 * deltaUV2(1) - edge2 * deltaUV1(1)) * f;
+		float denom = deltaUV1(0) * deltaUV2(1) - deltaUV1(1) * deltaUV2(0);
+		Eigen::Vector3f tangt(1.0f, 0.0f, 0.0f);
+		if (std::fabs(denom) > 1e-8f) {
+			float f = 1.0f / denom;
+			tangt = (edge1 * deltaUV2(1) - edge2 * deltaUV1(1)) * f;
+		}
 		tangt.normalize();
 
 		for (int j=0; j<vec_F[i].num_vertex; j++) {
@@ -133,8 +210,32 @@ void Mesh::buildIndices() {
 	}
 }
 
-Mesh::Mesh(std::string filename, float scale) {
-	read_obj(filename,vec_V,vec_N,vec_TC,vec_F); // raw
+Mesh::Mesh(std::string filename, float scale, std::atomic<float> *progress, std::atomic<bool> *cancel_requested, std::atomic<int> *stage) {
+	load_cancelled = false;
+	if (stage != nullptr) {
+		stage->store(1);
+	}
+	if (!read_obj(filename,vec_V,vec_N,vec_TC,vec_F, progress, cancel_requested)) {
+		load_cancelled = true;
+		return;
+	}
+	if (cancel_requested != nullptr && cancel_requested->load()) {
+		load_cancelled = true;
+		return;
+	}
+
+	if (vec_TC.empty()) {
+		if (stage != nullptr) {
+			stage->store(2);
+		}
+		buildBoxProjectionVT(progress, cancel_requested);
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			load_cancelled = true;
+			return;
+		}
+	}
+
+	if (progress != nullptr) progress->store(0.84f);
 	has_vt_mapping = !vec_TC.empty();
 	// printf("vec_V: %ld, vec_N: %ld, vec_TC: %ld, vec_F: %ld\n", vec_V.size(), vec_N.size(), vec_TC.size(), vec_F.size());
 
@@ -154,6 +255,10 @@ Mesh::Mesh(std::string filename, float scale) {
 	std::vector<Face> vec_F_cp = vec_F;
 	int counter = (int)(vec_V.size());
 	for (int i=0; i<vec_F_cp.size(); i++) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			load_cancelled = true;
+			return;
+		}
 		for (int j=0; j<3; j++) {
 			int cur_v = vec_F_cp[i]._vertex(j);
 			if (ver_rep_check.find(cur_v) == ver_rep_check.end()) {
@@ -176,7 +281,12 @@ Mesh::Mesh(std::string filename, float scale) {
 			}
 		}
 	}
+	if (progress != nullptr) progress->store(0.88f);
 	for (int i=0; i<vec_F_cp.size(); i++) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			load_cancelled = true;
+			return;
+		}
 		for (int j=0; j<3; j++) {
 			int cur_v = vec_F_cp[i]._vertex(j);
 			Eigen::Vector2i cur_vec;
@@ -186,6 +296,7 @@ Mesh::Mesh(std::string filename, float scale) {
 			vec_F[i]._vertex(j) = ver_rep_check[cur_v][cur_vec];
 		}
 	}
+	if (progress != nullptr) progress->store(0.91f);
 
 	top_right = Eigen::Vector3f(0,0,0);
 	bottom_left = Eigen::Vector3f(0,0,0);
@@ -195,6 +306,10 @@ Mesh::Mesh(std::string filename, float scale) {
 	// printf("vec_V: %ld, vec_N: %ld, vec_TC: %ld, vec_F: %ld\n", vec_V.size(), vec_N.size(), vec_TC.size(), vec_F.size());
 
 	for (int i=0; i<vec_V.size(); i++) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			load_cancelled = true;
+			return;
+		}
 		mat_V.row(i) << vec_V[i](0), vec_V[i](1), vec_V[i](2);
 		if (vec_V[i](0) > top_right(0)) {top_right(0) = vec_V[i](0);}
 		if (vec_V[i](1) > top_right(1)) {top_right(1) = vec_V[i](1);}
@@ -204,12 +319,33 @@ Mesh::Mesh(std::string filename, float scale) {
 		if (vec_V[i](1) < bottom_left(1)) {bottom_left(1) = vec_V[i](1);}
 		if (vec_V[i](2) < bottom_left(2)) {bottom_left(2) = vec_V[i](2);}
 	}
+	if (progress != nullptr) progress->store(0.94f);
 
 	buildV(scale);
+	if (cancel_requested != nullptr && cancel_requested->load()) {
+		load_cancelled = true;
+		return;
+	}
+	if (progress != nullptr) progress->store(0.96f);
 	buildN();
+	if (cancel_requested != nullptr && cancel_requested->load()) {
+		load_cancelled = true;
+		return;
+	}
+	if (progress != nullptr) progress->store(0.98f);
 	buildVN();
+	if (cancel_requested != nullptr && cancel_requested->load()) {
+		load_cancelled = true;
+		return;
+	}
+	if (progress != nullptr) progress->store(0.995f);
 	buildTC();
+	if (cancel_requested != nullptr && cancel_requested->load()) {
+		load_cancelled = true;
+		return;
+	}
 	buildIndices();
+	if (progress != nullptr) progress->store(1.0f);
 
 	// printf("V: %ld, N: %ld, TC: %ld, T: %ld\n", V.rows(), N.rows(), TC.rows(), T.rows());
 	start = 0;

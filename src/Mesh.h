@@ -1,5 +1,6 @@
 #ifndef MESH_H
 #define MESH_H
+#include <atomic>
 #include <Eigen/Core>
 #include <Eigen/Dense>
 #include "Face.h"
@@ -30,12 +31,14 @@ class Mesh {
 		Eigen::Vector3f top_right;
 		Eigen::Vector3f bottom_left;
 		bool has_vt_mapping;
+		bool load_cancelled;
 
-		Mesh(std::string filename, float scale);
+		Mesh(std::string filename, float scale, std::atomic<float> *progress = nullptr, std::atomic<bool> *cancel_requested = nullptr, std::atomic<int> *stage = nullptr);
 
 		void buildV(float scale);
 		void buildVN();
 		void buildTC();
+		void buildBoxProjectionVT(std::atomic<float> *progress = nullptr, std::atomic<bool> *cancel_requested = nullptr);
 		void buildN();
 
 		void buildIndices();

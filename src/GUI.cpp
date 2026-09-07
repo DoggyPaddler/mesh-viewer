@@ -1,4 +1,5 @@
 #include "GUI.h"
+#include <algorithm>
 
 nanogui::Theme *textbox_theme;
 nanogui::Theme *button_theme;
@@ -82,46 +83,128 @@ MeshList::MeshList(nanogui::Widget *parent, std::vector<std::string> item_names)
     open_mesh->setTheme(button_theme);
     open_mesh->setFixedSize(Eigen::Vector2i(120,20));
 
-    const std::vector<Widget *> &children = toolbox->children();
-    ((nanogui::Button *) children[this->selectedIndex])->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
+    if (!items.empty()) {
+        selectItem(this->selectedIndex, false);
+    }
     // items[selectedIndex]->setBackgroundColor(nanogui::Color(180, 180, 180, 255));
 }
 
 nanogui::Button * MeshList::addItem(const std::string item_name, int i) {
-    nanogui::Button *b = new nanogui::Button(toolbox, item_name);
+    nanogui::Widget *row = new nanogui::Widget(toolbox);
+    row->setFixedSize(Eigen::Vector2i(120, 20));
+
+    nanogui::Button *b = new nanogui::Button(row, item_name);
+    b->setPosition(Eigen::Vector2i(0, 0));
     b->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
-    // b->setTheme(ml_item_theme);
     b->setFixedSize(Eigen::Vector2i(120,20));
-    b->setCallback([this, item_name, i]{
-        items[this->selectedIndex]->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
-        items[this->selectedIndex]->setPushed(false);
-
-        this->selectedIndex = i;
-        this->popup()->setVisible(false);
-        this->setPushed(false);
-
-        this->setCaption(item_name);
-        cumulative_rel(1) = selectedIndex * 6.0;
-
-        // std::cout << "bkg color: " << this->backgroundColor() << std::endl;
-        // items[0]->setBackgroundColor(nanogui::Color(74, 74, 74, 255));
-        items[i]->setBackgroundColor(nanogui::Color(180, 180, 180, 255));
-        items[i]->setPushed(true);
+    b->setCallback([this, b]{
+        auto it = std::find(items.begin(), items.end(), b);
+        if (it == items.end()) {
+            return;
+        }
+        int index = (int)std::distance(items.begin(), it);
+        selectItem(index, true);
     });
+
+    nanogui::Button *delete_button = new nanogui::Button(row, "x");
+    delete_button->setPosition(Eigen::Vector2i(104, 2));
+    delete_button->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
+    delete_button->setTextColor(nanogui::Color(0, 255));
+    delete_button->setFontSize(10);
+    delete_button->setFixedSize(Eigen::Vector2i(16, 16));
+    delete_button->setCallback([this, delete_button] {
+        auto it = std::find(delete_items.begin(), delete_items.end(), delete_button);
+        if (it == delete_items.end()) {
+            return;
+        }
+        int index = (int)std::distance(delete_items.begin(), it);
+        if (onDeleteRequest) {
+            onDeleteRequest(index);
+        }
+    });
+
+    item_rows.push_back(row);
     items.push_back(b);
+    delete_items.push_back(delete_button);
     return b;
 }
 
+void MeshList::selectItem(int index, bool close_popup) {
+    if (items.empty()) {
+        selectedIndex = 0;
+        setCaption("");
+        return;
+    }
+
+    index = std::max(0, std::min(index, (int)items.size() - 1));
+
+    for (int k = 0; k < (int)items.size(); ++k) {
+        const nanogui::Color item_color = (k == index)
+            ? nanogui::Color(180, 180, 180, 255)
+            : nanogui::Color(255, 255, 255, 255);
+        items[k]->setBackgroundColor(item_color);
+        delete_items[k]->setBackgroundColor(item_color);
+        items[k]->setPushed(k == index);
+    }
+
+    selectedIndex = index;
+    setCaption(names[selectedIndex]);
+    cumulative_rel(1) = selectedIndex * 6.0;
+
+    if (close_popup) {
+        popup()->setVisible(false);
+        setPushed(false);
+    }
+}
+
+void MeshList::removeItem(int index) {
+    if (index < 0 || index >= (int)items.size()) {
+        return;
+    }
+
+    nanogui::Widget *row = item_rows[index];
+    row->setVisible(false);
+
+    item_rows.erase(item_rows.begin() + index);
+    items.erase(items.begin() + index);
+    delete_items.erase(delete_items.begin() + index);
+    names.erase(names.begin() + index);
+
+    if (items.empty()) {
+        selectedIndex = 0;
+        setCaption("");
+        popup()->setVisible(false);
+        setPushed(false);
+        return;
+    }
+
+    int next = selectedIndex;
+    if (next >= (int)items.size()) {
+        next = (int)items.size() - 1;
+    }
+    if (index < selectedIndex) {
+        next = selectedIndex - 1;
+    }
+
+    selectItem(next, false);
+}
+
+void MeshList::setDeleteCallback(std::function<void(int)> callback) {
+    onDeleteRequest = callback;
+}
+
 bool MeshList::scrollEvent(const Eigen::Vector2i &p, const Eigen::Vector2f &rel) {
+    if (names.empty()) {
+        return true;
+    }
     if (cumulative_rel.y() + rel.y() > 0 && cumulative_rel.y() + rel.y() < names.size() * 6.0) {
         cumulative_rel = cumulative_rel + rel;
     }
     // printf("cumulative_rel.y: %f\n", cumulative_rel.y());
     int next_selectedIndex = std::min((int)(cumulative_rel.y()/6.0), (int)(names.size()-1));
     if (next_selectedIndex != selectedIndex) {
-        selectedIndex = next_selectedIndex;
+        selectItem(next_selectedIndex, false);
     }
-    this->setCaption(names[selectedIndex]);
     return Widget::scrollEvent(p, rel);
 }
 
@@ -152,9 +235,37 @@ TexList::TexList(nanogui::Widget *parent_window, nanogui::Widget *parent_button,
     open_mesh->setTheme(button_theme);
     open_mesh->setFixedSize(Eigen::Vector2i(120,20));
 
-    const std::vector<Widget *> &children = toolbox->children();
-    ((nanogui::Button *) children[this->selectedIndex])->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
+    if (!items.empty()) {
+        selectItem(this->selectedIndex, false);
+    }
     // this->setBackgroundColor(nanogui::Color(180, 100, 0, 255));
+}
+
+void TexList::selectItem(int index, bool close_popup) {
+    if (items.empty()) {
+        selectedIndex = 0;
+        setCaption("");
+        return;
+    }
+
+    index = std::max(0, std::min(index, (int)items.size() - 1));
+
+    for (int k = 0; k < (int)items.size(); ++k) {
+        const nanogui::Color item_color = (k == index)
+            ? nanogui::Color(180, 180, 180, 255)
+            : nanogui::Color(255, 255, 255, 255);
+        items[k]->setBackgroundColor(item_color);
+        delete_items[k]->setBackgroundColor(item_color);
+        items[k]->setPushed(k == index);
+    }
+
+    selectedIndex = index;
+    cumulative_rel(1) = selectedIndex * 6.0;
+
+    if (close_popup) {
+        popup()->setVisible(false);
+        setPushed(false);
+    }
 }
 
 void TexList::setSelectable(bool enabled) {
@@ -170,12 +281,17 @@ void TexList::setSelectable(bool enabled) {
 
     for (int index = 0; index < items.size(); ++index) {
         nanogui::Button *item = items[index];
+        nanogui::Button *delete_item = delete_items[index];
         const bool is_selected = index == selectedIndex;
         item->setTextColor(selectable ? nanogui::Color(0, 255) : nanogui::Color(120, 255));
+        delete_item->setTextColor(selectable ? nanogui::Color(0, 255) : nanogui::Color(120, 255));
         if (selectable) {
-            item->setBackgroundColor(is_selected ? nanogui::Color(180, 180, 180, 255) : nanogui::Color(255, 255, 255, 255));
+            nanogui::Color c = is_selected ? nanogui::Color(180, 180, 180, 255) : nanogui::Color(255, 255, 255, 255);
+            item->setBackgroundColor(c);
+            delete_item->setBackgroundColor(c);
         } else {
             item->setBackgroundColor(nanogui::Color(210, 210, 210, 255));
+            delete_item->setBackgroundColor(nanogui::Color(210, 210, 210, 255));
             item->setPushed(false);
         }
     }
@@ -185,35 +301,92 @@ void TexList::setSelectable(bool enabled) {
 }
 
 nanogui::Button * TexList::addItem(const std::string item_name, int i, int *uesTex) {
-    nanogui::Button *b = new nanogui::Button(toolbox, item_name);
+    nanogui::Widget *row = new nanogui::Widget(toolbox);
+    row->setFixedSize(Eigen::Vector2i(120, 20));
+
+    nanogui::Button *b = new nanogui::Button(row, item_name);
+    b->setPosition(Eigen::Vector2i(0, 0));
     b->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
     b->setFixedSize(Eigen::Vector2i(120,20));
-    b->setCallback([this, item_name, i, uesTex]{
+    b->setCallback([this, b, uesTex]{
         if (!selectable) {
             return;
         }
 
-        items[this->selectedIndex]->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
-        items[this->selectedIndex]->setPushed(false);
-        this->selectedIndex = i;
-        this->popup()->setVisible(false);
-        this->setPushed(false);
-        // this->setCaption("Texture");
-        cumulative_rel(1) = selectedIndex * 6.0;
-        // items[0]->setBackgroundColor(nanogui::Color(74, 74, 74, 255));
-        items[i]->setBackgroundColor(nanogui::Color(180, 180, 180, 255));
-        items[i]->setPushed(true);
+        auto it = std::find(items.begin(), items.end(), b);
+        if (it == items.end()) {
+            return;
+        }
+        int index = (int)std::distance(items.begin(), it);
+        selectItem(index, true);
 
         this->setBackgroundColor(nanogui::Color(180, 180, 180, 255));
-        // std::cout << "tex bkg color: " << this->backgroundColor() << std::endl;
         *uesTex = 1;
         nanogui::Button * buttonA = ((nanogui::Button *)parent_window->children()[0]);
-        // std::cout << "num child: " << parent->children().size() << std::endl;
         buttonA->setPushed(false);
         ((nanogui::Button *)parent_button)->setCaption("Texture");
     });
+
+    nanogui::Button *delete_button = new nanogui::Button(row, "x");
+    delete_button->setPosition(Eigen::Vector2i(104, 2));
+    delete_button->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
+    delete_button->setTextColor(nanogui::Color(0, 255));
+    delete_button->setFontSize(10);
+    delete_button->setFixedSize(Eigen::Vector2i(16, 16));
+    delete_button->setCallback([this, delete_button] {
+        if (!selectable) {
+            return;
+        }
+        auto it = std::find(delete_items.begin(), delete_items.end(), delete_button);
+        if (it == delete_items.end()) {
+            return;
+        }
+        int index = (int)std::distance(delete_items.begin(), it);
+        if (onDeleteRequest) {
+            onDeleteRequest(index);
+        }
+    });
+
+    item_rows.push_back(row);
     items.push_back(b);
+    delete_items.push_back(delete_button);
     return b;
+}
+
+void TexList::removeItem(int index) {
+    if (index < 0 || index >= (int)items.size()) {
+        return;
+    }
+
+    nanogui::Widget *row = item_rows[index];
+    row->setVisible(false);
+
+    item_rows.erase(item_rows.begin() + index);
+    items.erase(items.begin() + index);
+    delete_items.erase(delete_items.begin() + index);
+    names.erase(names.begin() + index);
+
+    if (items.empty()) {
+        selectedIndex = 0;
+        setCaption("");
+        popup()->setVisible(false);
+        setPushed(false);
+        return;
+    }
+
+    int next = selectedIndex;
+    if (next >= (int)items.size()) {
+        next = (int)items.size() - 1;
+    }
+    if (index < selectedIndex) {
+        next = selectedIndex - 1;
+    }
+
+    selectItem(next, false);
+}
+
+void TexList::setDeleteCallback(std::function<void(int)> callback) {
+    onDeleteRequest = callback;
 }
 
 bool TexList::mouseButtonEvent(const Eigen::Vector2i &p, int button, bool down, int modifiers) {
@@ -238,11 +411,8 @@ bool TexList::scrollEvent(const Eigen::Vector2i &p, const Eigen::Vector2f &rel) 
     // printf("cumulative_rel.y: %f\n", cumulative_rel.y());
     int next_selectedIndex = std::min((int)(cumulative_rel.y()/6.0), (int)(names.size()-1));
     if (next_selectedIndex != selectedIndex) {
-        items[selectedIndex]->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
-        selectedIndex = next_selectedIndex;
-        items[selectedIndex]->setBackgroundColor(nanogui::Color(180, 180, 180, 255));
+        selectItem(next_selectedIndex, false);
     }
-    // this->setCaption(names[selectedIndex]);
     return Widget::scrollEvent(p, rel);
 }
 Row::Row(nanogui::Label *left, nanogui::Widget *right) {
@@ -362,6 +532,29 @@ void GUI::combo_init(nanogui::ComboBox *combo_box) {
     p->setAnchorHeight(26);
 }
 
+void GUI::setUploadActive(bool active) {
+    nanoguiWindow->setVisible(!active);
+    uploadWindow->setVisible(active);
+    if (active) {
+        upload_progress->setValue(0.0f);
+        upload_stage_label->setCaption("processing OBJ");
+        screen->performLayout();
+        Eigen::Vector2i s = screen->size();
+        Eigen::Vector2i w = uploadWindow->size();
+        uploadWindow->setPosition(Eigen::Vector2i((s.x() - w.x()) / 2, (s.y() - w.y()) / 2));
+    }
+    screen->performLayout();
+}
+
+void GUI::setUploadProgress(float p) {
+    float clamped = std::max(0.0f, std::min(1.0f, p));
+    upload_progress->setValue(clamped);
+}
+
+void GUI::setUploadStage(const std::string &stage_text) {
+    upload_stage_label->setCaption(stage_text);
+}
+
 void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, std::vector<std::string> tex_list, int* useTex) {
     auto name_extractor = [](std::string p) -> std::string {return p.substr(p.find_last_of("/") + 1, p.length());};
     std::transform(obj_list.begin(), obj_list.end(), obj_list.begin(), name_extractor);
@@ -387,6 +580,20 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     nanogui::GridLayout *layout = new nanogui::GridLayout(nanogui::Orientation::Horizontal, 2,nanogui::Alignment::Middle, 15, 0);
     layout->setColAlignment({nanogui::Alignment::Maximum, nanogui::Alignment::Fill});
     nanoguiWindow->setLayout(layout);
+
+    uploadWindow = new nanogui::Window(screen, "Uploading OBJ");
+    uploadWindow->setPosition(Eigen::Vector2i(220, 20));
+    uploadWindow->setLayout(new nanogui::BoxLayout(nanogui::Orientation::Vertical, nanogui::Alignment::Middle, 8, 8));
+    upload_stage_label = new nanogui::Label(uploadWindow, "processing OBJ", "sans");
+    upload_stage_label->setFixedWidth(220);
+    upload_progress = new nanogui::ProgressBar(uploadWindow);
+    upload_progress->setFixedSize(Eigen::Vector2i(220, 10));
+    upload_progress->setValue(0.0f);
+    cancel_upload = new nanogui::Button(uploadWindow, "Cancel");
+    cancel_upload->setBackgroundColor(nanogui::Color(74, 74, 74, 255));
+    cancel_upload->setTheme(button_theme);
+    cancel_upload->setFixedSize(Eigen::Vector2i(220, 24));
+    uploadWindow->setVisible(false);
 
     nanogui::Label* lab;
 

@@ -144,7 +144,9 @@ bool read_obj(const std::string obj_file_name,
 		std::vector<Eigen::Vector3f> & V,
 		std::vector<Eigen::Vector3f> & N,
 		std::vector<Eigen::Vector2f> & TC,
-		std::vector<Face> & F) {
+		std::vector<Face> & F,
+		std::atomic<float> *progress,
+		std::atomic<bool> *cancel_requested) {
 
 	std::string v("v");
 	std::string vn("vn");
@@ -167,6 +169,14 @@ bool read_obj(const std::string obj_file_name,
 		return false;
 	}
 
+	long file_size = 0;
+	fseek(obj_file, 0, SEEK_END);
+	file_size = ftell(obj_file);
+	fseek(obj_file, 0, SEEK_SET);
+	if (progress != nullptr) {
+		progress->store(0.0f);
+	}
+
 	char line[2048];
 	char currentmaterialref[2048] = "";
 
@@ -176,6 +186,17 @@ bool read_obj(const std::string obj_file_name,
 	int cur_total_vertex = 0;
 
 	while (fgets(line, 2048, obj_file) != NULL) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			fclose(obj_file);
+			return false;
+		}
+
+		if (progress != nullptr && file_size > 0) {
+			long pos = ftell(obj_file);
+			float parse_progress = 0.7f * std::min(1.0f, (float) pos / (float) file_size);
+			progress->store(parse_progress);
+		}
+
 		char type[2048];
 
 		// Read first word containing type
@@ -255,6 +276,9 @@ bool read_obj(const std::string obj_file_name,
 	}
 
 	fclose(obj_file);
+	if (progress != nullptr) {
+		progress->store(0.7f);
+	}
 	return true;
 }
 

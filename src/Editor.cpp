@@ -5,9 +5,14 @@
 #include <objc/objc.h>
 #include <objc/objc-runtime.h>
 #include <iostream>
+#include <algorithm>
 
 
 Editor::Editor(Eigen::Vector3f cam_init_pos, std::vector<std::string> obj_list, std::vector<std::string> tex_list) {
+	mesh_upload_in_progress.store(false);
+	mesh_upload_cancel_requested.store(false);
+	mesh_upload_progress.store(0.0f);
+	mesh_upload_stage.store(0);
 	cursor = new Cursor();
 	resources = new ResourceManager();
 	cam = new Camera(cam_init_pos);
@@ -24,9 +29,114 @@ Editor::Editor(Eigen::Vector3f cam_init_pos, std::vector<std::string> obj_list, 
 	gui.nanogui_init(window, obj_list, tex_list, &useTex);
 }
 
+Editor::~Editor() {
+	cancel_mesh_upload();
+	if (mesh_upload_thread.joinable()) {
+		mesh_upload_thread.join();
+	}
+}
+
+void Editor::start_mesh_upload(std::string filename, float scale) {
+	if (mesh_upload_in_progress.load()) {
+		return;
+	}
+
+	mesh_upload_cancel_requested.store(false);
+	mesh_upload_progress.store(0.0f);
+	mesh_upload_stage.store(1);
+	mesh_upload_in_progress.store(true);
+	pending_uploaded_mesh_name = filename.substr(filename.find_last_of("/") + 1, filename.length());
+	gui.setUploadActive(true);
+	gui.setUploadStage("processing OBJ");
+
+	if (mesh_upload_thread.joinable()) {
+		mesh_upload_thread.join();
+	}
+
+	mesh_upload_thread = std::thread([this, filename, scale]() {
+		std::unique_ptr<Mesh> loaded_mesh(new Mesh(filename, scale, &mesh_upload_progress, &mesh_upload_cancel_requested, &mesh_upload_stage));
+		if (!mesh_upload_cancel_requested.load() && !loaded_mesh->load_cancelled) {
+			std::lock_guard<std::mutex> lock(mesh_upload_mutex);
+			pending_uploaded_mesh = std::move(loaded_mesh);
+		}
+		mesh_upload_stage.store(0);
+		mesh_upload_in_progress.store(false);
+	});
+}
+
+void Editor::cancel_mesh_upload() {
+	if (!mesh_upload_in_progress.load()) {
+		return;
+	}
+	mesh_upload_cancel_requested.store(true);
+}
+
+void Editor::poll_mesh_upload() {
+	if (mesh_upload_in_progress.load()) {
+		int stage = mesh_upload_stage.load();
+		if (stage == 2) {
+			gui.setUploadStage("creating VT mapping");
+		} else {
+			gui.setUploadStage("processing OBJ");
+		}
+		gui.setUploadProgress(mesh_upload_progress.load());
+		return;
+	}
+
+	if (mesh_upload_thread.joinable()) {
+		mesh_upload_thread.join();
+	}
+
+	gui.setUploadActive(false);
+	gui.setUploadProgress(0.0f);
+
+	std::unique_ptr<Mesh> completed_mesh;
+	{
+		std::lock_guard<std::mutex> lock(mesh_upload_mutex);
+		if (pending_uploaded_mesh != nullptr) {
+			completed_mesh = std::move(pending_uploaded_mesh);
+		}
+	}
+
+	if (completed_mesh == nullptr) {
+		return;
+	}
+
+	float m1 = std::max(completed_mesh->top_right(0) - completed_mesh->bottom_left(0), completed_mesh->top_right(1) - completed_mesh->bottom_left(1));
+	float m2 = std::max(m1, completed_mesh->top_right(2) - completed_mesh->bottom_left(2));
+	completed_mesh->V = completed_mesh->V * 1.0/m2;
+
+	int n = (int)mesh_vector.size();
+	resources->addVAO(new VertexArrayObject());
+	resources->addVBO(new VertexBufferObject());
+	resources->addVBO(new VertexBufferObject());
+	resources->addVBO(new VertexBufferObject());
+	resources->addVBO(new VertexBufferObject());
+	resources->addVBO(new VertexBufferObject());
+	resources->addEBO(new ElementBufferObject());
+
+	resources->_usedVAOs[n]->bind();
+	resources->_usedVBOs[n*5]->update(completed_mesh->V.transpose());
+	resources->_usedVBOs[n*5+1]->update(completed_mesh->VN.transpose());
+	resources->_usedVBOs[n*5+2]->update(completed_mesh->TC.transpose());
+	resources->_usedVBOs[n*5+3]->update(completed_mesh->N.transpose());
+	resources->_usedVBOs[n*5+4]->update(completed_mesh->T.transpose());
+	resources->_usedEBOs[n]->update(completed_mesh->Indices.transpose());
+
+	mesh_vector.push_back(*completed_mesh);
+
+	gui.ml->names.push_back(pending_uploaded_mesh_name);
+	gui.ml->toolbox->setLayout(new nanogui::GridLayout(nanogui::Orientation::Horizontal, 1,nanogui::Alignment::Maximum, 0, 0));
+	gui.ml->addItem(pending_uploaded_mesh_name, (int)gui.ml->names.size() - 1);
+	gui.screen->performLayout();
+}
+
 void Editor::insert_mesh(std::string filename, float scale) {
 	printf("%s\n", filename.c_str());
 	Mesh new_mesh(filename, scale);
+	if (new_mesh.load_cancelled) {
+		return;
+	}
 
 	float m1 = std::max(new_mesh.top_right(0) - new_mesh.bottom_left(0), new_mesh.top_right(1) - new_mesh.bottom_left(1));
 	float m2 = std::max(m1, new_mesh.top_right(2) - new_mesh.bottom_left(2));
@@ -52,6 +162,67 @@ void Editor::insert_mesh(std::string filename, float scale) {
 	resources->_usedEBOs[n]->update(new_mesh.Indices.transpose());
 
 	mesh_vector.push_back(new_mesh);
+}
+
+void Editor::delete_mesh(int index) {
+	if ((int)mesh_vector.size() <= 1) {
+		return;
+	}
+
+	if (index < 0 || index >= (int)mesh_vector.size()) {
+		return;
+	}
+
+	mesh_vector.erase(mesh_vector.begin() + index);
+
+	VertexArrayObject *vao = resources->_usedVAOs[index];
+	vao->free();
+	delete vao;
+	resources->_usedVAOs.erase(resources->_usedVAOs.begin() + index);
+
+	int vbo_start = index * 5;
+	for (int k = 0; k < 5; ++k) {
+		VertexBufferObject *vbo = resources->_usedVBOs[vbo_start];
+		vbo->free();
+		delete vbo;
+		resources->_usedVBOs.erase(resources->_usedVBOs.begin() + vbo_start);
+	}
+
+	ElementBufferObject *ebo = resources->_usedEBOs[index];
+	ebo->free();
+	delete ebo;
+	resources->_usedEBOs.erase(resources->_usedEBOs.begin() + index);
+
+	gui.ml->removeItem(index);
+
+	cur_mesh = std::max(0, std::min(gui.ml->selectedIndex, (int)mesh_vector.size() - 1));
+	gui.ml->selectedIndex = cur_mesh;
+	resources->loadMeshes(cur_mesh);
+}
+
+void Editor::delete_tex(int index) {
+	if ((int)gui.ml2->names.size() <= 1) {
+		return;
+	}
+
+	if (index < 0 || index >= (int)gui.ml2->names.size()) {
+		return;
+	}
+
+	int tex_start = index * 4;
+	for (int k = 0; k < 4; ++k) {
+		Texture *tex = resources->_usedTextures[tex_start];
+		glDeleteTextures(1, &tex->textureId1);
+		delete tex;
+		resources->_usedTextures.erase(resources->_usedTextures.begin() + tex_start);
+	}
+
+	gui.ml2->removeItem(index);
+	cur_tex = std::max(0, std::min(gui.ml2->selectedIndex, (int)gui.ml2->names.size() - 1));
+	gui.ml2->selectedIndex = cur_tex;
+	if (useTex) {
+		resources->loadTex(cur_tex);
+	}
 }
 
 void Editor::add_tex(std::string foldername) {
@@ -158,12 +329,7 @@ void Editor::setGUICallbacks() {
 	auto open_mesh_callback = [&]() {
 		std::string pathname = nanogui::file_dialog({{"obj", "Object File Format"}}, false);
 		if (pathname.length() == 0) return;
-		std::string file = pathname.substr(pathname.find_last_of("/") + 1, pathname.length());
-		insert_mesh(pathname, 6);
-		gui.ml->toolbox->setLayout(new nanogui::GridLayout(nanogui::Orientation::Horizontal, 1,nanogui::Alignment::Maximum, 0, 0));
-		gui.ml->addItem(file ,(int)gui.ml->names.size());
-		gui.ml->names.push_back(file);
-		gui.screen->performLayout();
+		start_mesh_upload(pathname, 6);
 	};
 	auto open_tex_callback = [&]() {
 		auto result = directory_dialog({{"", ""}}, false, true);
@@ -193,5 +359,14 @@ void Editor::setGUICallbacks() {
 	gui.cc3->cw->setCallback([this, cw_callback](const nanogui::Color &c) {cw_callback(gui.cc3, "ambient", c);});
 
 	gui.ml->open_mesh->setCallback(open_mesh_callback);
+	gui.ml->setDeleteCallback([this](int index) {
+		delete_mesh(index);
+	});
 	gui.ml2->open_mesh->setCallback(open_tex_callback);
+	gui.ml2->setDeleteCallback([this](int index) {
+		delete_tex(index);
+	});
+	gui.cancel_upload->setCallback([this] {
+		cancel_mesh_upload();
+	});
 }
