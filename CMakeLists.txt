@@ -12,16 +12,19 @@ include_directories(lib/nanogui/include)
 include_directories(${NANOGUI_EXTRA_INCS})
 
 set(MM_EXTRA_SOURCE "")
-list(APPEND MM_EXTRA_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/fileDialog.mm")
-include_directories(${MM_EXTRA_SOURCE})
+set(FILE_DIALOG_MM "${CMAKE_CURRENT_SOURCE_DIR}/src/fileDialog.mm")
+if(EXISTS "${FILE_DIALOG_MM}")
+	list(APPEND MM_EXTRA_SOURCE "${FILE_DIALOG_MM}")
+endif()
 
 include_directories(src)
 add_definitions(${NANOGUI_EXTRA_DEFS})
 add_subdirectory(lib/soil soil)
 
 file(GLOB SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+list(APPEND SOURCES ${MM_EXTRA_SOURCE})
 #list(REMOVE_ITEM SOURCES "lib/nanogui/src/example*.cpp")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC lib/soil/inc)
-target_link_libraries(${PROJECT_NAME} ${COCOA_LIBRARY} ${CARBON_LIBRARY} nanogui ${NANOGUI_EXTRA_LIBS} soil ${MM_EXTRA_SOURCE})
+target_link_libraries(${PROJECT_NAME} ${COCOA_LIBRARY} ${CARBON_LIBRARY} nanogui ${NANOGUI_EXTRA_LIBS} soil)

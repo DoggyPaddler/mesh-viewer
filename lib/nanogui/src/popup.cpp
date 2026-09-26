@@ -74,11 +74,9 @@ void Popup::draw(NVGcontext* ctx) {
         sign = 1;
     }
 
-    const int arrow_tip_offset = 10;
-    const int arrow_half_height = 10;
-    nvgMoveTo(ctx, base.x() + arrow_tip_offset * sign, base.y());
-    nvgLineTo(ctx, base.x() - 1 * sign, base.y() - arrow_half_height);
-    nvgLineTo(ctx, base.x() - 1 * sign, base.y() + arrow_half_height);
+    nvgMoveTo(ctx, base.x() + 15*sign, base.y());
+    nvgLineTo(ctx, base.x() - 1*sign, base.y() - 15);
+    nvgLineTo(ctx, base.x() - 1*sign, base.y() + 15);
 
     nvgFillColor(ctx, mTheme->mWindowPopup);
     nvgFill(ctx);

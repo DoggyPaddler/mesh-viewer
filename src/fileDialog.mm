@@ -5,7 +5,6 @@
 #import <Cocoa/Cocoa.h>
 #include <string>
 #include <vector>
-// #include "Editor.h"
 
 std::vector<std::string> directory_dialog(const std::vector<std::pair<std::string, std::string>> &filetypes, bool save, bool multiple) {
     if (save && multiple) {
@@ -18,9 +17,9 @@ std::vector<std::string> directory_dialog(const std::vector<std::pair<std::strin
 
         NSMutableArray *types = [NSMutableArray new];
         for (size_t idx = 0; idx < filetypes.size(); ++idx)
-            [types addObject: [NSString stringWithUTF8String: filetypes[idx].first.c_str()]];
+            [types addObject:[NSString stringWithUTF8String:filetypes[idx].first.c_str()]];
 
-        [saveDlg setAllowedFileTypes: types];
+        [saveDlg setAllowedFileTypes:types];
 
         if ([saveDlg runModal] == NSModalResponseOK)
             result.emplace_back([[[saveDlg URL] path] UTF8String]);
@@ -32,13 +31,13 @@ std::vector<std::string> directory_dialog(const std::vector<std::pair<std::strin
         [openDlg setAllowsMultipleSelection:multiple];
         NSMutableArray *types = [NSMutableArray new];
         for (size_t idx = 0; idx < filetypes.size(); ++idx)
-            [types addObject: [NSString stringWithUTF8String: filetypes[idx].first.c_str()]];
+            [types addObject:[NSString stringWithUTF8String:filetypes[idx].first.c_str()]];
 
-        [openDlg setAllowedFileTypes: types];
+        [openDlg setAllowedFileTypes:types];
 
         if ([openDlg runModal] == NSModalResponseOK) {
-            for (NSURL* url in [openDlg URLs]) {
-                result.emplace_back((char*) [[url path] UTF8String]);
+            for (NSURL *url in [openDlg URLs]) {
+                result.emplace_back((char *)[[url path] UTF8String]);
             }
         }
     }

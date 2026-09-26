@@ -174,6 +174,7 @@ int main(int /* argc */, char ** /* argv */) {
         glEnable(GL_DEPTH_TEST);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         editor->cam->update_camera(std::chrono::high_resolution_clock::now(), t_start);
+        editor->poll_mesh_upload();
         // Draw triangles 
 
         renderer_draw();

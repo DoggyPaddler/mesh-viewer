@@ -1,12 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesh Viewer Web</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <aside class="panel" id="panel">
+        <h1>Mesh Viewer</h1>
 
-<head>
-    <title>Mesh Viewer: Project from 2022</title>
-</head>
+        <section class="group">
+          <label class="label">Assets</label>
+          <div class="row">
+            <button id="openObjBtn" class="btn">Open OBJ</button>
+            <input id="objInput" type="file" accept=".obj" hidden />
+          </div>
+          <ul id="assetList" class="asset-list"></ul>
+        </section>
 
-<body>
-    Hello World!
-</body>
+        <section class="group">
+          <label class="label" for="lightIntensity">Light Intensity</label>
+          <div class="row align-center">
+            <input id="lightIntensity" type="range" min="1" max="100" value="50" />
+            <span id="lightIntensityValue">50</span>
+          </div>
+        </section>
 
+        <section class="group">
+          <label class="label">Camera</label>
+          <button id="toggleRotateBtn" class="btn">Pause/Resume</button>
+        </section>
+      </aside>
+
+      <section class="viewport">
+        <canvas id="view"></canvas>
+      </section>
+
+      <div id="uploadOverlay" class="overlay hidden" aria-hidden="true">
+        <div class="overlay-card">
+          <h2>Uploading OBJ</h2>
+          <p id="uploadStage">processing OBJ</p>
+          <progress id="uploadProgress" max="1" value="0"></progress>
+          <button id="cancelUploadBtn" class="btn btn-cancel">Cancel</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js?v=2"></script>
+  </body>
 </html>

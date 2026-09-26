@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/cmake_install.cmake",
+		"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/cmake_install.cmake",
+		"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/cmake_install.cmake",
+		"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/cmake_install.cmake",
+		"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

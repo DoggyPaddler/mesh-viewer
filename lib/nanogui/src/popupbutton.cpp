@@ -36,7 +36,7 @@ PopupButton::~PopupButton() {
 }
 
 Vector2i PopupButton::preferredSize(NVGcontext *ctx) const {
-    return Button::preferredSize(ctx) + Vector2i(10, 0);
+    return Button::preferredSize(ctx) + Vector2i(15, 0);
 }
 
 void PopupButton::draw(NVGcontext* ctx) {
@@ -75,9 +75,9 @@ void PopupButton::performLayout(NVGcontext *ctx) {
 
     int posY = absolutePosition().y() - parentWindow->position().y() + mSize.y() /2;
     if (mPopup->side() == Popup::Right)
-        mPopup->setAnchorPos(Vector2i(parentWindow->width() + 10, posY));
+        mPopup->setAnchorPos(Vector2i(parentWindow->width() + 15, posY));
     else
-        mPopup->setAnchorPos(Vector2i(0 - 10, posY));
+        mPopup->setAnchorPos(Vector2i(0 - 15, posY));
 }
 
 void PopupButton::setSide(Popup::Side side) {

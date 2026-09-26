@@ -1,0 +1,192 @@
+:root {
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --panel-border: rgba(0, 0, 0, 0.08);
+  --text: #101418;
+  --muted: #4a5560;
+  --btn-bg: #1f2933;
+  --btn-text: #f5f7fa;
+  --bg-top: #e9eef2;
+  --bg-bottom: #d8e1e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: linear-gradient(160deg, var(--bg-top), var(--bg-bottom));
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.panel {
+  padding: 16px;
+  background: var(--panel-bg);
+  border-right: 1px solid var(--panel-border);
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+}
+
+.panel h1 {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+
+.group {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  margin-top: 10px;
+  width: 100%;
+  background: #4a4a4a;
+}
+
+.asset-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.asset-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d6dde3;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.asset-item.active {
+  background: #eceff3;
+}
+
+.asset-select {
+  flex: 1;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 7px 8px;
+  cursor: pointer;
+  color: #111;
+}
+
+.asset-delete {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.asset-item.active .asset-delete {
+  background: #eceff3;
+}
+
+.viewport {
+  position: relative;
+}
+
+#view {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(10, 14, 20, 0.25);
+  z-index: 20;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay-card {
+  width: 290px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(250, 252, 255, 0.95);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-card h2 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.overlay-card p {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.overlay-card progress {
+  width: 100%;
+  height: 8px;
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--panel-border);
+  }
+}
