@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 # Include any dependencies generated for this target.
 include lib/nanogui/CMakeFiles/example_icons.dir/depend.make
@@ -73,18 +73,18 @@ lib/nanogui/CMakeFiles/example_icons.dir/codegen:
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/codegen
 
 lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o: lib/nanogui/CMakeFiles/example_icons.dir/flags.make
-lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/src/example_icons.cpp
+lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/src/example_icons.cpp
 lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o: lib/nanogui/CMakeFiles/example_icons.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o -MF CMakeFiles/example_icons.dir/src/example_icons.cpp.o.d -o CMakeFiles/example_icons.dir/src/example_icons.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/src/example_icons.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o -MF CMakeFiles/example_icons.dir/src/example_icons.cpp.o.d -o CMakeFiles/example_icons.dir/src/example_icons.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/src/example_icons.cpp
 
 lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example_icons.dir/src/example_icons.cpp.i"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/src/example_icons.cpp > CMakeFiles/example_icons.dir/src/example_icons.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/src/example_icons.cpp > CMakeFiles/example_icons.dir/src/example_icons.cpp.i
 
 lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example_icons.dir/src/example_icons.cpp.s"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/src/example_icons.cpp -o CMakeFiles/example_icons.dir/src/example_icons.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/src/example_icons.cpp -o CMakeFiles/example_icons.dir/src/example_icons.cpp.s
 
 # Object files for target example_icons
 example_icons_OBJECTS = \
@@ -97,18 +97,18 @@ lib/nanogui/example_icons: lib/nanogui/CMakeFiles/example_icons.dir/src/example_
 lib/nanogui/example_icons: lib/nanogui/CMakeFiles/example_icons.dir/build.make
 lib/nanogui/example_icons: lib/nanogui/libnanogui.dylib
 lib/nanogui/example_icons: lib/nanogui/CMakeFiles/example_icons.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable example_icons"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_icons.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable example_icons"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_icons.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/nanogui/CMakeFiles/example_icons.dir/build: lib/nanogui/example_icons
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/build
 
 lib/nanogui/CMakeFiles/example_icons.dir/clean:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/example_icons.dir/cmake_clean.cmake
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/example_icons.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/clean
 
 lib/nanogui/CMakeFiles/example_icons.dir/depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/example_icons.dir/DependInfo.cmake "--color=$(COLOR)" example_icons
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/example_icons.dir/DependInfo.cmake "--color=$(COLOR)" example_icons
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/depend
 

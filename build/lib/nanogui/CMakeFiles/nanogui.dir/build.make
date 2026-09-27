@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 # Include any dependencies generated for this target.
 include lib/nanogui/CMakeFiles/nanogui.dir/depend.make
@@ -77,50 +77,50 @@ nanogui_OBJECTS =
 
 # External object files for target nanogui
 nanogui_EXTERNAL_OBJECTS = \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
 
 lib/nanogui/libnanogui.dylib: lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
 lib/nanogui/libnanogui.dylib: lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o
@@ -168,19 +168,19 @@ lib/nanogui/libnanogui.dylib: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_obj
 lib/nanogui/libnanogui.dylib: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o
 lib/nanogui/libnanogui.dylib: lib/nanogui/CMakeFiles/nanogui.dir/build.make
 lib/nanogui/libnanogui.dylib: lib/nanogui/CMakeFiles/nanogui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.dylib"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && strip -u -r /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/libnanogui.dylib
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.dylib"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && strip -u -r /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/libnanogui.dylib
 
 # Rule to build all files generated by this target.
 lib/nanogui/CMakeFiles/nanogui.dir/build: lib/nanogui/libnanogui.dylib
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/build
 
 lib/nanogui/CMakeFiles/nanogui.dir/clean:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/clean
 
 lib/nanogui/CMakeFiles/nanogui.dir/depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake "--color=$(COLOR)" nanogui
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake "--color=$(COLOR)" nanogui
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/depend
 

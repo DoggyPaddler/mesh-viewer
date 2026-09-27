@@ -1,4 +1,4 @@
-# Install script for directory: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui
+# Install script for directory: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/libnanogui.dylib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/libnanogui.dylib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnanogui.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnanogui.dylib")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -51,18 +51,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/include/nanogui" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/python/nanogui.cpython-37m-darwin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/python/nanogui.cpython-37m-darwin.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/nanogui.cpython-37m-darwin.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/nanogui.cpython-37m-darwin.so")
     execute_process(COMMAND "/usr/bin/install_name_tool"
       -id "nanogui.cpython-37m-darwin.so"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/nanogui.cpython-37m-darwin.so")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui"
+      -delete_rpath "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/nanogui.cpython-37m-darwin.so")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/nanogui.cpython-37m-darwin.so")
@@ -75,13 +75,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/cmake_install.cmake")
+  include("/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/install_local_manifest.txt"
+  file(WRITE "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

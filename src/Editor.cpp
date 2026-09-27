@@ -21,6 +21,10 @@ Editor::Editor(Eigen::Vector3f cam_init_pos, std::vector<std::string> obj_list, 
 	cur_tex = 0;
 	render_mode = 0;
 	useTex = 0;
+	light_pos = cam_init_pos(0) * Vector3f(
+		cos(cam_init_pos(1)) * cos(cam_init_pos(2)),
+		sin(cam_init_pos(2)),
+		sin(cam_init_pos(1)) * cos(cam_init_pos(2)));
 
 	window = glfwCreateWindow(600, 400, "3D Viewer", nullptr, nullptr);    // Create a GLFWwindow object
 	glfwMakeContextCurrent(window);
@@ -264,6 +268,8 @@ void Editor::add_tex(std::string foldername) {
 }
 
 void Editor::setGUICallbacks() {
+	gui.setLightPosition(light_pos);
+
 	gui.render_mode->setCallback([this](int a) {
 		this->gui.render_mode->setSelectedIndex(a);
 		nanogui::Button * buttonA = ((nanogui::Button *)gui.render_mode->popup()->children()[a]);
@@ -273,7 +279,7 @@ void Editor::setGUICallbacks() {
 		//std::cout << this->gui.render_mode->items().size() << std::endl;
 		if (a == 0) {
 			this->gui.glossiness->setVisible(false);
-			this->gui.metallic->setVisible(false);
+			this->gui.pbr_ambient->setVisible(false);
 			this->gui.shineness->setVisible(true);
 			this->gui.ambient->setVisible(true);
 			this->gui.screen->performLayout();
@@ -281,7 +287,7 @@ void Editor::setGUICallbacks() {
 			//this->gui.nanoguiWindow->setSize(gui.nanoguiWindow->size() - Eigen::Vector2i(0,20));
 		} else {
 			this->gui.glossiness->setVisible(true);
-			this->gui.metallic->setVisible(true);
+			this->gui.pbr_ambient->setVisible(true);
 			this->gui.shineness->setVisible(false);
 			this->gui.ambient->setVisible(false);
 			this->gui.screen->performLayout();
@@ -312,6 +318,15 @@ void Editor::setGUICallbacks() {
 	nanogui::IntBox<int> * light_intensity_w = (nanogui::IntBox<int> *)gui.light_intensity->w;
 	light_intensity_w->setCallback([this](const int n) {
 		this->resources->setFloat(0, "light_intensity", n);
+	});
+	gui.light_position_x->setCallback([this](const float value) {
+		this->light_pos.x() = value;
+	});
+	gui.light_position_y->setCallback([this](const float value) {
+		this->light_pos.y() = value;
+	});
+	gui.light_position_z->setCallback([this](const float value) {
+		this->light_pos.z() = value;
 	});
 	nanogui::IntBox<int> * gloss_w = (nanogui::IntBox<int> *)gui.glossiness->w;
 	gloss_w->setCallback([this](const int n) {
@@ -357,6 +372,11 @@ void Editor::setGUICallbacks() {
 	gui.cc3->tb_g->setCallback([this, tb_callback](const int n) {tb_callback(gui.cc3, "ambient", 1, n);});
 	gui.cc3->tb_b->setCallback([this, tb_callback](const int n) {tb_callback(gui.cc3, "ambient", 2, n);});
 	gui.cc3->cw->setCallback([this, cw_callback](const nanogui::Color &c) {cw_callback(gui.cc3, "ambient", c);});
+
+	gui.cc4->tb_r->setCallback([this, tb_callback](const int n) {tb_callback(gui.cc4, "pbr_ambient", 0, n);});
+	gui.cc4->tb_g->setCallback([this, tb_callback](const int n) {tb_callback(gui.cc4, "pbr_ambient", 1, n);});
+	gui.cc4->tb_b->setCallback([this, tb_callback](const int n) {tb_callback(gui.cc4, "pbr_ambient", 2, n);});
+	gui.cc4->cw->setCallback([this, cw_callback](const nanogui::Color &c) {cw_callback(gui.cc4, "pbr_ambient", c);});
 
 	gui.ml->open_mesh->setCallback(open_mesh_callback);
 	gui.ml->setDeleteCallback([this](int index) {

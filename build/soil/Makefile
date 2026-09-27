@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil//CMakeFiles/progress.marks
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil//CMakeFiles/progress.marks
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/clean
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/preinstall
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/preinstall
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 soil/CMakeFiles/soil.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/CMakeFiles/soil.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/CMakeFiles/soil.dir/rule
 .PHONY : soil/CMakeFiles/soil.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ soil: soil/CMakeFiles/soil.dir/rule
 
 # fast build rule for target.
 soil/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/build
 .PHONY : soil/fast
 
 src/SOIL.o: src/SOIL.c.o
@@ -180,7 +180,7 @@ src/SOIL.o: src/SOIL.c.o
 
 # target to build an object file
 src/SOIL.c.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/SOIL.c.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/SOIL.c.o
 .PHONY : src/SOIL.c.o
 
 src/SOIL.i: src/SOIL.c.i
@@ -188,7 +188,7 @@ src/SOIL.i: src/SOIL.c.i
 
 # target to preprocess a source file
 src/SOIL.c.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/SOIL.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/SOIL.c.i
 .PHONY : src/SOIL.c.i
 
 src/SOIL.s: src/SOIL.c.s
@@ -196,7 +196,7 @@ src/SOIL.s: src/SOIL.c.s
 
 # target to generate assembly for a file
 src/SOIL.c.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/SOIL.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/SOIL.c.s
 .PHONY : src/SOIL.c.s
 
 src/image_DXT.o: src/image_DXT.c.o
@@ -204,7 +204,7 @@ src/image_DXT.o: src/image_DXT.c.o
 
 # target to build an object file
 src/image_DXT.c.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_DXT.c.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_DXT.c.o
 .PHONY : src/image_DXT.c.o
 
 src/image_DXT.i: src/image_DXT.c.i
@@ -212,7 +212,7 @@ src/image_DXT.i: src/image_DXT.c.i
 
 # target to preprocess a source file
 src/image_DXT.c.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_DXT.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_DXT.c.i
 .PHONY : src/image_DXT.c.i
 
 src/image_DXT.s: src/image_DXT.c.s
@@ -220,7 +220,7 @@ src/image_DXT.s: src/image_DXT.c.s
 
 # target to generate assembly for a file
 src/image_DXT.c.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_DXT.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_DXT.c.s
 .PHONY : src/image_DXT.c.s
 
 src/image_helper.o: src/image_helper.c.o
@@ -228,7 +228,7 @@ src/image_helper.o: src/image_helper.c.o
 
 # target to build an object file
 src/image_helper.c.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_helper.c.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_helper.c.o
 .PHONY : src/image_helper.c.o
 
 src/image_helper.i: src/image_helper.c.i
@@ -236,7 +236,7 @@ src/image_helper.i: src/image_helper.c.i
 
 # target to preprocess a source file
 src/image_helper.c.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_helper.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_helper.c.i
 .PHONY : src/image_helper.c.i
 
 src/image_helper.s: src/image_helper.c.s
@@ -244,7 +244,7 @@ src/image_helper.s: src/image_helper.c.s
 
 # target to generate assembly for a file
 src/image_helper.c.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_helper.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/image_helper.c.s
 .PHONY : src/image_helper.c.s
 
 src/stb_image_aug.o: src/stb_image_aug.c.o
@@ -252,7 +252,7 @@ src/stb_image_aug.o: src/stb_image_aug.c.o
 
 # target to build an object file
 src/stb_image_aug.c.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o
 .PHONY : src/stb_image_aug.c.o
 
 src/stb_image_aug.i: src/stb_image_aug.c.i
@@ -260,7 +260,7 @@ src/stb_image_aug.i: src/stb_image_aug.c.i
 
 # target to preprocess a source file
 src/stb_image_aug.c.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/stb_image_aug.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/stb_image_aug.c.i
 .PHONY : src/stb_image_aug.c.i
 
 src/stb_image_aug.s: src/stb_image_aug.c.s
@@ -268,7 +268,7 @@ src/stb_image_aug.s: src/stb_image_aug.c.s
 
 # target to generate assembly for a file
 src/stb_image_aug.c.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/stb_image_aug.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/src/stb_image_aug.c.s
 .PHONY : src/stb_image_aug.c.s
 
 # Help Target
@@ -307,6 +307,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

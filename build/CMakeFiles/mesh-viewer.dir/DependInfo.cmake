@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/main.cpp" "CMakeFiles/mesh-viewer.dir/main.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/main.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Camera.cpp" "CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Cursor.cpp" "CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Editor.cpp" "CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GLHelpers.cpp" "CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GUI.cpp" "CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Mesh.cpp" "CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Object.cpp" "CMakeFiles/mesh-viewer.dir/src/Object.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Object.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ReadObj.cpp" "CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ResourceManager.cpp" "CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o.d"
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/fileDialog.mm" "CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/main.cpp" "CMakeFiles/mesh-viewer.dir/main.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/main.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Camera.cpp" "CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Cursor.cpp" "CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Editor.cpp" "CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp" "CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GUI.cpp" "CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.cpp" "CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Object.cpp" "CMakeFiles/mesh-viewer.dir/src/Object.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/Object.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.cpp" "CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.cpp" "CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/fileDialog.mm" "CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o" "gcc" "CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

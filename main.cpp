@@ -1,6 +1,7 @@
 // #include <GLFW/glfw3.h>
 #include <Eigen/Core>
 #include <Eigen/Dense>
+#include <algorithm>
 #include <iostream>
 #include <SOIL/SOIL.h>
 
@@ -63,6 +64,17 @@ void mouse_move_callback(GLFWwindow* window, double xpos, double ypos) {
         editor->cam->alpha_shift += 0.5 * a * M_PI/90.0;
         editor->cam->beta_shift -= 0.5 * b * M_PI/90.0;
     }
+    bool shift_pressed = glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS ||
+                         glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS;
+    if (shift_pressed) {
+        float dx = editor->cursor->p1(0) - editor->cursor->p0(0);
+        float dy = editor->cursor->p1(1) - editor->cursor->p0(1);
+        float movement_scale = editor->cam->radius / std::max(height, 1);
+        Vector3f camera_right = editor->cam->camera.block<1, 3>(0, 0).transpose();
+        Vector3f camera_up = editor->cam->camera.block<1, 3>(1, 0).transpose();
+        editor->light_pos += movement_scale * (dx * camera_right + dy * camera_up);
+        editor->gui.setLightPosition(editor->light_pos);
+    }
 }
 
 void mouse_click_callback(GLFWwindow* window, int button, int action, int mods) {
@@ -96,8 +108,10 @@ void renderer_draw() {
     editor->resources->_usedPrograms[0]->bind();
     glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("view"), 1, GL_FALSE, editor->cam->view.data());
     glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("camera"), 1, GL_FALSE, editor->cam->camera.data());
-    Vector3f light_pos = editor->cam->cam_pos;
+    Vector3f light_pos = editor->light_pos;
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("light_pos"), light_pos(0), light_pos(1),light_pos(2));
+    Vector3f camera_pos = editor->cam->cam_pos;
+    glUniform3f(editor->resources->_usedPrograms[0]->uniform("camera_pos"), camera_pos(0), camera_pos(1), camera_pos(2));
     glUniform1i(editor->resources->_usedPrograms[0]->uniform("render_mode"), editor->render_mode);
     glUniform1i(editor->resources->_usedPrograms[0]->uniform("useTex"), editor->useTex);
 
@@ -148,6 +162,7 @@ int main(int /* argc */, char ** /* argv */) {
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("diffuse"), 110,100,160);
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("specular"), 100,100,100);
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("ambient"), 40,40,40);
+    glUniform3f(editor->resources->_usedPrograms[0]->uniform("pbr_ambient"), 20,20,20);
     glUniform1f(editor->resources->_usedPrograms[0]->uniform("p"), 100);
     glUniform1f(editor->resources->_usedPrograms[0]->uniform("kg"), 50);
     glUniform1f(editor->resources->_usedPrograms[0]->uniform("light_intensity"), 50.0f);

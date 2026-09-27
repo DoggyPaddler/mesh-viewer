@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 # Include any dependencies generated for this target.
 include soil/CMakeFiles/soil.dir/depend.make
@@ -73,60 +73,60 @@ soil/CMakeFiles/soil.dir/codegen:
 .PHONY : soil/CMakeFiles/soil.dir/codegen
 
 soil/CMakeFiles/soil.dir/src/image_helper.c.o: soil/CMakeFiles/soil.dir/flags.make
-soil/CMakeFiles/soil.dir/src/image_helper.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_helper.c
+soil/CMakeFiles/soil.dir/src/image_helper.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_helper.c
 soil/CMakeFiles/soil.dir/src/image_helper.c.o: soil/CMakeFiles/soil.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object soil/CMakeFiles/soil.dir/src/image_helper.c.o"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/image_helper.c.o -MF CMakeFiles/soil.dir/src/image_helper.c.o.d -o CMakeFiles/soil.dir/src/image_helper.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object soil/CMakeFiles/soil.dir/src/image_helper.c.o"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/image_helper.c.o -MF CMakeFiles/soil.dir/src/image_helper.c.o.d -o CMakeFiles/soil.dir/src/image_helper.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_helper.c
 
 soil/CMakeFiles/soil.dir/src/image_helper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/soil.dir/src/image_helper.c.i"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_helper.c > CMakeFiles/soil.dir/src/image_helper.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_helper.c > CMakeFiles/soil.dir/src/image_helper.c.i
 
 soil/CMakeFiles/soil.dir/src/image_helper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/soil.dir/src/image_helper.c.s"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_helper.c -o CMakeFiles/soil.dir/src/image_helper.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_helper.c -o CMakeFiles/soil.dir/src/image_helper.c.s
 
 soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o: soil/CMakeFiles/soil.dir/flags.make
-soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/stb_image_aug.c
+soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/stb_image_aug.c
 soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o: soil/CMakeFiles/soil.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o -MF CMakeFiles/soil.dir/src/stb_image_aug.c.o.d -o CMakeFiles/soil.dir/src/stb_image_aug.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/stb_image_aug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/stb_image_aug.c.o -MF CMakeFiles/soil.dir/src/stb_image_aug.c.o.d -o CMakeFiles/soil.dir/src/stb_image_aug.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/stb_image_aug.c
 
 soil/CMakeFiles/soil.dir/src/stb_image_aug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/soil.dir/src/stb_image_aug.c.i"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/stb_image_aug.c > CMakeFiles/soil.dir/src/stb_image_aug.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/stb_image_aug.c > CMakeFiles/soil.dir/src/stb_image_aug.c.i
 
 soil/CMakeFiles/soil.dir/src/stb_image_aug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/soil.dir/src/stb_image_aug.c.s"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/stb_image_aug.c -o CMakeFiles/soil.dir/src/stb_image_aug.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/stb_image_aug.c -o CMakeFiles/soil.dir/src/stb_image_aug.c.s
 
 soil/CMakeFiles/soil.dir/src/image_DXT.c.o: soil/CMakeFiles/soil.dir/flags.make
-soil/CMakeFiles/soil.dir/src/image_DXT.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_DXT.c
+soil/CMakeFiles/soil.dir/src/image_DXT.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_DXT.c
 soil/CMakeFiles/soil.dir/src/image_DXT.c.o: soil/CMakeFiles/soil.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object soil/CMakeFiles/soil.dir/src/image_DXT.c.o"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/image_DXT.c.o -MF CMakeFiles/soil.dir/src/image_DXT.c.o.d -o CMakeFiles/soil.dir/src/image_DXT.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_DXT.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object soil/CMakeFiles/soil.dir/src/image_DXT.c.o"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/image_DXT.c.o -MF CMakeFiles/soil.dir/src/image_DXT.c.o.d -o CMakeFiles/soil.dir/src/image_DXT.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_DXT.c
 
 soil/CMakeFiles/soil.dir/src/image_DXT.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/soil.dir/src/image_DXT.c.i"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_DXT.c > CMakeFiles/soil.dir/src/image_DXT.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_DXT.c > CMakeFiles/soil.dir/src/image_DXT.c.i
 
 soil/CMakeFiles/soil.dir/src/image_DXT.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/soil.dir/src/image_DXT.c.s"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/image_DXT.c -o CMakeFiles/soil.dir/src/image_DXT.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/image_DXT.c -o CMakeFiles/soil.dir/src/image_DXT.c.s
 
 soil/CMakeFiles/soil.dir/src/SOIL.c.o: soil/CMakeFiles/soil.dir/flags.make
-soil/CMakeFiles/soil.dir/src/SOIL.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/SOIL.c
+soil/CMakeFiles/soil.dir/src/SOIL.c.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/SOIL.c
 soil/CMakeFiles/soil.dir/src/SOIL.c.o: soil/CMakeFiles/soil.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object soil/CMakeFiles/soil.dir/src/SOIL.c.o"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/SOIL.c.o -MF CMakeFiles/soil.dir/src/SOIL.c.o.d -o CMakeFiles/soil.dir/src/SOIL.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/SOIL.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object soil/CMakeFiles/soil.dir/src/SOIL.c.o"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT soil/CMakeFiles/soil.dir/src/SOIL.c.o -MF CMakeFiles/soil.dir/src/SOIL.c.o.d -o CMakeFiles/soil.dir/src/SOIL.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/SOIL.c
 
 soil/CMakeFiles/soil.dir/src/SOIL.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/soil.dir/src/SOIL.c.i"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/SOIL.c > CMakeFiles/soil.dir/src/SOIL.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/SOIL.c > CMakeFiles/soil.dir/src/SOIL.c.i
 
 soil/CMakeFiles/soil.dir/src/SOIL.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/soil.dir/src/SOIL.c.s"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/src/SOIL.c -o CMakeFiles/soil.dir/src/SOIL.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/src/SOIL.c -o CMakeFiles/soil.dir/src/SOIL.c.s
 
 # Object files for target soil
 soil_OBJECTS = \
@@ -144,19 +144,19 @@ soil/libsoil.a: soil/CMakeFiles/soil.dir/src/image_DXT.c.o
 soil/libsoil.a: soil/CMakeFiles/soil.dir/src/SOIL.c.o
 soil/libsoil.a: soil/CMakeFiles/soil.dir/build.make
 soil/libsoil.a: soil/CMakeFiles/soil.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libsoil.a"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && $(CMAKE_COMMAND) -P CMakeFiles/soil.dir/cmake_clean_target.cmake
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soil.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libsoil.a"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && $(CMAKE_COMMAND) -P CMakeFiles/soil.dir/cmake_clean_target.cmake
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soil.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 soil/CMakeFiles/soil.dir/build: soil/libsoil.a
 .PHONY : soil/CMakeFiles/soil.dir/build
 
 soil/CMakeFiles/soil.dir/clean:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil && $(CMAKE_COMMAND) -P CMakeFiles/soil.dir/cmake_clean.cmake
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil && $(CMAKE_COMMAND) -P CMakeFiles/soil.dir/cmake_clean.cmake
 .PHONY : soil/CMakeFiles/soil.dir/clean
 
 soil/CMakeFiles/soil.dir/depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/soil/CMakeFiles/soil.dir/DependInfo.cmake "--color=$(COLOR)" soil
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/soil/CMakeFiles/soil.dir/DependInfo.cmake "--color=$(COLOR)" soil
 .PHONY : soil/CMakeFiles/soil.dir/depend
 

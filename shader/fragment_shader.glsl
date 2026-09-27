@@ -15,7 +15,9 @@ uniform mat4 proj;
 uniform vec3 diffuse;
 uniform vec3 specular;
 uniform vec3 ambient;
+uniform vec3 pbr_ambient;
 uniform vec3 light_pos;
+uniform vec3 camera_pos;
 uniform float p;
 uniform float kg;
 uniform float light_intensity;
@@ -35,11 +37,11 @@ float alpha = 1.0;
 vec3 blinn_phong(vec3 ka, vec3 kd, vec3 ks, float p, vec3 n, vec3 v, vec3 l) {
 	float light_strength = light_intensity * 0.02;
 	vec3 I = vec3(light_strength, light_strength, light_strength);
-	float factor = max(n.x * l.x + n.y * l.y + n.z * l.z, -(n.x * l.x + n.y * l.y + n.z * l.z));
+	float factor = max(dot(n, l), 0.0);
 	vec3 diffuse = factor * I * kd;
 
 	vec3 h = normalize(v + l);
-	factor = pow(max((n.x * h.x + n.y * h.y + n.z * h.z), -(n.x * h.x + n.y * h.y + n.z * h.z)), p);
+	factor = pow(max(dot(n, h), 0.0), p);
 	vec3 specular = factor * I * ks;
 
 	vec3 ambient = ka;
@@ -47,6 +49,9 @@ vec3 blinn_phong(vec3 ka, vec3 kd, vec3 ks, float p, vec3 n, vec3 v, vec3 l) {
 }
 
 vec3 ShadePBRSpecular(vec3 C_diff, vec3 F0, float a, vec3 N, vec3 L, vec3 V) {
+	if (dot(N, L) <= 0.0 || dot(N, V) <= 0.0)
+		return vec3(0.0);
+
 	vec3 new_C_diff = C_diff * (1 - F0);
 	float new_a = pow((1 - a), 2);
 
@@ -75,6 +80,9 @@ vec3 ShadePBRSpecular(vec3 C_diff, vec3 F0, float a, vec3 N, vec3 L, vec3 V) {
 }
 
 vec3 ShadePBRSpecularV2(vec3 C_diff, vec3 C_spc, float a, vec3 N, vec3 L, vec3 V) {
+	if (dot(N, L) <= 0.0 || dot(N, V) <= 0.0)
+		return vec3(0.0);
+
 	vec3 H = normalize(V + L);
 
 	float dotVH = max(dot(V, H), 1e-6);
@@ -123,32 +131,25 @@ void main() {
 
 
 	vec3 light_d = normalize(light_pos - fs_pos.xyz);
+	vec3 view_d = normalize(camera_pos - fs_pos.xyz);
 	float r = length(light_pos - fs_pos.xyz);
 	vec3 L = normalize(light_pos - fs_pos.xyz);
-	vec3 V = normalize(light_pos - fs_pos.xyz);
+	vec3 V = normalize(camera_pos - fs_pos.xyz);
 	float radiance = min(1.0 / (r * r / 1e3), 8.0); // r2
 	radiance = max(radiance, 5.0);
 
 
 	vec4 vertex_normal_4d = model * vec4(fs_vn[0], fs_vn[1], fs_vn[2], 0.0);
 	vec3 vertex_normal_3d = vec3(vertex_normal_4d[0], vertex_normal_4d[1], vertex_normal_4d[2]);
-	if (vertex_normal_3d.x * light_d.x + vertex_normal_3d.y * light_d.y + vertex_normal_3d.z * light_d.z < 0) {
-		vertex_normal_3d = -vertex_normal_3d;
-	}
 	vec3 tngt_light = toTangentSpc * light_d;
-	if (vertex_normal_3d.x * light_d.x + vertex_normal_3d.y * light_d.y + vertex_normal_3d.z * light_d.z < 0) {
-		vertex_normal_3d = -vertex_normal_3d;
-	}
-	if (texture_normal.x * tngt_light.x + texture_normal.y * tngt_light.y + texture_normal.z * tngt_light.z < 0) {
-		texture_normal = -texture_normal;
-	}
+	vec3 tngt_view = toTangentSpc * view_d;
 
 	if (render_mode == 0) {
 		if (useTex == 1) {
-			outColor = vec4(blinn_phong(ka, texture_color, texture_specular, p, normalize(texture_normal), toTangentSpc * light_d, toTangentSpc * light_d), 1.0);
+			outColor = vec4(blinn_phong(ka, texture_color, texture_specular, p, normalize(texture_normal), tngt_view, tngt_light), 1.0);
 			//outColor = vec4(1.0, 1.0, 1.0, 1.0);
 		} else {
-			outColor = vec4(blinn_phong(ka, kd, ks, p, normalize(vertex_normal_3d), light_d, light_d), 1.0);
+			outColor = vec4(blinn_phong(ka, kd, ks, p, normalize(vertex_normal_3d), view_d, light_d), 1.0);
 			//outColor = vec4(1.0, 1.0, 1.0, 1.0);
 		}
 	} else {
@@ -157,12 +158,16 @@ void main() {
 			
 			//outColor = vec4(ShadePBRSpecularV2(texture_color, pow(abs(texture_specular - 0.05), vec3(1/1.0, 1/1.0, 1/1.0)), texture_glossiness.x * 1.1, texture_normal, toTangentSpc * light_d, toTangentSpc * light_d), 1.0);
 
-			outColor = vec4((light_intensity * 0.02) * ShadePBRSpecularV2(texture_color, abs(texture_specular - 0.05), texture_glossiness.x * 1.1, texture_normal, toTangentSpc * light_d, toTangentSpc * light_d), 1.0);
+			vec3 ambient_light = (pbr_ambient / 255.0) * texture_color;
+			vec3 direct_light = (light_intensity * 0.02) * ShadePBRSpecularV2(texture_color, abs(texture_specular - 0.05), texture_glossiness.x * 1.1, texture_normal, tngt_light, tngt_view);
+			outColor = vec4(ambient_light + direct_light, 1.0);
 			//outColor = vec4(texture(tex_normal4, fs_text_coord).xyz, 1.0);
 			
 			//outColor = vec4(ShadePBRSpecularV2(kd, ks, kg/100.0, texture_normal, toTangentSpc * light_d, toTangentSpc * light_d), 1.0);
 		} else {
-			outColor = vec4((light_intensity * 0.02) * ShadePBRSpecularV2(kd, ks, kg/100.0, normalize(vertex_normal_3d), light_d, light_d), 1.0);
+			vec3 ambient_light = (pbr_ambient / 255.0) * kd;
+			vec3 direct_light = (light_intensity * 0.02) * ShadePBRSpecularV2(kd, ks, kg/100.0, normalize(vertex_normal_3d), light_d, view_d);
+			outColor = vec4(ambient_light + direct_light, 1.0);
 		}
 	}
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGLAD_GLAPI_EXPORT -DNANOGUI_PYTHON -DNANOGUI_SHARED -DNVG_SHARED
 
-CXX_INCLUDES = -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/glfw/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/nanovg/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/eigen -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/inc
+CXX_INCLUDES = -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/glfw/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/nanovg/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/inc
 
 CXX_FLAGS =  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -O3 -DNDEBUG
 

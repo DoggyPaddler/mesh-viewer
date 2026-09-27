@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 # Include any dependencies generated for this target.
 include lib/nanogui/CMakeFiles/nanogui-python.dir/depend.make
@@ -77,23 +77,23 @@ nanogui__python_OBJECTS =
 
 # External object files for target nanogui-python
 nanogui__python_EXTERNAL_OBJECTS = \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o" \
-"/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o"
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o" \
+"/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o"
 
 lib/nanogui/python/nanogui.cpython-37m-darwin.so: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o
 lib/nanogui/python/nanogui.cpython-37m-darwin.so: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o
@@ -115,19 +115,19 @@ lib/nanogui/python/nanogui.cpython-37m-darwin.so: lib/nanogui/CMakeFiles/nanogui
 lib/nanogui/python/nanogui.cpython-37m-darwin.so: lib/nanogui/CMakeFiles/nanogui-python.dir/build.make
 lib/nanogui/python/nanogui.cpython-37m-darwin.so: lib/nanogui/libnanogui.dylib
 lib/nanogui/python/nanogui.cpython-37m-darwin.so: lib/nanogui/CMakeFiles/nanogui-python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library python/nanogui.cpython-37m-darwin.so"
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui-python.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && strip -u -r /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/python/nanogui.cpython-37m-darwin.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library python/nanogui.cpython-37m-darwin.so"
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui-python.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && strip -u -r /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/python/nanogui.cpython-37m-darwin.so
 
 # Rule to build all files generated by this target.
 lib/nanogui/CMakeFiles/nanogui-python.dir/build: lib/nanogui/python/nanogui.cpython-37m-darwin.so
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/build
 
 lib/nanogui/CMakeFiles/nanogui-python.dir/clean:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui-python.dir/cmake_clean.cmake
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui-python.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/clean
 
 lib/nanogui/CMakeFiles/nanogui-python.dir/depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/CMakeFiles/nanogui-python.dir/DependInfo.cmake "--color=$(COLOR)" nanogui-python
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/CMakeFiles/nanogui-python.dir/DependInfo.cmake "--color=$(COLOR)" nanogui-python
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/depend
 

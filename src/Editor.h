@@ -28,6 +28,7 @@ class Editor {
 		int cur_tex;
 		int render_mode;
 		int useTex;
+		Vector3f light_pos;
 		Cursor* cursor;
 		Camera* cam;
 		ResourceManager *resources;

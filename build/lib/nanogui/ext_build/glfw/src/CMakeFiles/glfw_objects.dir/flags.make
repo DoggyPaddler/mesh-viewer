@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/glfw/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/glfw/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui/ext_build/glfw/src
+C_INCLUDES = -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/glfw/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/glfw/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui/ext_build/glfw/src
 
 C_FLAGS =  -Wno-deprecated-declarations -O3 -DNDEBUG -fPIC -fno-common
 

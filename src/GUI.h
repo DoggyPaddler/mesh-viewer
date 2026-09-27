@@ -125,8 +125,12 @@ class GUI {
 		nanogui::Screen *screen = nullptr;
 		nanogui::Window *nanoguiWindow;
 		nanogui::Window *uploadWindow;
-		nanogui::ComboBox *render_mode;
+        nanogui::ComboBox *render_mode;
         nanogui::ComboBox *texOrColor;
+        nanogui::PopupButton *light_popup;
+        nanogui::FloatBox<float> *light_position_x;
+        nanogui::FloatBox<float> *light_position_y;
+        nanogui::FloatBox<float> *light_position_z;
         nanogui::Button *b1;
         nanogui::Button *cancel_upload;
         nanogui::ProgressBar *upload_progress;
@@ -135,10 +139,11 @@ class GUI {
         ColorController *cc;
         ColorController *cc2;
         ColorController *cc3;
+        ColorController *cc4;
         Row* light_intensity;
         Row* glossiness;
         Row* shineness;
-        Row* metallic;
+        Row* pbr_ambient;
         Row* ambient;
         MeshList *ml;
         TexList *ml2;
@@ -148,6 +153,7 @@ class GUI {
         void setUploadActive(bool active);
         void setUploadProgress(float p);
         void setUploadStage(const std::string &stage_text);
+        void setLightPosition(const Eigen::Vector3f &position);
 };
 
 

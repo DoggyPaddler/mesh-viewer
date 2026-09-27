@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mesh-viewer.dir/depend.make
@@ -73,158 +73,158 @@ CMakeFiles/mesh-viewer.dir/codegen:
 .PHONY : CMakeFiles/mesh-viewer.dir/codegen
 
 CMakeFiles/mesh-viewer.dir/main.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/main.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/main.cpp
+CMakeFiles/mesh-viewer.dir/main.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/main.cpp
 CMakeFiles/mesh-viewer.dir/main.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mesh-viewer.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/main.cpp.o -MF CMakeFiles/mesh-viewer.dir/main.cpp.o.d -o CMakeFiles/mesh-viewer.dir/main.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mesh-viewer.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/main.cpp.o -MF CMakeFiles/mesh-viewer.dir/main.cpp.o.d -o CMakeFiles/mesh-viewer.dir/main.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/main.cpp
 
 CMakeFiles/mesh-viewer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/main.cpp > CMakeFiles/mesh-viewer.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/main.cpp > CMakeFiles/mesh-viewer.dir/main.cpp.i
 
 CMakeFiles/mesh-viewer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/main.cpp -o CMakeFiles/mesh-viewer.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/main.cpp -o CMakeFiles/mesh-viewer.dir/main.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Camera.cpp
+CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Camera.cpp
 CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Camera.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Camera.cpp
 
 CMakeFiles/mesh-viewer.dir/src/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/Camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Camera.cpp > CMakeFiles/mesh-viewer.dir/src/Camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Camera.cpp > CMakeFiles/mesh-viewer.dir/src/Camera.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/Camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Camera.cpp -o CMakeFiles/mesh-viewer.dir/src/Camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Camera.cpp -o CMakeFiles/mesh-viewer.dir/src/Camera.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Cursor.cpp
+CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Cursor.cpp
 CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Cursor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Cursor.cpp
 
 CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Cursor.cpp > CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Cursor.cpp > CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Cursor.cpp -o CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Cursor.cpp -o CMakeFiles/mesh-viewer.dir/src/Cursor.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Editor.cpp
+CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Editor.cpp
 CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Editor.cpp
 
 CMakeFiles/mesh-viewer.dir/src/Editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/Editor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Editor.cpp > CMakeFiles/mesh-viewer.dir/src/Editor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Editor.cpp > CMakeFiles/mesh-viewer.dir/src/Editor.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/Editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/Editor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Editor.cpp -o CMakeFiles/mesh-viewer.dir/src/Editor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Editor.cpp -o CMakeFiles/mesh-viewer.dir/src/Editor.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GLHelpers.cpp
+CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp
 CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GLHelpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp
 
 CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GLHelpers.cpp > CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp > CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GLHelpers.cpp -o CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp -o CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GUI.cpp
+CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GUI.cpp
 CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/GUI.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GUI.cpp
 
 CMakeFiles/mesh-viewer.dir/src/GUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/GUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GUI.cpp > CMakeFiles/mesh-viewer.dir/src/GUI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GUI.cpp > CMakeFiles/mesh-viewer.dir/src/GUI.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/GUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/GUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/GUI.cpp -o CMakeFiles/mesh-viewer.dir/src/GUI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GUI.cpp -o CMakeFiles/mesh-viewer.dir/src/GUI.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Mesh.cpp
+CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.cpp
 CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.cpp
 
 CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Mesh.cpp > CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.cpp > CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Mesh.cpp -o CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.cpp -o CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/Object.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/Object.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Object.cpp
+CMakeFiles/mesh-viewer.dir/src/Object.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Object.cpp
 CMakeFiles/mesh-viewer.dir/src/Object.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Object.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Object.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Object.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mesh-viewer.dir/src/Object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/Object.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/Object.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/Object.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Object.cpp
 
 CMakeFiles/mesh-viewer.dir/src/Object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/Object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Object.cpp > CMakeFiles/mesh-viewer.dir/src/Object.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Object.cpp > CMakeFiles/mesh-viewer.dir/src/Object.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/Object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/Object.cpp -o CMakeFiles/mesh-viewer.dir/src/Object.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Object.cpp -o CMakeFiles/mesh-viewer.dir/src/Object.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ReadObj.cpp
+CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.cpp
 CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ReadObj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.cpp
 
 CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ReadObj.cpp > CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.cpp > CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ReadObj.cpp -o CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.cpp -o CMakeFiles/mesh-viewer.dir/src/ReadObj.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ResourceManager.cpp
+CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.cpp
 CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ResourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o -MF CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o.d -o CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.cpp
 
 CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ResourceManager.cpp > CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.cpp > CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.i
 
 CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/ResourceManager.cpp -o CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.cpp -o CMakeFiles/mesh-viewer.dir/src/ResourceManager.cpp.s
 
 CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: CMakeFiles/mesh-viewer.dir/flags.make
-CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/fileDialog.mm
+CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/fileDialog.mm
 CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: CMakeFiles/mesh-viewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o -MF CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o.d -o CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/fileDialog.mm
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o -MF CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o.d -o CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/fileDialog.mm
 
 CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/fileDialog.mm > CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/fileDialog.mm > CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.i
 
 CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src/fileDialog.mm -o CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/fileDialog.mm -o CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.s
 
 # Object files for target mesh-viewer
 mesh__viewer_OBJECTS = \
@@ -258,7 +258,7 @@ mesh-viewer: CMakeFiles/mesh-viewer.dir/build.make
 mesh-viewer: lib/nanogui/libnanogui.dylib
 mesh-viewer: soil/libsoil.a
 mesh-viewer: CMakeFiles/mesh-viewer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable mesh-viewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable mesh-viewer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mesh-viewer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -270,6 +270,6 @@ CMakeFiles/mesh-viewer.dir/clean:
 .PHONY : CMakeFiles/mesh-viewer.dir/clean
 
 CMakeFiles/mesh-viewer.dir/depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles/mesh-viewer.dir/DependInfo.cmake "--color=$(COLOR)" mesh-viewer
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/mesh-viewer.dir/DependInfo.cmake "--color=$(COLOR)" mesh-viewer
 .PHONY : CMakeFiles/mesh-viewer.dir/depend
 

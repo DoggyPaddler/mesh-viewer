@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/src/example4.cpp" "lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.o" "gcc" "lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.o.d"
+  "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/src/example4.cpp" "lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.o" "gcc" "lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

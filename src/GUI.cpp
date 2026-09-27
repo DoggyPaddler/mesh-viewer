@@ -107,7 +107,7 @@ nanogui::Button * MeshList::addItem(const std::string item_name, int i) {
     });
 
     nanogui::Button *delete_button = new nanogui::Button(row, "x");
-    delete_button->setPosition(Eigen::Vector2i(104, 2));
+    delete_button->setPosition(Eigen::Vector2i(102, 2));
     delete_button->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
     delete_button->setTextColor(nanogui::Color(0, 255));
     delete_button->setFontSize(10);
@@ -324,11 +324,11 @@ nanogui::Button * TexList::addItem(const std::string item_name, int i, int *uesT
         *uesTex = 1;
         nanogui::Button * buttonA = ((nanogui::Button *)parent_window->children()[0]);
         buttonA->setPushed(false);
-        ((nanogui::Button *)parent_button)->setCaption("Texture");
+        ((nanogui::Button *)parent_button)->setCaption(b->caption());
     });
 
     nanogui::Button *delete_button = new nanogui::Button(row, "x");
-    delete_button->setPosition(Eigen::Vector2i(104, 2));
+    delete_button->setPosition(Eigen::Vector2i(102, 2));
     delete_button->setBackgroundColor(nanogui::Color(255, 255, 255, 255));
     delete_button->setTextColor(nanogui::Color(0, 255));
     delete_button->setFontSize(10);
@@ -555,6 +555,12 @@ void GUI::setUploadStage(const std::string &stage_text) {
     upload_stage_label->setCaption(stage_text);
 }
 
+void GUI::setLightPosition(const Eigen::Vector3f &position) {
+    light_position_x->setValue(position.x());
+    light_position_y->setValue(position.y());
+    light_position_z->setValue(position.z());
+}
+
 void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, std::vector<std::string> tex_list, int* useTex) {
     auto name_extractor = [](std::string p) -> std::string {return p.substr(p.find_last_of("/") + 1, p.length());};
     std::transform(obj_list.begin(), obj_list.end(), obj_list.begin(), name_extractor);
@@ -620,8 +626,20 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     b1->setTheme(button_theme);
     b1->setFixedSize(Eigen::Vector2i(120,20));
 
-    lab = new nanogui::Label(nanoguiWindow, "Light Intensity", "sans");
-    nanogui::IntBox<int>* tb_light_intensity = new nanogui::IntBox<int>(nanoguiWindow);
+    lab = new nanogui::Label(nanoguiWindow, "Light", "sans");
+    light_popup = new nanogui::PopupButton(nanoguiWindow, "Light");
+    light_popup->setTextColor(nanogui::Color(0, 255));
+    light_popup->setFixedSize(Eigen::Vector2i(120, 20));
+
+    nanogui::Popup *light_popup_page = light_popup->popup();
+    light_popup_page->setFixedWidth(230);
+    nanogui::GridLayout *light_layout = new nanogui::GridLayout(
+        nanogui::Orientation::Horizontal, 2, nanogui::Alignment::Middle, 15, 0);
+    light_layout->setColAlignment({nanogui::Alignment::Maximum, nanogui::Alignment::Fill});
+    light_popup_page->setLayout(light_layout);
+
+    nanogui::Label *light_intensity_label = new nanogui::Label(light_popup_page, "Light Intensity", "sans");
+    nanogui::IntBox<int>* tb_light_intensity = new nanogui::IntBox<int>(light_popup_page);
     tb_light_intensity->setEditable(true);
     tb_light_intensity->setFixedSize(Eigen::Vector2i(120, 20));
     tb_light_intensity->setValue(50);
@@ -633,8 +651,24 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     tb_light_intensity->setMinMaxValues(1, 100);
     tb_light_intensity->setValueIncrement(1);
 
-    light_intensity = new Row(lab, tb_light_intensity);
+    light_intensity = new Row(light_intensity_label, tb_light_intensity);
     light_intensity->setVisible(true);
+
+    auto create_position_box = [this, light_popup_page](const std::string &axis) {
+        new nanogui::Label(light_popup_page, axis, "sans");
+        nanogui::FloatBox<float> *box = new nanogui::FloatBox<float>(light_popup_page);
+        box->setEditable(true);
+        box->setSpinnable(true);
+        box->setValueIncrement(0.1f);
+        box->setFixedSize(Eigen::Vector2i(120, 20));
+        box->setTheme(textbox_theme);
+        box->setFontSize(12);
+        return box;
+    };
+
+    light_position_x = create_position_box("Position X");
+    light_position_y = create_position_box("Position Y");
+    light_position_z = create_position_box("Position Z");
 
     lab = new nanogui::Label(nanoguiWindow, "Shineness", "sans");
     tb = new nanogui::IntBox<int>(nanoguiWindow);
@@ -677,21 +711,10 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     glossiness = new Row(lab, tb2);
     glossiness->setVisible(false);
 
-    lab = new nanogui::Label(nanoguiWindow, "Metallic", "sans");
-    nanogui::IntBox<int>* tb3 = new nanogui::IntBox<int>(nanoguiWindow);
-    tb3->setEditable(true);
-    tb3->setFixedSize(Eigen::Vector2i(120, 20));
-    tb3->setValue(50);
-    tb3->setTheme(textbox_theme);
-    tb3->setFontSize(12);
-    tb3->setFormat("[0-9]*");
-
-    tb3->setSpinnable(true);
-    tb3->setMinMaxValues(1, 99);
-    tb3->setValueIncrement(1);
-
-    metallic = new Row(lab, tb3);
-    metallic->setVisible(false);
+    lab = new nanogui::Label(nanoguiWindow, "Ambient", "sans");
+    cc4 = new ColorController(nanoguiWindow, nanogui::Color(20, 20, 20, 255));
+    pbr_ambient = new Row(lab, cc4);
+    pbr_ambient->setVisible(false);
 
     screen->setVisible(true);
     screen->performLayout();

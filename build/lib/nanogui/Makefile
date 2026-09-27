@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/lib/nanogui//CMakeFiles/progress.marks
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/lib/nanogui//CMakeFiles/progress.marks
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/clean
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/preinstall
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/preinstall
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/nanogui-obj.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ nanogui-obj: lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
 
 # fast build rule for target.
 nanogui-obj/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/build
 .PHONY : nanogui-obj/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/nanogui.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ nanogui: lib/nanogui/CMakeFiles/nanogui.dir/rule
 
 # fast build rule for target.
 nanogui/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/build
 .PHONY : nanogui/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/example1.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example1.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example1.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/example1.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ example1: lib/nanogui/CMakeFiles/example1.dir/rule
 
 # fast build rule for target.
 example1/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/build
 .PHONY : example1/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/example2.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example2.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example2.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/example2.dir/rule
 
 # Convenience name for target.
@@ -214,12 +214,12 @@ example2: lib/nanogui/CMakeFiles/example2.dir/rule
 
 # fast build rule for target.
 example2/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/build
 .PHONY : example2/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/example3.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example3.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example3.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/example3.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ example3: lib/nanogui/CMakeFiles/example3.dir/rule
 
 # fast build rule for target.
 example3/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/build
 .PHONY : example3/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/example4.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example4.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example4.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/example4.dir/rule
 
 # Convenience name for target.
@@ -242,12 +242,12 @@ example4: lib/nanogui/CMakeFiles/example4.dir/rule
 
 # fast build rule for target.
 example4/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/build
 .PHONY : example4/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/example_icons.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example_icons.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example_icons.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/rule
 
 # Convenience name for target.
@@ -256,12 +256,12 @@ example_icons: lib/nanogui/CMakeFiles/example_icons.dir/rule
 
 # fast build rule for target.
 example_icons/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/build
 .PHONY : example_icons/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
 
 # Convenience name for target.
@@ -270,12 +270,12 @@ nanogui-python-obj: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
 
 # fast build rule for target.
 nanogui-python-obj/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build
 .PHONY : nanogui-python-obj/fast
 
 # Convenience name for target.
 lib/nanogui/CMakeFiles/nanogui-python.dir/rule:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python.dir/rule
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python.dir/rule
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/rule
 
 # Convenience name for target.
@@ -284,7 +284,7 @@ nanogui-python: lib/nanogui/CMakeFiles/nanogui-python.dir/rule
 
 # fast build rule for target.
 nanogui-python/fast:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/build
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/build
 .PHONY : nanogui-python/fast
 
 ext/coro/coro.o: ext/coro/coro.c.o
@@ -292,7 +292,7 @@ ext/coro/coro.o: ext/coro/coro.c.o
 
 # target to build an object file
 ext/coro/coro.c.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o
 .PHONY : ext/coro/coro.c.o
 
 ext/coro/coro.i: ext/coro/coro.c.i
@@ -300,7 +300,7 @@ ext/coro/coro.i: ext/coro/coro.c.i
 
 # target to preprocess a source file
 ext/coro/coro.c.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.i
 .PHONY : ext/coro/coro.c.i
 
 ext/coro/coro.s: ext/coro/coro.c.s
@@ -308,7 +308,7 @@ ext/coro/coro.s: ext/coro/coro.c.s
 
 # target to generate assembly for a file
 ext/coro/coro.c.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.s
 .PHONY : ext/coro/coro.c.s
 
 ext/nanovg/src/nanovg.o: ext/nanovg/src/nanovg.c.o
@@ -316,7 +316,7 @@ ext/nanovg/src/nanovg.o: ext/nanovg/src/nanovg.c.o
 
 # target to build an object file
 ext/nanovg/src/nanovg.c.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
 .PHONY : ext/nanovg/src/nanovg.c.o
 
 ext/nanovg/src/nanovg.i: ext/nanovg/src/nanovg.c.i
@@ -324,7 +324,7 @@ ext/nanovg/src/nanovg.i: ext/nanovg/src/nanovg.c.i
 
 # target to preprocess a source file
 ext/nanovg/src/nanovg.c.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.i
 .PHONY : ext/nanovg/src/nanovg.c.i
 
 ext/nanovg/src/nanovg.s: ext/nanovg/src/nanovg.c.s
@@ -332,7 +332,7 @@ ext/nanovg/src/nanovg.s: ext/nanovg/src/nanovg.c.s
 
 # target to generate assembly for a file
 ext/nanovg/src/nanovg.c.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.s
 .PHONY : ext/nanovg/src/nanovg.c.s
 
 nanogui_resources.o: nanogui_resources.cpp.o
@@ -340,7 +340,7 @@ nanogui_resources.o: nanogui_resources.cpp.o
 
 # target to build an object file
 nanogui_resources.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o
 .PHONY : nanogui_resources.cpp.o
 
 nanogui_resources.i: nanogui_resources.cpp.i
@@ -348,7 +348,7 @@ nanogui_resources.i: nanogui_resources.cpp.i
 
 # target to preprocess a source file
 nanogui_resources.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.i
 .PHONY : nanogui_resources.cpp.i
 
 nanogui_resources.s: nanogui_resources.cpp.s
@@ -356,7 +356,7 @@ nanogui_resources.s: nanogui_resources.cpp.s
 
 # target to generate assembly for a file
 nanogui_resources.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.s
 .PHONY : nanogui_resources.cpp.s
 
 python/basics.o: python/basics.cpp.o
@@ -364,7 +364,7 @@ python/basics.o: python/basics.cpp.o
 
 # target to build an object file
 python/basics.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o
 .PHONY : python/basics.cpp.o
 
 python/basics.i: python/basics.cpp.i
@@ -372,7 +372,7 @@ python/basics.i: python/basics.cpp.i
 
 # target to preprocess a source file
 python/basics.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.i
 .PHONY : python/basics.cpp.i
 
 python/basics.s: python/basics.cpp.s
@@ -380,7 +380,7 @@ python/basics.s: python/basics.cpp.s
 
 # target to generate assembly for a file
 python/basics.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.s
 .PHONY : python/basics.cpp.s
 
 python/button.o: python/button.cpp.o
@@ -388,7 +388,7 @@ python/button.o: python/button.cpp.o
 
 # target to build an object file
 python/button.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o
 .PHONY : python/button.cpp.o
 
 python/button.i: python/button.cpp.i
@@ -396,7 +396,7 @@ python/button.i: python/button.cpp.i
 
 # target to preprocess a source file
 python/button.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.i
 .PHONY : python/button.cpp.i
 
 python/button.s: python/button.cpp.s
@@ -404,7 +404,7 @@ python/button.s: python/button.cpp.s
 
 # target to generate assembly for a file
 python/button.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.s
 .PHONY : python/button.cpp.s
 
 python/constants_entypo.o: python/constants_entypo.cpp.o
@@ -412,7 +412,7 @@ python/constants_entypo.o: python/constants_entypo.cpp.o
 
 # target to build an object file
 python/constants_entypo.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o
 .PHONY : python/constants_entypo.cpp.o
 
 python/constants_entypo.i: python/constants_entypo.cpp.i
@@ -420,7 +420,7 @@ python/constants_entypo.i: python/constants_entypo.cpp.i
 
 # target to preprocess a source file
 python/constants_entypo.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.i
 .PHONY : python/constants_entypo.cpp.i
 
 python/constants_entypo.s: python/constants_entypo.cpp.s
@@ -428,7 +428,7 @@ python/constants_entypo.s: python/constants_entypo.cpp.s
 
 # target to generate assembly for a file
 python/constants_entypo.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.s
 .PHONY : python/constants_entypo.cpp.s
 
 python/constants_glfw.o: python/constants_glfw.cpp.o
@@ -436,7 +436,7 @@ python/constants_glfw.o: python/constants_glfw.cpp.o
 
 # target to build an object file
 python/constants_glfw.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o
 .PHONY : python/constants_glfw.cpp.o
 
 python/constants_glfw.i: python/constants_glfw.cpp.i
@@ -444,7 +444,7 @@ python/constants_glfw.i: python/constants_glfw.cpp.i
 
 # target to preprocess a source file
 python/constants_glfw.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.i
 .PHONY : python/constants_glfw.cpp.i
 
 python/constants_glfw.s: python/constants_glfw.cpp.s
@@ -452,7 +452,7 @@ python/constants_glfw.s: python/constants_glfw.cpp.s
 
 # target to generate assembly for a file
 python/constants_glfw.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.s
 .PHONY : python/constants_glfw.cpp.s
 
 python/eigen.o: python/eigen.cpp.o
@@ -460,7 +460,7 @@ python/eigen.o: python/eigen.cpp.o
 
 # target to build an object file
 python/eigen.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o
 .PHONY : python/eigen.cpp.o
 
 python/eigen.i: python/eigen.cpp.i
@@ -468,7 +468,7 @@ python/eigen.i: python/eigen.cpp.i
 
 # target to preprocess a source file
 python/eigen.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.i
 .PHONY : python/eigen.cpp.i
 
 python/eigen.s: python/eigen.cpp.s
@@ -476,7 +476,7 @@ python/eigen.s: python/eigen.cpp.s
 
 # target to generate assembly for a file
 python/eigen.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.s
 .PHONY : python/eigen.cpp.s
 
 python/formhelper.o: python/formhelper.cpp.o
@@ -484,7 +484,7 @@ python/formhelper.o: python/formhelper.cpp.o
 
 # target to build an object file
 python/formhelper.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o
 .PHONY : python/formhelper.cpp.o
 
 python/formhelper.i: python/formhelper.cpp.i
@@ -492,7 +492,7 @@ python/formhelper.i: python/formhelper.cpp.i
 
 # target to preprocess a source file
 python/formhelper.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.i
 .PHONY : python/formhelper.cpp.i
 
 python/formhelper.s: python/formhelper.cpp.s
@@ -500,7 +500,7 @@ python/formhelper.s: python/formhelper.cpp.s
 
 # target to generate assembly for a file
 python/formhelper.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.s
 .PHONY : python/formhelper.cpp.s
 
 python/glcanvas.o: python/glcanvas.cpp.o
@@ -508,7 +508,7 @@ python/glcanvas.o: python/glcanvas.cpp.o
 
 # target to build an object file
 python/glcanvas.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o
 .PHONY : python/glcanvas.cpp.o
 
 python/glcanvas.i: python/glcanvas.cpp.i
@@ -516,7 +516,7 @@ python/glcanvas.i: python/glcanvas.cpp.i
 
 # target to preprocess a source file
 python/glcanvas.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.i
 .PHONY : python/glcanvas.cpp.i
 
 python/glcanvas.s: python/glcanvas.cpp.s
@@ -524,7 +524,7 @@ python/glcanvas.s: python/glcanvas.cpp.s
 
 # target to generate assembly for a file
 python/glcanvas.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.s
 .PHONY : python/glcanvas.cpp.s
 
 python/glutil.o: python/glutil.cpp.o
@@ -532,7 +532,7 @@ python/glutil.o: python/glutil.cpp.o
 
 # target to build an object file
 python/glutil.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o
 .PHONY : python/glutil.cpp.o
 
 python/glutil.i: python/glutil.cpp.i
@@ -540,7 +540,7 @@ python/glutil.i: python/glutil.cpp.i
 
 # target to preprocess a source file
 python/glutil.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.i
 .PHONY : python/glutil.cpp.i
 
 python/glutil.s: python/glutil.cpp.s
@@ -548,7 +548,7 @@ python/glutil.s: python/glutil.cpp.s
 
 # target to generate assembly for a file
 python/glutil.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.s
 .PHONY : python/glutil.cpp.s
 
 python/layout.o: python/layout.cpp.o
@@ -556,7 +556,7 @@ python/layout.o: python/layout.cpp.o
 
 # target to build an object file
 python/layout.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o
 .PHONY : python/layout.cpp.o
 
 python/layout.i: python/layout.cpp.i
@@ -564,7 +564,7 @@ python/layout.i: python/layout.cpp.i
 
 # target to preprocess a source file
 python/layout.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.i
 .PHONY : python/layout.cpp.i
 
 python/layout.s: python/layout.cpp.s
@@ -572,7 +572,7 @@ python/layout.s: python/layout.cpp.s
 
 # target to generate assembly for a file
 python/layout.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.s
 .PHONY : python/layout.cpp.s
 
 python/main.o: python/main.cpp.o
@@ -580,7 +580,7 @@ python/main.o: python/main.cpp.o
 
 # target to build an object file
 python/main.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o
 .PHONY : python/main.cpp.o
 
 python/main.i: python/main.cpp.i
@@ -588,7 +588,7 @@ python/main.i: python/main.cpp.i
 
 # target to preprocess a source file
 python/main.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.i
 .PHONY : python/main.cpp.i
 
 python/main.s: python/main.cpp.s
@@ -596,7 +596,7 @@ python/main.s: python/main.cpp.s
 
 # target to generate assembly for a file
 python/main.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.s
 .PHONY : python/main.cpp.s
 
 python/misc.o: python/misc.cpp.o
@@ -604,7 +604,7 @@ python/misc.o: python/misc.cpp.o
 
 # target to build an object file
 python/misc.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o
 .PHONY : python/misc.cpp.o
 
 python/misc.i: python/misc.cpp.i
@@ -612,7 +612,7 @@ python/misc.i: python/misc.cpp.i
 
 # target to preprocess a source file
 python/misc.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.i
 .PHONY : python/misc.cpp.i
 
 python/misc.s: python/misc.cpp.s
@@ -620,7 +620,7 @@ python/misc.s: python/misc.cpp.s
 
 # target to generate assembly for a file
 python/misc.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.s
 .PHONY : python/misc.cpp.s
 
 python/nanovg.o: python/nanovg.cpp.o
@@ -628,7 +628,7 @@ python/nanovg.o: python/nanovg.cpp.o
 
 # target to build an object file
 python/nanovg.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o
 .PHONY : python/nanovg.cpp.o
 
 python/nanovg.i: python/nanovg.cpp.i
@@ -636,7 +636,7 @@ python/nanovg.i: python/nanovg.cpp.i
 
 # target to preprocess a source file
 python/nanovg.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.i
 .PHONY : python/nanovg.cpp.i
 
 python/nanovg.s: python/nanovg.cpp.s
@@ -644,7 +644,7 @@ python/nanovg.s: python/nanovg.cpp.s
 
 # target to generate assembly for a file
 python/nanovg.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.s
 .PHONY : python/nanovg.cpp.s
 
 python/tabs.o: python/tabs.cpp.o
@@ -652,7 +652,7 @@ python/tabs.o: python/tabs.cpp.o
 
 # target to build an object file
 python/tabs.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o
 .PHONY : python/tabs.cpp.o
 
 python/tabs.i: python/tabs.cpp.i
@@ -660,7 +660,7 @@ python/tabs.i: python/tabs.cpp.i
 
 # target to preprocess a source file
 python/tabs.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.i
 .PHONY : python/tabs.cpp.i
 
 python/tabs.s: python/tabs.cpp.s
@@ -668,7 +668,7 @@ python/tabs.s: python/tabs.cpp.s
 
 # target to generate assembly for a file
 python/tabs.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.s
 .PHONY : python/tabs.cpp.s
 
 python/textbox.o: python/textbox.cpp.o
@@ -676,7 +676,7 @@ python/textbox.o: python/textbox.cpp.o
 
 # target to build an object file
 python/textbox.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o
 .PHONY : python/textbox.cpp.o
 
 python/textbox.i: python/textbox.cpp.i
@@ -684,7 +684,7 @@ python/textbox.i: python/textbox.cpp.i
 
 # target to preprocess a source file
 python/textbox.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.i
 .PHONY : python/textbox.cpp.i
 
 python/textbox.s: python/textbox.cpp.s
@@ -692,7 +692,7 @@ python/textbox.s: python/textbox.cpp.s
 
 # target to generate assembly for a file
 python/textbox.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.s
 .PHONY : python/textbox.cpp.s
 
 python/theme.o: python/theme.cpp.o
@@ -700,7 +700,7 @@ python/theme.o: python/theme.cpp.o
 
 # target to build an object file
 python/theme.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.o
 .PHONY : python/theme.cpp.o
 
 python/theme.i: python/theme.cpp.i
@@ -708,7 +708,7 @@ python/theme.i: python/theme.cpp.i
 
 # target to preprocess a source file
 python/theme.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.i
 .PHONY : python/theme.cpp.i
 
 python/theme.s: python/theme.cpp.s
@@ -716,7 +716,7 @@ python/theme.s: python/theme.cpp.s
 
 # target to generate assembly for a file
 python/theme.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/theme.cpp.s
 .PHONY : python/theme.cpp.s
 
 python/widget.o: python/widget.cpp.o
@@ -724,7 +724,7 @@ python/widget.o: python/widget.cpp.o
 
 # target to build an object file
 python/widget.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o
 .PHONY : python/widget.cpp.o
 
 python/widget.i: python/widget.cpp.i
@@ -732,7 +732,7 @@ python/widget.i: python/widget.cpp.i
 
 # target to preprocess a source file
 python/widget.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.i
 .PHONY : python/widget.cpp.i
 
 python/widget.s: python/widget.cpp.s
@@ -740,7 +740,7 @@ python/widget.s: python/widget.cpp.s
 
 # target to generate assembly for a file
 python/widget.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.s
 .PHONY : python/widget.cpp.s
 
 src/button.o: src/button.cpp.o
@@ -748,7 +748,7 @@ src/button.o: src/button.cpp.o
 
 # target to build an object file
 src/button.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o
 .PHONY : src/button.cpp.o
 
 src/button.i: src/button.cpp.i
@@ -756,7 +756,7 @@ src/button.i: src/button.cpp.i
 
 # target to preprocess a source file
 src/button.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.i
 .PHONY : src/button.cpp.i
 
 src/button.s: src/button.cpp.s
@@ -764,7 +764,7 @@ src/button.s: src/button.cpp.s
 
 # target to generate assembly for a file
 src/button.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.s
 .PHONY : src/button.cpp.s
 
 src/checkbox.o: src/checkbox.cpp.o
@@ -772,7 +772,7 @@ src/checkbox.o: src/checkbox.cpp.o
 
 # target to build an object file
 src/checkbox.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o
 .PHONY : src/checkbox.cpp.o
 
 src/checkbox.i: src/checkbox.cpp.i
@@ -780,7 +780,7 @@ src/checkbox.i: src/checkbox.cpp.i
 
 # target to preprocess a source file
 src/checkbox.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.i
 .PHONY : src/checkbox.cpp.i
 
 src/checkbox.s: src/checkbox.cpp.s
@@ -788,7 +788,7 @@ src/checkbox.s: src/checkbox.cpp.s
 
 # target to generate assembly for a file
 src/checkbox.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.s
 .PHONY : src/checkbox.cpp.s
 
 src/colorpicker.o: src/colorpicker.cpp.o
@@ -796,7 +796,7 @@ src/colorpicker.o: src/colorpicker.cpp.o
 
 # target to build an object file
 src/colorpicker.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o
 .PHONY : src/colorpicker.cpp.o
 
 src/colorpicker.i: src/colorpicker.cpp.i
@@ -804,7 +804,7 @@ src/colorpicker.i: src/colorpicker.cpp.i
 
 # target to preprocess a source file
 src/colorpicker.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.i
 .PHONY : src/colorpicker.cpp.i
 
 src/colorpicker.s: src/colorpicker.cpp.s
@@ -812,7 +812,7 @@ src/colorpicker.s: src/colorpicker.cpp.s
 
 # target to generate assembly for a file
 src/colorpicker.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.s
 .PHONY : src/colorpicker.cpp.s
 
 src/colorwheel.o: src/colorwheel.cpp.o
@@ -820,7 +820,7 @@ src/colorwheel.o: src/colorwheel.cpp.o
 
 # target to build an object file
 src/colorwheel.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o
 .PHONY : src/colorwheel.cpp.o
 
 src/colorwheel.i: src/colorwheel.cpp.i
@@ -828,7 +828,7 @@ src/colorwheel.i: src/colorwheel.cpp.i
 
 # target to preprocess a source file
 src/colorwheel.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.i
 .PHONY : src/colorwheel.cpp.i
 
 src/colorwheel.s: src/colorwheel.cpp.s
@@ -836,7 +836,7 @@ src/colorwheel.s: src/colorwheel.cpp.s
 
 # target to generate assembly for a file
 src/colorwheel.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.s
 .PHONY : src/colorwheel.cpp.s
 
 src/combobox.o: src/combobox.cpp.o
@@ -844,7 +844,7 @@ src/combobox.o: src/combobox.cpp.o
 
 # target to build an object file
 src/combobox.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o
 .PHONY : src/combobox.cpp.o
 
 src/combobox.i: src/combobox.cpp.i
@@ -852,7 +852,7 @@ src/combobox.i: src/combobox.cpp.i
 
 # target to preprocess a source file
 src/combobox.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.i
 .PHONY : src/combobox.cpp.i
 
 src/combobox.s: src/combobox.cpp.s
@@ -860,7 +860,7 @@ src/combobox.s: src/combobox.cpp.s
 
 # target to generate assembly for a file
 src/combobox.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.s
 .PHONY : src/combobox.cpp.s
 
 src/common.o: src/common.cpp.o
@@ -868,7 +868,7 @@ src/common.o: src/common.cpp.o
 
 # target to build an object file
 src/common.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o
 .PHONY : src/common.cpp.o
 
 src/common.i: src/common.cpp.i
@@ -876,7 +876,7 @@ src/common.i: src/common.cpp.i
 
 # target to preprocess a source file
 src/common.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.i
 .PHONY : src/common.cpp.i
 
 src/common.s: src/common.cpp.s
@@ -884,7 +884,7 @@ src/common.s: src/common.cpp.s
 
 # target to generate assembly for a file
 src/common.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.s
 .PHONY : src/common.cpp.s
 
 src/darwin.o: src/darwin.mm.o
@@ -892,7 +892,7 @@ src/darwin.o: src/darwin.mm.o
 
 # target to build an object file
 src/darwin.mm.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o
 .PHONY : src/darwin.mm.o
 
 src/darwin.i: src/darwin.mm.i
@@ -900,7 +900,7 @@ src/darwin.i: src/darwin.mm.i
 
 # target to preprocess a source file
 src/darwin.mm.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.i
 .PHONY : src/darwin.mm.i
 
 src/darwin.s: src/darwin.mm.s
@@ -908,7 +908,7 @@ src/darwin.s: src/darwin.mm.s
 
 # target to generate assembly for a file
 src/darwin.mm.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.s
 .PHONY : src/darwin.mm.s
 
 src/example1.o: src/example1.cpp.o
@@ -916,7 +916,7 @@ src/example1.o: src/example1.cpp.o
 
 # target to build an object file
 src/example1.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.o
 .PHONY : src/example1.cpp.o
 
 src/example1.i: src/example1.cpp.i
@@ -924,7 +924,7 @@ src/example1.i: src/example1.cpp.i
 
 # target to preprocess a source file
 src/example1.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.i
 .PHONY : src/example1.cpp.i
 
 src/example1.s: src/example1.cpp.s
@@ -932,7 +932,7 @@ src/example1.s: src/example1.cpp.s
 
 # target to generate assembly for a file
 src/example1.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.s
 .PHONY : src/example1.cpp.s
 
 src/example2.o: src/example2.cpp.o
@@ -940,7 +940,7 @@ src/example2.o: src/example2.cpp.o
 
 # target to build an object file
 src/example2.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/src/example2.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/src/example2.cpp.o
 .PHONY : src/example2.cpp.o
 
 src/example2.i: src/example2.cpp.i
@@ -948,7 +948,7 @@ src/example2.i: src/example2.cpp.i
 
 # target to preprocess a source file
 src/example2.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/src/example2.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/src/example2.cpp.i
 .PHONY : src/example2.cpp.i
 
 src/example2.s: src/example2.cpp.s
@@ -956,7 +956,7 @@ src/example2.s: src/example2.cpp.s
 
 # target to generate assembly for a file
 src/example2.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/src/example2.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/src/example2.cpp.s
 .PHONY : src/example2.cpp.s
 
 src/example3.o: src/example3.cpp.o
@@ -964,7 +964,7 @@ src/example3.o: src/example3.cpp.o
 
 # target to build an object file
 src/example3.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/src/example3.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/src/example3.cpp.o
 .PHONY : src/example3.cpp.o
 
 src/example3.i: src/example3.cpp.i
@@ -972,7 +972,7 @@ src/example3.i: src/example3.cpp.i
 
 # target to preprocess a source file
 src/example3.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/src/example3.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/src/example3.cpp.i
 .PHONY : src/example3.cpp.i
 
 src/example3.s: src/example3.cpp.s
@@ -980,7 +980,7 @@ src/example3.s: src/example3.cpp.s
 
 # target to generate assembly for a file
 src/example3.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/src/example3.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/src/example3.cpp.s
 .PHONY : src/example3.cpp.s
 
 src/example4.o: src/example4.cpp.o
@@ -988,7 +988,7 @@ src/example4.o: src/example4.cpp.o
 
 # target to build an object file
 src/example4.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.o
 .PHONY : src/example4.cpp.o
 
 src/example4.i: src/example4.cpp.i
@@ -996,7 +996,7 @@ src/example4.i: src/example4.cpp.i
 
 # target to preprocess a source file
 src/example4.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.i
 .PHONY : src/example4.cpp.i
 
 src/example4.s: src/example4.cpp.s
@@ -1004,7 +1004,7 @@ src/example4.s: src/example4.cpp.s
 
 # target to generate assembly for a file
 src/example4.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/src/example4.cpp.s
 .PHONY : src/example4.cpp.s
 
 src/example_icons.o: src/example_icons.cpp.o
@@ -1012,7 +1012,7 @@ src/example_icons.o: src/example_icons.cpp.o
 
 # target to build an object file
 src/example_icons.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.o
 .PHONY : src/example_icons.cpp.o
 
 src/example_icons.i: src/example_icons.cpp.i
@@ -1020,7 +1020,7 @@ src/example_icons.i: src/example_icons.cpp.i
 
 # target to preprocess a source file
 src/example_icons.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.i
 .PHONY : src/example_icons.cpp.i
 
 src/example_icons.s: src/example_icons.cpp.s
@@ -1028,7 +1028,7 @@ src/example_icons.s: src/example_icons.cpp.s
 
 # target to generate assembly for a file
 src/example_icons.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/src/example_icons.cpp.s
 .PHONY : src/example_icons.cpp.s
 
 src/glcanvas.o: src/glcanvas.cpp.o
@@ -1036,7 +1036,7 @@ src/glcanvas.o: src/glcanvas.cpp.o
 
 # target to build an object file
 src/glcanvas.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o
 .PHONY : src/glcanvas.cpp.o
 
 src/glcanvas.i: src/glcanvas.cpp.i
@@ -1044,7 +1044,7 @@ src/glcanvas.i: src/glcanvas.cpp.i
 
 # target to preprocess a source file
 src/glcanvas.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.i
 .PHONY : src/glcanvas.cpp.i
 
 src/glcanvas.s: src/glcanvas.cpp.s
@@ -1052,7 +1052,7 @@ src/glcanvas.s: src/glcanvas.cpp.s
 
 # target to generate assembly for a file
 src/glcanvas.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.s
 .PHONY : src/glcanvas.cpp.s
 
 src/glutil.o: src/glutil.cpp.o
@@ -1060,7 +1060,7 @@ src/glutil.o: src/glutil.cpp.o
 
 # target to build an object file
 src/glutil.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o
 .PHONY : src/glutil.cpp.o
 
 src/glutil.i: src/glutil.cpp.i
@@ -1068,7 +1068,7 @@ src/glutil.i: src/glutil.cpp.i
 
 # target to preprocess a source file
 src/glutil.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.i
 .PHONY : src/glutil.cpp.i
 
 src/glutil.s: src/glutil.cpp.s
@@ -1076,7 +1076,7 @@ src/glutil.s: src/glutil.cpp.s
 
 # target to generate assembly for a file
 src/glutil.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.s
 .PHONY : src/glutil.cpp.s
 
 src/graph.o: src/graph.cpp.o
@@ -1084,7 +1084,7 @@ src/graph.o: src/graph.cpp.o
 
 # target to build an object file
 src/graph.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o
 .PHONY : src/graph.cpp.o
 
 src/graph.i: src/graph.cpp.i
@@ -1092,7 +1092,7 @@ src/graph.i: src/graph.cpp.i
 
 # target to preprocess a source file
 src/graph.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.i
 .PHONY : src/graph.cpp.i
 
 src/graph.s: src/graph.cpp.s
@@ -1100,7 +1100,7 @@ src/graph.s: src/graph.cpp.s
 
 # target to generate assembly for a file
 src/graph.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.s
 .PHONY : src/graph.cpp.s
 
 src/imagepanel.o: src/imagepanel.cpp.o
@@ -1108,7 +1108,7 @@ src/imagepanel.o: src/imagepanel.cpp.o
 
 # target to build an object file
 src/imagepanel.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o
 .PHONY : src/imagepanel.cpp.o
 
 src/imagepanel.i: src/imagepanel.cpp.i
@@ -1116,7 +1116,7 @@ src/imagepanel.i: src/imagepanel.cpp.i
 
 # target to preprocess a source file
 src/imagepanel.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.i
 .PHONY : src/imagepanel.cpp.i
 
 src/imagepanel.s: src/imagepanel.cpp.s
@@ -1124,7 +1124,7 @@ src/imagepanel.s: src/imagepanel.cpp.s
 
 # target to generate assembly for a file
 src/imagepanel.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.s
 .PHONY : src/imagepanel.cpp.s
 
 src/imageview.o: src/imageview.cpp.o
@@ -1132,7 +1132,7 @@ src/imageview.o: src/imageview.cpp.o
 
 # target to build an object file
 src/imageview.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o
 .PHONY : src/imageview.cpp.o
 
 src/imageview.i: src/imageview.cpp.i
@@ -1140,7 +1140,7 @@ src/imageview.i: src/imageview.cpp.i
 
 # target to preprocess a source file
 src/imageview.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.i
 .PHONY : src/imageview.cpp.i
 
 src/imageview.s: src/imageview.cpp.s
@@ -1148,7 +1148,7 @@ src/imageview.s: src/imageview.cpp.s
 
 # target to generate assembly for a file
 src/imageview.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.s
 .PHONY : src/imageview.cpp.s
 
 src/label.o: src/label.cpp.o
@@ -1156,7 +1156,7 @@ src/label.o: src/label.cpp.o
 
 # target to build an object file
 src/label.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o
 .PHONY : src/label.cpp.o
 
 src/label.i: src/label.cpp.i
@@ -1164,7 +1164,7 @@ src/label.i: src/label.cpp.i
 
 # target to preprocess a source file
 src/label.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.i
 .PHONY : src/label.cpp.i
 
 src/label.s: src/label.cpp.s
@@ -1172,7 +1172,7 @@ src/label.s: src/label.cpp.s
 
 # target to generate assembly for a file
 src/label.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.s
 .PHONY : src/label.cpp.s
 
 src/layout.o: src/layout.cpp.o
@@ -1180,7 +1180,7 @@ src/layout.o: src/layout.cpp.o
 
 # target to build an object file
 src/layout.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o
 .PHONY : src/layout.cpp.o
 
 src/layout.i: src/layout.cpp.i
@@ -1188,7 +1188,7 @@ src/layout.i: src/layout.cpp.i
 
 # target to preprocess a source file
 src/layout.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.i
 .PHONY : src/layout.cpp.i
 
 src/layout.s: src/layout.cpp.s
@@ -1196,7 +1196,7 @@ src/layout.s: src/layout.cpp.s
 
 # target to generate assembly for a file
 src/layout.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.s
 .PHONY : src/layout.cpp.s
 
 src/messagedialog.o: src/messagedialog.cpp.o
@@ -1204,7 +1204,7 @@ src/messagedialog.o: src/messagedialog.cpp.o
 
 # target to build an object file
 src/messagedialog.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o
 .PHONY : src/messagedialog.cpp.o
 
 src/messagedialog.i: src/messagedialog.cpp.i
@@ -1212,7 +1212,7 @@ src/messagedialog.i: src/messagedialog.cpp.i
 
 # target to preprocess a source file
 src/messagedialog.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.i
 .PHONY : src/messagedialog.cpp.i
 
 src/messagedialog.s: src/messagedialog.cpp.s
@@ -1220,7 +1220,7 @@ src/messagedialog.s: src/messagedialog.cpp.s
 
 # target to generate assembly for a file
 src/messagedialog.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.s
 .PHONY : src/messagedialog.cpp.s
 
 src/popup.o: src/popup.cpp.o
@@ -1228,7 +1228,7 @@ src/popup.o: src/popup.cpp.o
 
 # target to build an object file
 src/popup.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o
 .PHONY : src/popup.cpp.o
 
 src/popup.i: src/popup.cpp.i
@@ -1236,7 +1236,7 @@ src/popup.i: src/popup.cpp.i
 
 # target to preprocess a source file
 src/popup.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.i
 .PHONY : src/popup.cpp.i
 
 src/popup.s: src/popup.cpp.s
@@ -1244,7 +1244,7 @@ src/popup.s: src/popup.cpp.s
 
 # target to generate assembly for a file
 src/popup.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.s
 .PHONY : src/popup.cpp.s
 
 src/popupbutton.o: src/popupbutton.cpp.o
@@ -1252,7 +1252,7 @@ src/popupbutton.o: src/popupbutton.cpp.o
 
 # target to build an object file
 src/popupbutton.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o
 .PHONY : src/popupbutton.cpp.o
 
 src/popupbutton.i: src/popupbutton.cpp.i
@@ -1260,7 +1260,7 @@ src/popupbutton.i: src/popupbutton.cpp.i
 
 # target to preprocess a source file
 src/popupbutton.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.i
 .PHONY : src/popupbutton.cpp.i
 
 src/popupbutton.s: src/popupbutton.cpp.s
@@ -1268,7 +1268,7 @@ src/popupbutton.s: src/popupbutton.cpp.s
 
 # target to generate assembly for a file
 src/popupbutton.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.s
 .PHONY : src/popupbutton.cpp.s
 
 src/progressbar.o: src/progressbar.cpp.o
@@ -1276,7 +1276,7 @@ src/progressbar.o: src/progressbar.cpp.o
 
 # target to build an object file
 src/progressbar.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o
 .PHONY : src/progressbar.cpp.o
 
 src/progressbar.i: src/progressbar.cpp.i
@@ -1284,7 +1284,7 @@ src/progressbar.i: src/progressbar.cpp.i
 
 # target to preprocess a source file
 src/progressbar.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.i
 .PHONY : src/progressbar.cpp.i
 
 src/progressbar.s: src/progressbar.cpp.s
@@ -1292,7 +1292,7 @@ src/progressbar.s: src/progressbar.cpp.s
 
 # target to generate assembly for a file
 src/progressbar.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.s
 .PHONY : src/progressbar.cpp.s
 
 src/screen.o: src/screen.cpp.o
@@ -1300,7 +1300,7 @@ src/screen.o: src/screen.cpp.o
 
 # target to build an object file
 src/screen.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o
 .PHONY : src/screen.cpp.o
 
 src/screen.i: src/screen.cpp.i
@@ -1308,7 +1308,7 @@ src/screen.i: src/screen.cpp.i
 
 # target to preprocess a source file
 src/screen.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.i
 .PHONY : src/screen.cpp.i
 
 src/screen.s: src/screen.cpp.s
@@ -1316,7 +1316,7 @@ src/screen.s: src/screen.cpp.s
 
 # target to generate assembly for a file
 src/screen.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.s
 .PHONY : src/screen.cpp.s
 
 src/serializer.o: src/serializer.cpp.o
@@ -1324,7 +1324,7 @@ src/serializer.o: src/serializer.cpp.o
 
 # target to build an object file
 src/serializer.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o
 .PHONY : src/serializer.cpp.o
 
 src/serializer.i: src/serializer.cpp.i
@@ -1332,7 +1332,7 @@ src/serializer.i: src/serializer.cpp.i
 
 # target to preprocess a source file
 src/serializer.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.i
 .PHONY : src/serializer.cpp.i
 
 src/serializer.s: src/serializer.cpp.s
@@ -1340,7 +1340,7 @@ src/serializer.s: src/serializer.cpp.s
 
 # target to generate assembly for a file
 src/serializer.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.s
 .PHONY : src/serializer.cpp.s
 
 src/slider.o: src/slider.cpp.o
@@ -1348,7 +1348,7 @@ src/slider.o: src/slider.cpp.o
 
 # target to build an object file
 src/slider.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o
 .PHONY : src/slider.cpp.o
 
 src/slider.i: src/slider.cpp.i
@@ -1356,7 +1356,7 @@ src/slider.i: src/slider.cpp.i
 
 # target to preprocess a source file
 src/slider.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.i
 .PHONY : src/slider.cpp.i
 
 src/slider.s: src/slider.cpp.s
@@ -1364,7 +1364,7 @@ src/slider.s: src/slider.cpp.s
 
 # target to generate assembly for a file
 src/slider.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.s
 .PHONY : src/slider.cpp.s
 
 src/stackedwidget.o: src/stackedwidget.cpp.o
@@ -1372,7 +1372,7 @@ src/stackedwidget.o: src/stackedwidget.cpp.o
 
 # target to build an object file
 src/stackedwidget.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o
 .PHONY : src/stackedwidget.cpp.o
 
 src/stackedwidget.i: src/stackedwidget.cpp.i
@@ -1380,7 +1380,7 @@ src/stackedwidget.i: src/stackedwidget.cpp.i
 
 # target to preprocess a source file
 src/stackedwidget.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.i
 .PHONY : src/stackedwidget.cpp.i
 
 src/stackedwidget.s: src/stackedwidget.cpp.s
@@ -1388,7 +1388,7 @@ src/stackedwidget.s: src/stackedwidget.cpp.s
 
 # target to generate assembly for a file
 src/stackedwidget.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.s
 .PHONY : src/stackedwidget.cpp.s
 
 src/tabheader.o: src/tabheader.cpp.o
@@ -1396,7 +1396,7 @@ src/tabheader.o: src/tabheader.cpp.o
 
 # target to build an object file
 src/tabheader.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o
 .PHONY : src/tabheader.cpp.o
 
 src/tabheader.i: src/tabheader.cpp.i
@@ -1404,7 +1404,7 @@ src/tabheader.i: src/tabheader.cpp.i
 
 # target to preprocess a source file
 src/tabheader.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.i
 .PHONY : src/tabheader.cpp.i
 
 src/tabheader.s: src/tabheader.cpp.s
@@ -1412,7 +1412,7 @@ src/tabheader.s: src/tabheader.cpp.s
 
 # target to generate assembly for a file
 src/tabheader.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.s
 .PHONY : src/tabheader.cpp.s
 
 src/tabwidget.o: src/tabwidget.cpp.o
@@ -1420,7 +1420,7 @@ src/tabwidget.o: src/tabwidget.cpp.o
 
 # target to build an object file
 src/tabwidget.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o
 .PHONY : src/tabwidget.cpp.o
 
 src/tabwidget.i: src/tabwidget.cpp.i
@@ -1428,7 +1428,7 @@ src/tabwidget.i: src/tabwidget.cpp.i
 
 # target to preprocess a source file
 src/tabwidget.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.i
 .PHONY : src/tabwidget.cpp.i
 
 src/tabwidget.s: src/tabwidget.cpp.s
@@ -1436,7 +1436,7 @@ src/tabwidget.s: src/tabwidget.cpp.s
 
 # target to generate assembly for a file
 src/tabwidget.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.s
 .PHONY : src/tabwidget.cpp.s
 
 src/textbox.o: src/textbox.cpp.o
@@ -1444,7 +1444,7 @@ src/textbox.o: src/textbox.cpp.o
 
 # target to build an object file
 src/textbox.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o
 .PHONY : src/textbox.cpp.o
 
 src/textbox.i: src/textbox.cpp.i
@@ -1452,7 +1452,7 @@ src/textbox.i: src/textbox.cpp.i
 
 # target to preprocess a source file
 src/textbox.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.i
 .PHONY : src/textbox.cpp.i
 
 src/textbox.s: src/textbox.cpp.s
@@ -1460,7 +1460,7 @@ src/textbox.s: src/textbox.cpp.s
 
 # target to generate assembly for a file
 src/textbox.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.s
 .PHONY : src/textbox.cpp.s
 
 src/theme.o: src/theme.cpp.o
@@ -1468,7 +1468,7 @@ src/theme.o: src/theme.cpp.o
 
 # target to build an object file
 src/theme.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o
 .PHONY : src/theme.cpp.o
 
 src/theme.i: src/theme.cpp.i
@@ -1476,7 +1476,7 @@ src/theme.i: src/theme.cpp.i
 
 # target to preprocess a source file
 src/theme.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.i
 .PHONY : src/theme.cpp.i
 
 src/theme.s: src/theme.cpp.s
@@ -1484,7 +1484,7 @@ src/theme.s: src/theme.cpp.s
 
 # target to generate assembly for a file
 src/theme.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.s
 .PHONY : src/theme.cpp.s
 
 src/vscrollpanel.o: src/vscrollpanel.cpp.o
@@ -1492,7 +1492,7 @@ src/vscrollpanel.o: src/vscrollpanel.cpp.o
 
 # target to build an object file
 src/vscrollpanel.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o
 .PHONY : src/vscrollpanel.cpp.o
 
 src/vscrollpanel.i: src/vscrollpanel.cpp.i
@@ -1500,7 +1500,7 @@ src/vscrollpanel.i: src/vscrollpanel.cpp.i
 
 # target to preprocess a source file
 src/vscrollpanel.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.i
 .PHONY : src/vscrollpanel.cpp.i
 
 src/vscrollpanel.s: src/vscrollpanel.cpp.s
@@ -1508,7 +1508,7 @@ src/vscrollpanel.s: src/vscrollpanel.cpp.s
 
 # target to generate assembly for a file
 src/vscrollpanel.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.s
 .PHONY : src/vscrollpanel.cpp.s
 
 src/widget.o: src/widget.cpp.o
@@ -1516,7 +1516,7 @@ src/widget.o: src/widget.cpp.o
 
 # target to build an object file
 src/widget.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o
 .PHONY : src/widget.cpp.o
 
 src/widget.i: src/widget.cpp.i
@@ -1524,7 +1524,7 @@ src/widget.i: src/widget.cpp.i
 
 # target to preprocess a source file
 src/widget.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.i
 .PHONY : src/widget.cpp.i
 
 src/widget.s: src/widget.cpp.s
@@ -1532,7 +1532,7 @@ src/widget.s: src/widget.cpp.s
 
 # target to generate assembly for a file
 src/widget.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.s
 .PHONY : src/widget.cpp.s
 
 src/window.o: src/window.cpp.o
@@ -1540,7 +1540,7 @@ src/window.o: src/window.cpp.o
 
 # target to build an object file
 src/window.cpp.o:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o
 .PHONY : src/window.cpp.o
 
 src/window.i: src/window.cpp.i
@@ -1548,7 +1548,7 @@ src/window.i: src/window.cpp.i
 
 # target to preprocess a source file
 src/window.cpp.i:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.i
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.i
 .PHONY : src/window.cpp.i
 
 src/window.s: src/window.cpp.s
@@ -1556,7 +1556,7 @@ src/window.s: src/window.cpp.s
 
 # target to generate assembly for a file
 src/window.cpp.s:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.s
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.s
 .PHONY : src/window.cpp.s
 
 # Help Target
@@ -1750,6 +1750,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

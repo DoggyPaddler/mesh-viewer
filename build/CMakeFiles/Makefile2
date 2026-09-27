@@ -54,10 +54,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer
+CMAKE_SOURCE_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build
+CMAKE_BINARY_DIR = /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -197,14 +197,14 @@ CMakeFiles/mesh-viewer.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 CMakeFiles/mesh-viewer.dir/all: soil/CMakeFiles/soil.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mesh-viewer.dir/build.make CMakeFiles/mesh-viewer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mesh-viewer.dir/build.make CMakeFiles/mesh-viewer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Built target mesh-viewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Built target mesh-viewer"
 .PHONY : CMakeFiles/mesh-viewer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mesh-viewer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mesh-viewer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : CMakeFiles/mesh-viewer.dir/rule
 
 # Convenience name for target.
@@ -214,7 +214,7 @@ mesh-viewer: CMakeFiles/mesh-viewer.dir/rule
 # codegen rule for target.
 CMakeFiles/mesh-viewer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mesh-viewer.dir/build.make CMakeFiles/mesh-viewer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Finished codegen for target mesh-viewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Finished codegen for target mesh-viewer"
 .PHONY : CMakeFiles/mesh-viewer.dir/codegen
 
 # clean rule for target.
@@ -229,14 +229,14 @@ CMakeFiles/mesh-viewer.dir/clean:
 lib/nanogui/CMakeFiles/nanogui-obj.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target nanogui-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target nanogui-obj"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui-obj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-obj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
 
 # Convenience name for target.
@@ -246,7 +246,7 @@ nanogui-obj: lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/nanogui-obj.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Finished codegen for target nanogui-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Finished codegen for target nanogui-obj"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/codegen
 
 # clean rule for target.
@@ -258,18 +258,18 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/clean:
 # Target rules for target lib/nanogui/CMakeFiles/nanogui.dir
 
 # All Build rule for target.
-lib/nanogui/CMakeFiles/nanogui.dir/all: lib/nanogui/CMakeFiles/nanogui-obj.dir/all
 lib/nanogui/CMakeFiles/nanogui.dir/all: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
+lib/nanogui/CMakeFiles/nanogui.dir/all: lib/nanogui/CMakeFiles/nanogui-obj.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=37 "Built target nanogui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=37 "Built target nanogui"
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/rule
 
 # Convenience name for target.
@@ -279,7 +279,7 @@ nanogui: lib/nanogui/CMakeFiles/nanogui.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/nanogui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=37 "Finished codegen for target nanogui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=37 "Finished codegen for target nanogui"
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/codegen
 
 # clean rule for target.
@@ -294,14 +294,14 @@ lib/nanogui/CMakeFiles/nanogui.dir/clean:
 lib/nanogui/CMakeFiles/example1.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=1,2 "Built target example1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=1,2 "Built target example1"
 .PHONY : lib/nanogui/CMakeFiles/example1.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example1.dir/rule
 
 # Convenience name for target.
@@ -311,7 +311,7 @@ example1: lib/nanogui/CMakeFiles/example1.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/example1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=1,2 "Finished codegen for target example1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=1,2 "Finished codegen for target example1"
 .PHONY : lib/nanogui/CMakeFiles/example1.dir/codegen
 
 # clean rule for target.
@@ -326,14 +326,14 @@ lib/nanogui/CMakeFiles/example1.dir/clean:
 lib/nanogui/CMakeFiles/example2.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=3,4 "Built target example2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=3,4 "Built target example2"
 .PHONY : lib/nanogui/CMakeFiles/example2.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example2.dir/rule
 
 # Convenience name for target.
@@ -343,7 +343,7 @@ example2: lib/nanogui/CMakeFiles/example2.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/example2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=3,4 "Finished codegen for target example2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=3,4 "Finished codegen for target example2"
 .PHONY : lib/nanogui/CMakeFiles/example2.dir/codegen
 
 # clean rule for target.
@@ -358,14 +358,14 @@ lib/nanogui/CMakeFiles/example2.dir/clean:
 lib/nanogui/CMakeFiles/example3.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=5,6 "Built target example3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=5,6 "Built target example3"
 .PHONY : lib/nanogui/CMakeFiles/example3.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example3.dir/rule
 
 # Convenience name for target.
@@ -375,7 +375,7 @@ example3: lib/nanogui/CMakeFiles/example3.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/example3.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=5,6 "Finished codegen for target example3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=5,6 "Finished codegen for target example3"
 .PHONY : lib/nanogui/CMakeFiles/example3.dir/codegen
 
 # clean rule for target.
@@ -390,14 +390,14 @@ lib/nanogui/CMakeFiles/example3.dir/clean:
 lib/nanogui/CMakeFiles/example4.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=7,8 "Built target example4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=7,8 "Built target example4"
 .PHONY : lib/nanogui/CMakeFiles/example4.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example4.dir/rule
 
 # Convenience name for target.
@@ -407,7 +407,7 @@ example4: lib/nanogui/CMakeFiles/example4.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/example4.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=7,8 "Finished codegen for target example4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=7,8 "Finished codegen for target example4"
 .PHONY : lib/nanogui/CMakeFiles/example4.dir/codegen
 
 # clean rule for target.
@@ -422,14 +422,14 @@ lib/nanogui/CMakeFiles/example4.dir/clean:
 lib/nanogui/CMakeFiles/example_icons.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=9,10 "Built target example_icons"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=9,10 "Built target example_icons"
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example_icons.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example_icons.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/rule
 
 # Convenience name for target.
@@ -439,7 +439,7 @@ example_icons: lib/nanogui/CMakeFiles/example_icons.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/example_icons.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=9,10 "Finished codegen for target example_icons"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=9,10 "Finished codegen for target example_icons"
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/codegen
 
 # clean rule for target.
@@ -454,14 +454,14 @@ lib/nanogui/CMakeFiles/example_icons.dir/clean:
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Built target nanogui-python-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Built target nanogui-python-obj"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
 
 # Convenience name for target.
@@ -471,7 +471,7 @@ nanogui-python-obj: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Finished codegen for target nanogui-python-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Finished codegen for target nanogui-python-obj"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/codegen
 
 # clean rule for target.
@@ -487,14 +487,14 @@ lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui.di
 lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=70 "Built target nanogui-python"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=70 "Built target nanogui-python"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui-python.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/rule
 
 # Convenience name for target.
@@ -504,7 +504,7 @@ nanogui-python: lib/nanogui/CMakeFiles/nanogui-python.dir/rule
 # codegen rule for target.
 lib/nanogui/CMakeFiles/nanogui-python.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=70 "Finished codegen for target nanogui-python"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=70 "Finished codegen for target nanogui-python"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/codegen
 
 # clean rule for target.
@@ -519,14 +519,14 @@ lib/nanogui/CMakeFiles/nanogui-python.dir/clean:
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target glfw_objects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target glfw_objects"
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/rule
 
 # Convenience name for target.
@@ -536,7 +536,7 @@ glfw_objects: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/rule
 # codegen rule for target.
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24 "Finished codegen for target glfw_objects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24 "Finished codegen for target glfw_objects"
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/codegen
 
 # clean rule for target.
@@ -551,14 +551,14 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/clean:
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/all: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=11 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=11 "Built target glfw"
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -568,7 +568,7 @@ glfw: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/rule
 # codegen rule for target.
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=11 "Finished codegen for target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=11 "Finished codegen for target glfw"
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/codegen
 
 # clean rule for target.
@@ -583,14 +583,14 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean:
 soil/CMakeFiles/soil.dir/all:
 	$(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/depend
 	$(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=88,89,90,91,92 "Built target soil"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=88,89,90,91,92 "Built target soil"
 .PHONY : soil/CMakeFiles/soil.dir/all
 
 # Build rule for subdir invocation for target.
 soil/CMakeFiles/soil.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil/CMakeFiles/soil.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles 0
 .PHONY : soil/CMakeFiles/soil.dir/rule
 
 # Convenience name for target.
@@ -600,7 +600,7 @@ soil: soil/CMakeFiles/soil.dir/rule
 # codegen rule for target.
 soil/CMakeFiles/soil.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f soil/CMakeFiles/soil.dir/build.make soil/CMakeFiles/soil.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/build/CMakeFiles --progress-num=88,89,90,91,92 "Finished codegen for target soil"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=88,89,90,91,92 "Finished codegen for target soil"
 .PHONY : soil/CMakeFiles/soil.dir/codegen
 
 # clean rule for target.

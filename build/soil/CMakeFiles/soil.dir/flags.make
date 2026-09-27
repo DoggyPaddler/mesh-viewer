@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DGLAD_GLAPI_EXPORT -DNANOGUI_PYTHON -DNANOGUI_SHARED -DNVG_SHARED
 
-C_INCLUDES = -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/glfw/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/nanovg/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/nanogui/ext/eigen -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git/Mesh-Viewer/lib/soil/inc
+C_INCLUDES = -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/glfw/include -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/nanovg/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src -I/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/soil/inc
 
 C_FLAGS = -O3 -DNDEBUG
 
