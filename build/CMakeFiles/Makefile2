@@ -193,8 +193,8 @@ soil/clean: soil/CMakeFiles/soil.dir/clean
 # Target rules for target CMakeFiles/mesh-viewer.dir
 
 # All Build rule for target.
-CMakeFiles/mesh-viewer.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 CMakeFiles/mesh-viewer.dir/all: soil/CMakeFiles/soil.dir/all
+CMakeFiles/mesh-viewer.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mesh-viewer.dir/build.make CMakeFiles/mesh-viewer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mesh-viewer.dir/build.make CMakeFiles/mesh-viewer.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Built target mesh-viewer"
@@ -483,8 +483,8 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/clean:
 # Target rules for target lib/nanogui/CMakeFiles/nanogui-python.dir
 
 # All Build rule for target.
-lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
+lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=70 "Built target nanogui-python"

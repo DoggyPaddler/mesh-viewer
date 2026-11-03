@@ -604,7 +604,7 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     nanogui::Label* lab;
 
     lab = new nanogui::Label(nanoguiWindow, "Render Options", "sans");
-    render_mode = new nanogui::ComboBox(nanoguiWindow, {"Blinn-Phong", "PBR Basic"});
+    render_mode = new nanogui::ComboBox(nanoguiWindow, {"Blinn-Phong", "PBR Basic", "PBR Metallic"});
     combo_init(render_mode);
 
     lab = new nanogui::Label(nanoguiWindow, "Textures", "sans");
@@ -688,8 +688,25 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
 
     lab = new nanogui::Label(nanoguiWindow, "Diffuse", "sans");
     cc = new ColorController(nanoguiWindow, nanogui::Color(110,100,160, 255));
+    diffuse_color = new Row(lab, cc);
     lab = new nanogui::Label(nanoguiWindow, "Specular", "sans");
     cc2 = new ColorController(nanoguiWindow, nanogui::Color(100,100,100, 255));
+    specular_color = new Row(lab, cc2);
+
+    lab = new nanogui::Label(nanoguiWindow, "Roughness", "sans");
+    nanogui::IntBox<int>* tb_roughness = new nanogui::IntBox<int>(nanoguiWindow);
+    tb_roughness->setEditable(true);
+    tb_roughness->setFixedSize(Eigen::Vector2i(120, 20));
+    tb_roughness->setValue(50);
+    tb_roughness->setTheme(textbox_theme);
+    tb_roughness->setFontSize(12);
+    tb_roughness->setFormat("[0-9]*");
+    tb_roughness->setSpinnable(true);
+    tb_roughness->setMinMaxValues(1, 100);
+    tb_roughness->setValueIncrement(1);
+    roughness = new Row(lab, tb_roughness);
+    roughness->setVisible(false);
+
     lab = new nanogui::Label(nanoguiWindow, "Ambient", "sans");
     cc3 = new ColorController(nanoguiWindow, nanogui::Color(40,40,40, 255));
     ambient = new Row(lab, cc3);
@@ -710,6 +727,20 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     
     glossiness = new Row(lab, tb2);
     glossiness->setVisible(false);
+
+    lab = new nanogui::Label(nanoguiWindow, "Metallic", "sans");
+    nanogui::IntBox<int>* tb_metallic = new nanogui::IntBox<int>(nanoguiWindow);
+    tb_metallic->setEditable(true);
+    tb_metallic->setFixedSize(Eigen::Vector2i(120, 20));
+    tb_metallic->setValue(50);
+    tb_metallic->setTheme(textbox_theme);
+    tb_metallic->setFontSize(12);
+    tb_metallic->setFormat("[0-9]*");
+    tb_metallic->setSpinnable(true);
+    tb_metallic->setMinMaxValues(0, 100);
+    tb_metallic->setValueIncrement(1);
+    metallic = new Row(lab, tb_metallic);
+    metallic->setVisible(false);
 
     lab = new nanogui::Label(nanoguiWindow, "Ambient", "sans");
     cc4 = new ColorController(nanoguiWindow, nanogui::Color(20, 20, 20, 255));

@@ -278,20 +278,38 @@ void Editor::setGUICallbacks() {
 
 		//std::cout << this->gui.render_mode->items().size() << std::endl;
 		if (a == 0) {
+			this->gui.diffuse_color->lab->setCaption("Diffuse");
+			this->gui.specular_color->setVisible(true);
+			this->gui.roughness->setVisible(false);
 			this->gui.glossiness->setVisible(false);
+			this->gui.metallic->setVisible(false);
 			this->gui.pbr_ambient->setVisible(false);
 			this->gui.shineness->setVisible(true);
 			this->gui.ambient->setVisible(true);
 			this->gui.screen->performLayout();
 			// this->gui.shineness->setVisible(true);
 			//this->gui.nanoguiWindow->setSize(gui.nanoguiWindow->size() - Eigen::Vector2i(0,20));
-		} else {
+		} else if (a == 1) {
+			this->gui.diffuse_color->lab->setCaption("Diffuse");
+			this->gui.specular_color->setVisible(true);
+			this->gui.roughness->setVisible(false);
 			this->gui.glossiness->setVisible(true);
+			this->gui.metallic->setVisible(false);
 			this->gui.pbr_ambient->setVisible(true);
 			this->gui.shineness->setVisible(false);
 			this->gui.ambient->setVisible(false);
 			this->gui.screen->performLayout();
 			//this->gui.nanoguiWindow->setSize(gui.nanoguiWindow->size() + Eigen::Vector2i(0,20));
+		} else {
+			this->gui.diffuse_color->lab->setCaption("Base Color");
+			this->gui.specular_color->setVisible(false);
+			this->gui.roughness->setVisible(true);
+			this->gui.glossiness->setVisible(false);
+			this->gui.metallic->setVisible(true);
+			this->gui.pbr_ambient->setVisible(true);
+			this->gui.shineness->setVisible(false);
+			this->gui.ambient->setVisible(false);
+			this->gui.screen->performLayout();
 		}
 		// std::cout << this->gui.nanoguiWindow->size() << std::endl;
 		// std::cout << this->gui.tb->size() << std::endl;
@@ -332,6 +350,14 @@ void Editor::setGUICallbacks() {
 	gloss_w->setCallback([this](const int n) {
 		// std::cout << "hello" << std::endl;
 		this->resources->setFloat(0, "kg", n);
+	});
+	nanogui::IntBox<int> * roughness_w = (nanogui::IntBox<int> *)gui.roughness->w;
+	roughness_w->setCallback([this](const int n) {
+		this->resources->setFloat(0, "roughness", n / 100.0f);
+	});
+	nanogui::IntBox<int> * metallic_w = (nanogui::IntBox<int> *)gui.metallic->w;
+	metallic_w->setCallback([this](const int n) {
+		this->resources->setFloat(0, "metallic", n / 100.0f);
 	});
 	auto tb_callback = [this](ColorController* cc, std::string s, int i, int n) {
 		nanogui::Color c = cc->intbox_callback(i, n);

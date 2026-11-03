@@ -20,6 +20,8 @@ uniform vec3 light_pos;
 uniform vec3 camera_pos;
 uniform float p;
 uniform float kg;
+uniform float roughness;
+uniform float metallic;
 uniform float light_intensity;
 uniform int render_mode;
 uniform int useTex;
@@ -49,9 +51,6 @@ vec3 blinn_phong(vec3 ka, vec3 kd, vec3 ks, float p, vec3 n, vec3 v, vec3 l) {
 }
 
 vec3 ShadePBRSpecular(vec3 C_diff, vec3 F0, float a, vec3 N, vec3 L, vec3 V) {
-	if (dot(N, L) <= 0.0 || dot(N, V) <= 0.0)
-		return vec3(0.0);
-
 	vec3 new_C_diff = C_diff * (1 - F0);
 	float new_a = pow((1 - a), 2);
 
@@ -80,9 +79,6 @@ vec3 ShadePBRSpecular(vec3 C_diff, vec3 F0, float a, vec3 N, vec3 L, vec3 V) {
 }
 
 vec3 ShadePBRSpecularV2(vec3 C_diff, vec3 C_spc, float a, vec3 N, vec3 L, vec3 V) {
-	if (dot(N, L) <= 0.0 || dot(N, V) <= 0.0)
-		return vec3(0.0);
-
 	vec3 H = normalize(V + L);
 
 	float dotVH = max(dot(V, H), 1e-6);
@@ -109,6 +105,33 @@ vec3 ShadePBRSpecularV2(vec3 C_diff, vec3 C_spc, float a, vec3 N, vec3 L, vec3 V
 	vec3 specular = Vis * D * F0;
 
 	return dotNL * (diffuse + specular);
+}
+
+vec3 ShadePBRMetallic(vec3 base_color, float metallic_value, float roughness_value,
+					 vec3 N, vec3 L, vec3 V) {
+	float dotNL = dot(N, L);
+	float dotNV = dot(N, V);
+	if (dotNL <= 0.0 || dotNV <= 0.0)
+		return vec3(0.0);
+
+	vec3 H = normalize(V + L);
+	float dotNH = max(dot(N, H), 0.0);
+	float dotVH = max(dot(V, H), 0.0);
+	float r = max(roughness_value, 0.04);
+	float alpha2 = r * r * r * r;
+	float denom = dotNH * dotNH * (alpha2 - 1.0) + 1.0;
+	float D = alpha2 / max(M_PI * denom * denom, 1e-6);
+
+	float k = (r + 1.0) * (r + 1.0) / 8.0;
+	float Gv = dotNV / (dotNV * (1.0 - k) + k);
+	float Gl = dotNL / (dotNL * (1.0 - k) + k);
+	float G = Gv * Gl;
+
+	vec3 F0 = mix(vec3(0.04), base_color, metallic_value);
+	vec3 F = F0 + (vec3(1.0) - F0) * pow(1.0 - dotVH, 5.0);
+	vec3 specular_brdf = (D * G * F) / max(4.0 * dotNV * dotNL, 1e-6);
+	vec3 diffuse_brdf = (vec3(1.0) - F) * (1.0 - metallic_value) * base_color / M_PI;
+	return (diffuse_brdf + specular_brdf) * dotNL;
 }
 
 void main() {
@@ -152,7 +175,7 @@ void main() {
 			outColor = vec4(blinn_phong(ka, kd, ks, p, normalize(vertex_normal_3d), view_d, light_d), 1.0);
 			//outColor = vec4(1.0, 1.0, 1.0, 1.0);
 		}
-	} else {
+	} else if (render_mode == 1) {
 		if (useTex == 1) {
 			//outColor = vec4(ShadePBRSpecularV2(texture_color, pow(texture_specular, vec3(1/1.2, 1/1.2, 1/1.2)), texture_glossiness.x * 1.1, texture_normal, toTangentSpc * light_d, toTangentSpc * light_d), 1.0);
 			
@@ -167,6 +190,18 @@ void main() {
 		} else {
 			vec3 ambient_light = (pbr_ambient / 255.0) * kd;
 			vec3 direct_light = (light_intensity * 0.02) * ShadePBRSpecularV2(kd, ks, kg/100.0, normalize(vertex_normal_3d), light_d, view_d);
+			outColor = vec4(ambient_light + direct_light, 1.0);
+		}
+	} else {
+		if (useTex == 1) {
+			vec3 ambient_light = (pbr_ambient / 255.0) * texture_color;
+			vec3 direct_light = (light_intensity * 0.02) * ShadePBRMetallic(
+				texture_color, metallic, roughness, normalize(texture_normal), tngt_light, tngt_view);
+			outColor = vec4(ambient_light + direct_light, 1.0);
+		} else {
+			vec3 ambient_light = (pbr_ambient / 255.0) * kd;
+			vec3 direct_light = (light_intensity * 0.02) * ShadePBRMetallic(
+				kd, metallic, roughness, normalize(vertex_normal_3d), light_d, view_d);
 			outColor = vec4(ambient_light + direct_light, 1.0);
 		}
 	}

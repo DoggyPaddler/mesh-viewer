@@ -141,7 +141,11 @@ class GUI {
         ColorController *cc3;
         ColorController *cc4;
         Row* light_intensity;
+        Row* diffuse_color;
+        Row* specular_color;
+        Row* roughness;
         Row* glossiness;
+        Row* metallic;
         Row* shineness;
         Row* pbr_ambient;
         Row* ambient;

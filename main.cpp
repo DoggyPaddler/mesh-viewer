@@ -165,6 +165,8 @@ int main(int /* argc */, char ** /* argv */) {
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("pbr_ambient"), 20,20,20);
     glUniform1f(editor->resources->_usedPrograms[0]->uniform("p"), 100);
     glUniform1f(editor->resources->_usedPrograms[0]->uniform("kg"), 50);
+    glUniform1f(editor->resources->_usedPrograms[0]->uniform("roughness"), 0.5f);
+    glUniform1f(editor->resources->_usedPrograms[0]->uniform("metallic"), 0.5f);
     glUniform1f(editor->resources->_usedPrograms[0]->uniform("light_intensity"), 50.0f);
     glUniform1i(editor->resources->_usedPrograms[0]->uniform("render_mode"), editor->render_mode);
     glUniform1i(editor->resources->_usedPrograms[0]->uniform("useTex"), 0);
