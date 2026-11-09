@@ -74,6 +74,87 @@ Run:
 	- `Env. Map`: choose/open/delete EXR environment maps.
 	- `Light`: point-light intensity and XYZ controls.
 
+### Interface Overview
+
+#### Main UI Overview
+
+The base UI layout with default controls and environment-enabled shading:
+
+![Main UI Overview](docs/screenshots/01-view.png)
+
+### Render Options
+
+#### Render Mode Switcher (Blinn / PBR Basic / PBR Metallic)
+
+The `Render Options` submenu for switching shading models:
+
+![Render Mode Menu](docs/screenshots/02-view.png)
+
+### Texture Workflow
+
+#### Texture Workflow Entry
+
+The `Textures` menu supports colorwheel mode and texture-set mode:
+
+![Texture Menu Entry](docs/screenshots/03-view.png)
+![Texture Mode Switch](docs/screenshots/04-view.png)
+
+### Asset Workflow
+
+#### Asset Management (OBJ List / Delete / Open)
+
+`Assets` supports list selection, remove (`x`), and loading new models:
+
+![Asset List and Open](docs/screenshots/05-view.png)
+
+### Lighting Workflow
+
+#### Light Submenu Structure (Environment Map + Point Light)
+
+`Light` is organized into environment map selection and point-light parameter controls:
+
+![Light Submenu and Point Light Controls](docs/screenshots/06-view.png)
+![Environment Map List with Delete and Open](docs/screenshots/07-view.png)
+
+Environment-map switching changes global image-based lighting immediately:
+
+![Environment Map Lighting Result](docs/screenshots/08-view.png)
+![Alternative Environment Map Result](docs/screenshots/09-view.png)
+
+#### Texture Library Management
+
+Texture presets can be listed, removed, and loaded from disk:
+
+![Texture Library List](docs/screenshots/10-view.png)
+
+### Material Presets (PBR Basic)
+
+#### Material Preset Results
+
+Examples of different texture/material presets on the same model:
+
+![Material Preset JT-19228](docs/screenshots/11-view.png)
+![Material Preset metal4](docs/screenshots/12-view.png)
+![Material Preset black_L10](docs/screenshots/13-view.png)
+
+### Environment And Material Interaction
+
+#### Environment + Material Interaction
+
+The same material under different environment maps produces very different reflections and color response:
+
+![Material Under Outdoor Environment](docs/screenshots/14-view.png)
+![Material Under Indoor Industrial Environment](docs/screenshots/15-view.png)
+
+### Multi-Mesh Support
+
+#### Different Mesh With Same Pipeline
+
+A different model (`sample2.obj`) under the same rendering/texture pipeline:
+
+![Alternate Mesh Sample](docs/screenshots/16-view.png)
+![Alternate Mesh Close Variant](docs/screenshots/17-view.png)
+
 ### Texture Folder Format
 
 Each texture set directory should include:
@@ -82,14 +163,6 @@ Each texture set directory should include:
 - `normal.png`
 - `glossiness.png`
 - `specular.png`
-
-## Screenshots
-
-Place screenshots in `docs/screenshots/` and they will render below.
-
-![Overview](docs/screenshots/01-view.png)
-![PBR Metal](docs/screenshots/02-view.png)
-![Environment Lighting](docs/screenshots/03-view.png)
 
 ## Automatic Screenshot Capture (macOS)
 
