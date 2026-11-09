@@ -4145,7 +4145,38 @@ CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o: /Users/xiezili/Desktop/Project-3D-V
   /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GUI.h \
   /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.h \
   /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.h \
-  /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.h
+  /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.h \
+  /usr/local/include/OpenEXR/IexBaseExc.h \
+  /usr/local/include/OpenEXR/IexExport.h \
+  /usr/local/include/OpenEXR/IexNamespace.h \
+  /usr/local/include/OpenEXR/IlmBaseConfig.h \
+  /usr/local/include/OpenEXR/ImathBox.h \
+  /usr/local/include/OpenEXR/ImathExc.h \
+  /usr/local/include/OpenEXR/ImathExport.h \
+  /usr/local/include/OpenEXR/ImathInt64.h \
+  /usr/local/include/OpenEXR/ImathLimits.h \
+  /usr/local/include/OpenEXR/ImathMath.h \
+  /usr/local/include/OpenEXR/ImathNamespace.h \
+  /usr/local/include/OpenEXR/ImathPlatform.h \
+  /usr/local/include/OpenEXR/ImathVec.h \
+  /usr/local/include/OpenEXR/ImfArray.h \
+  /usr/local/include/OpenEXR/ImfCompression.h \
+  /usr/local/include/OpenEXR/ImfExport.h \
+  /usr/local/include/OpenEXR/ImfForward.h \
+  /usr/local/include/OpenEXR/ImfFrameBuffer.h \
+  /usr/local/include/OpenEXR/ImfHeader.h \
+  /usr/local/include/OpenEXR/ImfInt64.h \
+  /usr/local/include/OpenEXR/ImfLineOrder.h \
+  /usr/local/include/OpenEXR/ImfName.h \
+  /usr/local/include/OpenEXR/ImfNamespace.h \
+  /usr/local/include/OpenEXR/ImfPixelType.h \
+  /usr/local/include/OpenEXR/ImfRgba.h \
+  /usr/local/include/OpenEXR/ImfRgbaFile.h \
+  /usr/local/include/OpenEXR/ImfThreading.h \
+  /usr/local/include/OpenEXR/ImfTileDescription.h \
+  /usr/local/include/OpenEXR/OpenEXRConfig.h \
+  /usr/local/include/OpenEXR/half.h \
+  /usr/local/include/OpenEXR/halfExport.h
 
 CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o: /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
@@ -6466,6 +6497,11 @@ CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o: /Users/xiezili/Desktop/Project-3D-Vie
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/log2.h \
@@ -6690,6 +6726,7 @@ CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o: /Users/xiezili/Desktop/Project-3D-Vie
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
@@ -12216,8 +12253,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSValueTransformer.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserNotification.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUndoManager.h:
@@ -12250,8 +12285,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSScriptSuiteRegistry.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSScriptStandardSuiteCommands.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSScriptExecutionContext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSScriptCommandDescription.h:
@@ -12271,8 +12304,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProgress.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPortNameServer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPortMessage.h:
 
@@ -12396,8 +12427,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleScript.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAffineTransform.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationLegacySwiftCompatibility.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h:
@@ -12429,8 +12458,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRun.h:
 
@@ -12650,19 +12677,7 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGEXRToneMappingGamma.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDisplayStream.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDisplayFade.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/clock_priv.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectPalette.h:
-
-/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectDisplay.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecCustomTransform.h:
 
@@ -12672,9 +12687,15 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataConsumer.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_param.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSStagedMigrationManager.h:
 
@@ -12684,9 +12705,9 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSRelationshipDescription.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPopUpButtonCell.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPropertyMapping.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentStoreResult.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPropertyDescription.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGEvent.h:
 
@@ -12694,11 +12715,13 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentStoreDescription.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentStoreCoordinator.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentStore.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSMappingModel.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryToken.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryChangeRequest.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryChange.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSOrderedCollectionChange.h:
 
@@ -12711,6 +12734,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_param.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSMergePolicy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryChangeRequest.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSMappingModel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/addressof.h:
 
@@ -12743,12 +12770,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/stable_sort.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSCustomMigrationStage.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/cups/language.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countr.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h:
 
@@ -12864,8 +12885,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindowTabGroup.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindowTab.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSUserInterfaceLayout.h:
@@ -12895,6 +12914,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSToolbar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSTokenFieldCell.h:
+
+/usr/local/include/OpenEXR/ImfRgbaFile.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSStatusItem.h:
 
@@ -13038,6 +13059,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSScrollView.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSSavePanel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSRulerView.h:
@@ -13068,21 +13091,13 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPathControl.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSControl.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSSlider.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectDisplayMetal.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPathComponentCell.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/out_ptr.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDisplayConfiguration.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_symmetric_difference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Headers/SFNTTypes.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentStoreResult.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPopUpButtonCell.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPathCell.h:
 
@@ -13118,10 +13133,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontCollection.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColor.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFProxySupport.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSNibLoading.h:
@@ -13141,16 +13152,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCIImageRep.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSMenu.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificateOIDs.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/CGLIOSurface.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSColorSampler.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSMediaLibraryBrowserController.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSLayoutGuide.h:
 
@@ -13182,10 +13183,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSGridView.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSGradient.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVOpenGLTexture.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSGlyphInfo.h:
@@ -13198,10 +13195,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSForm.h:
 
-/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/layout.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontPanel.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFNotificationCenter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPersistentDocument.h:
@@ -13213,6 +13206,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontDescriptor.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColor.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontCollection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontAssetRequest.h:
 
@@ -13245,6 +13242,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecIdentitySearch.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCursor.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSSlider.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSControl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSComboButton.h:
 
@@ -13376,6 +13377,14 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Object.cpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/clock_priv.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectPalette.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inner_product.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/kauth.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.cpp:
@@ -13393,6 +13402,84 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Resources.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp:
+
+/usr/local/include/OpenEXR/halfExport.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/AIFF.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryTransaction.h:
+
+/usr/local/include/OpenEXR/half.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/language.h:
+
+/usr/local/include/OpenEXR/ImfTileDescription.h:
+
+/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/layout.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSFontPanel.h:
+
+/usr/local/include/OpenEXR/ImfName.h:
+
+/usr/local/include/OpenEXR/ImfFrameBuffer.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSGradient.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:
+
+/usr/local/include/OpenEXR/ImfNamespace.h:
+
+/usr/local/include/OpenEXR/ImfCompression.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h:
+
+/usr/local/include/OpenEXR/ImfArray.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/signal.h:
+
+/usr/local/include/OpenEXR/ImathVec.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificateOIDs.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/CGLIOSurface.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSColorSampler.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSMediaLibraryBrowserController.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/HIShape.h:
+
+/usr/local/include/OpenEXR/ImathNamespace.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindowTab.h:
+
+/usr/local/include/OpenEXR/ImathMath.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/dispatch/once.h:
+
+/usr/local/include/OpenEXR/ImathInt64.h:
+
+/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/tabheader.h:
+
+/usr/local/include/OpenEXR/ImathExc.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPortNameServer.h:
+
+/usr/local/include/OpenEXR/ImathBox.h:
+
+/usr/local/include/OpenEXR/IlmBaseConfig.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectDisplayMetal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPathComponentCell.h:
+
+/usr/local/include/OpenEXR/IexBaseExc.h:
+
+/usr/local/include/OpenEXR/IexExport.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBundle.h:
 
@@ -13420,13 +13507,13 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSLightweightMigrationStage.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/signal.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_o_dsync.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/setjmp.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/os/workgroup_interval.h:
+
+/usr/local/include/OpenEXR/OpenEXRConfig.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/os/workgroup.h:
 
@@ -13548,6 +13635,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURLEnumerator.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFTree.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFTimeZone.h:
@@ -13607,10 +13696,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFCGTypes.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/AIFF.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryTransaction.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBitVector.h:
 
@@ -13677,8 +13762,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/theme.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSDragging.h:
-
-/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/tabheader.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/stackedwidget.h:
 
@@ -13766,9 +13849,9 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Householder/HouseholderSequence.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGConvertColorDataWithFormat.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSTokenField.h:
 
@@ -13846,8 +13929,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/products/GeneralMatrixVector.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h:
-
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Editor.h:
@@ -13863,6 +13944,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/arch/SSE/Complex.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserNotification.h:
+
+/usr/local/include/OpenEXR/IexNamespace.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/DiagonalProduct.h:
 
@@ -13954,15 +14039,23 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/MathFunctionsImpl.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/MathFunctions.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/MapBase.h:
 
-/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/Inverse.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDistantObject.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryChange.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
+
+/usr/local/include/OpenEXR/ImfHeader.h:
+
+/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/Inverse.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/IO.h:
 
@@ -14038,6 +14131,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSTextListElement.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectDisplay.h:
+
+/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/LU:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/Jacobi:
@@ -14060,15 +14157,11 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/Cholesky:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:
-
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/xmmintrin.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/dispatch/once.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h:
 
@@ -14123,8 +14216,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSSliderAccessory.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/aliasing_iterator.h:
 
@@ -14197,6 +14288,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
+
+/usr/local/include/OpenEXR/ImfRgba.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:
 
@@ -14512,13 +14607,21 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentityAuthority.h:
 
+/usr/local/include/OpenEXR/ImfForward.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSTextAlternatives.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecReadTransform.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
 
+/usr/local/include/OpenEXR/ImfPixelType.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDisplayStream.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
 
@@ -14540,6 +14643,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
+
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/include/nanogui/textbox.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h:
@@ -14556,6 +14661,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale:
 
+/usr/local/include/OpenEXR/ImfThreading.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_mcontext.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Eigenvalues/RealQZ.h:
@@ -14567,6 +14674,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h:
+
+/usr/local/include/OpenEXR/ImathExport.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit:
 
@@ -14644,9 +14753,9 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/17/include/tmmintrin.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSQueryGenerationToken.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/tmmintrin.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:
 
@@ -14805,14 +14914,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCollectionViewCompositionalLayout.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDistantObject.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
 
@@ -15206,9 +15307,15 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDisplayConfiguration.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/out_ptr.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/SpeechSynthesis.framework/Headers/SpeechSynthesis.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
+
+/usr/local/include/OpenEXR/ImfLineOrder.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
 
@@ -15296,9 +15403,9 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCollectionViewFlowLayout.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h:
+/usr/local/include/OpenEXR/ImfInt64.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/HIShape.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h:
 
@@ -15642,8 +15749,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSStatusBar.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/language.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/strict_weak_ordering_check.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPopUpButton.h:
@@ -15672,11 +15777,7 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPropertyDescription.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentHistoryToken.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/in_place.h:
 
@@ -15711,8 +15812,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/thread_act.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPropertyMapping.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h:
 
@@ -15814,6 +15913,8 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mbstate_t.h:
 
+/usr/local/include/OpenEXR/ImathPlatform.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/includes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h:
@@ -15834,7 +15935,11 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/cups/language.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/modulo.h:
 
@@ -15922,8 +16027,6 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/rotate.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSPersistentStoreCoordinator.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Core/util/XprHelper.h:
@@ -15971,6 +16074,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/InternetConfig.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSScriptStandardSuiteCommands.h:
+
+/usr/local/include/OpenEXR/ImathLimits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
 
@@ -16269,6 +16376,10 @@ CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o: /Users/xiezili/Desktop/Project-3
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAffineTransform.h:
+
+/usr/local/include/OpenEXR/ImfExport.h:
 
 /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui/ext/eigen/Eigen/src/Householder/Householder.h:
 

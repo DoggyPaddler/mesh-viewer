@@ -257,6 +257,7 @@ mesh-viewer: CMakeFiles/mesh-viewer.dir/src/fileDialog.mm.o
 mesh-viewer: CMakeFiles/mesh-viewer.dir/build.make
 mesh-viewer: lib/nanogui/libnanogui.dylib
 mesh-viewer: soil/libsoil.a
+mesh-viewer: /usr/local/lib/libIlmImf.dylib
 mesh-viewer: CMakeFiles/mesh-viewer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable mesh-viewer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mesh-viewer.dir/link.txt --verbose=$(VERBOSE)

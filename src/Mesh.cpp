@@ -3,6 +3,161 @@
 #include <map>
 #include <algorithm>
 #include <cmath>
+#include <limits>
+#include <numeric>
+
+namespace {
+
+struct AOTriangle {
+	Eigen::Vector3f a;
+	Eigen::Vector3f b;
+	Eigen::Vector3f c;
+	Eigen::Vector3f bounds_min;
+	Eigen::Vector3f bounds_max;
+	Eigen::Vector3f centroid;
+};
+
+struct AOBvhNode {
+	Eigen::Vector3f bounds_min;
+	Eigen::Vector3f bounds_max;
+	int start = 0;
+	int count = 0;
+	int left = -1;
+	int right = -1;
+};
+
+class AOTriangleBvh {
+public:
+	explicit AOTriangleBvh(const Eigen::MatrixXf &vertices, const Eigen::MatrixXi &indices) {
+		triangles.reserve(indices.rows());
+		for (int i = 0; i < indices.rows(); ++i) {
+			AOTriangle triangle;
+			triangle.a = vertices.row(indices(i, 0));
+			triangle.b = vertices.row(indices(i, 1));
+			triangle.c = vertices.row(indices(i, 2));
+			triangle.bounds_min = triangle.a.cwiseMin(triangle.b).cwiseMin(triangle.c);
+			triangle.bounds_max = triangle.a.cwiseMax(triangle.b).cwiseMax(triangle.c);
+			triangle.centroid = (triangle.a + triangle.b + triangle.c) / 3.0f;
+			if ((triangle.b - triangle.a).cross(triangle.c - triangle.a).squaredNorm() > 1e-16f) {
+				triangles.push_back(triangle);
+			}
+		}
+
+		order.resize(triangles.size());
+		std::iota(order.begin(), order.end(), 0);
+		if (!order.empty()) {
+			buildNode(0, (int)order.size());
+		}
+	}
+
+	bool occluded(const Eigen::Vector3f &origin, const Eigen::Vector3f &direction,
+			   float max_distance, float ray_epsilon) const {
+		return !nodes.empty() && intersectsNode(0, origin, direction, max_distance, ray_epsilon);
+	}
+
+private:
+	std::vector<AOTriangle> triangles;
+	std::vector<int> order;
+	std::vector<AOBvhNode> nodes;
+
+	int buildNode(int start, int end) {
+		const int node_index = (int)nodes.size();
+		nodes.emplace_back();
+		AOBvhNode &node = nodes[node_index];
+		node.bounds_min = Eigen::Vector3f::Constant(std::numeric_limits<float>::max());
+		node.bounds_max = Eigen::Vector3f::Constant(std::numeric_limits<float>::lowest());
+		Eigen::Vector3f centroid_min = node.bounds_min;
+		Eigen::Vector3f centroid_max = node.bounds_max;
+		for (int i = start; i < end; ++i) {
+			const AOTriangle &triangle = triangles[order[i]];
+			node.bounds_min = node.bounds_min.cwiseMin(triangle.bounds_min);
+			node.bounds_max = node.bounds_max.cwiseMax(triangle.bounds_max);
+			centroid_min = centroid_min.cwiseMin(triangle.centroid);
+			centroid_max = centroid_max.cwiseMax(triangle.centroid);
+		}
+
+		const int triangle_count = end - start;
+		if (triangle_count <= 8) {
+			node.start = start;
+			node.count = triangle_count;
+			return node_index;
+		}
+
+		Eigen::Vector3f extent = centroid_max - centroid_min;
+		int axis = 0;
+		if (extent.y() > extent.x()) axis = 1;
+		if (extent.z() > extent(axis)) axis = 2;
+		const int middle = start + triangle_count / 2;
+		std::nth_element(order.begin() + start, order.begin() + middle, order.begin() + end,
+			[this, axis](int lhs, int rhs) {
+				return triangles[lhs].centroid(axis) < triangles[rhs].centroid(axis);
+			});
+		const int left = buildNode(start, middle);
+		const int right = buildNode(middle, end);
+		nodes[node_index].left = left;
+		nodes[node_index].right = right;
+		return node_index;
+	}
+
+	static bool intersectsBounds(const AOBvhNode &node, const Eigen::Vector3f &origin,
+							  const Eigen::Vector3f &direction, float max_distance) {
+		float near_distance = 0.0f;
+		float far_distance = max_distance;
+		for (int axis = 0; axis < 3; ++axis) {
+			if (std::fabs(direction(axis)) < 1e-8f) {
+				if (origin(axis) < node.bounds_min(axis) || origin(axis) > node.bounds_max(axis)) {
+					return false;
+				}
+				continue;
+			}
+			const float inverse_direction = 1.0f / direction(axis);
+			float first = (node.bounds_min(axis) - origin(axis)) * inverse_direction;
+			float second = (node.bounds_max(axis) - origin(axis)) * inverse_direction;
+			if (first > second) std::swap(first, second);
+			near_distance = std::max(near_distance, first);
+			far_distance = std::min(far_distance, second);
+			if (far_distance < near_distance) return false;
+		}
+		return far_distance > 0.0f;
+	}
+
+	static bool intersectsTriangle(const AOTriangle &triangle, const Eigen::Vector3f &origin,
+							   const Eigen::Vector3f &direction, float max_distance, float ray_epsilon) {
+		const Eigen::Vector3f edge1 = triangle.b - triangle.a;
+		const Eigen::Vector3f edge2 = triangle.c - triangle.a;
+		const Eigen::Vector3f p = direction.cross(edge2);
+		const float determinant = edge1.dot(p);
+		if (std::fabs(determinant) < 1e-8f) return false;
+
+		const float inverse_determinant = 1.0f / determinant;
+		const Eigen::Vector3f t = origin - triangle.a;
+		const float u = t.dot(p) * inverse_determinant;
+		if (u < 0.0f || u > 1.0f) return false;
+		const Eigen::Vector3f q = t.cross(edge1);
+		const float v = direction.dot(q) * inverse_determinant;
+		if (v < 0.0f || u + v > 1.0f) return false;
+		const float distance = edge2.dot(q) * inverse_determinant;
+		return distance > ray_epsilon && distance < max_distance;
+	}
+
+	bool intersectsNode(int node_index, const Eigen::Vector3f &origin,
+					 const Eigen::Vector3f &direction, float max_distance, float ray_epsilon) const {
+		const AOBvhNode &node = nodes[node_index];
+		if (!intersectsBounds(node, origin, direction, max_distance)) return false;
+		if (node.count > 0) {
+			for (int i = node.start; i < node.start + node.count; ++i) {
+				if (intersectsTriangle(triangles[order[i]], origin, direction, max_distance, ray_epsilon)) {
+					return true;
+				}
+			}
+			return false;
+		}
+		return intersectsNode(node.left, origin, direction, max_distance, ray_epsilon) ||
+			intersectsNode(node.right, origin, direction, max_distance, ray_epsilon);
+	}
+};
+
+}
 
 void Mesh::buildBoxProjectionVT(std::atomic<float> *progress, std::atomic<bool> *cancel_requested) {
 	if (vec_V.empty()) {
@@ -210,6 +365,62 @@ void Mesh::buildIndices() {
 	}
 }
 
+void Mesh::buildAO(std::atomic<float> *progress, std::atomic<bool> *cancel_requested) {
+	const int vertex_count = (int)V.rows();
+	AO = Eigen::MatrixXf::Ones(vertex_count, 1);
+	if (vertex_count == 0 || Indices.rows() == 0 || VN.rows() != vertex_count) {
+		return;
+	}
+
+	AOTriangleBvh bvh(V, Indices);
+	const Eigen::Vector3f bounds_min = V.colwise().minCoeff().transpose();
+	const Eigen::Vector3f bounds_max = V.colwise().maxCoeff().transpose();
+	const float mesh_extent = (bounds_max - bounds_min).norm();
+	const float ray_bias = std::max(mesh_extent * 1e-4f, 1e-6f);
+	const float ray_epsilon = ray_bias * 0.25f;
+	const float max_distance = std::max(mesh_extent * 0.35f, ray_bias * 4.0f);
+	const int sample_count = 32;
+	const float golden_angle = 2.39996323f;
+
+	for (int vertex = 0; vertex < vertex_count; ++vertex) {
+		if (cancel_requested != nullptr && cancel_requested->load()) {
+			return;
+		}
+
+		Eigen::Vector3f normal = VN.row(vertex).transpose();
+		if (normal.squaredNorm() < 1e-12f) {
+			AO(vertex, 0) = 1.0f;
+			continue;
+		}
+		normal.normalize();
+		const Eigen::Vector3f reference = std::fabs(normal.y()) < 0.999f
+			? Eigen::Vector3f::UnitY()
+			: Eigen::Vector3f::UnitX();
+		const Eigen::Vector3f tangent = reference.cross(normal).normalized();
+		const Eigen::Vector3f bitangent = normal.cross(tangent);
+		const Eigen::Vector3f origin = V.row(vertex).transpose() + normal * ray_bias;
+		int occluded_rays = 0;
+
+		for (int sample = 0; sample < sample_count; ++sample) {
+			const float xi = (sample + 0.5f) / sample_count;
+			const float radius = std::sqrt(xi);
+			const float angle = sample * golden_angle;
+			const float normal_component = std::sqrt(1.0f - xi);
+			const Eigen::Vector3f direction =
+				tangent * (radius * std::cos(angle)) +
+				bitangent * (radius * std::sin(angle)) + normal * normal_component;
+			if (bvh.occluded(origin, direction, max_distance, ray_epsilon)) {
+				++occluded_rays;
+			}
+		}
+
+		AO(vertex, 0) = 1.0f - (float)occluded_rays / sample_count;
+		if (progress != nullptr && (vertex % 256 == 0)) {
+			progress->store(0.995f + 0.004f * (float)(vertex + 1) / vertex_count);
+		}
+	}
+}
+
 Mesh::Mesh(std::string filename, float scale, std::atomic<float> *progress, std::atomic<bool> *cancel_requested, std::atomic<int> *stage) {
 	load_cancelled = false;
 	if (stage != nullptr) {
@@ -345,6 +556,11 @@ Mesh::Mesh(std::string filename, float scale, std::atomic<float> *progress, std:
 		return;
 	}
 	buildIndices();
+	buildAO(progress, cancel_requested);
+	if (cancel_requested != nullptr && cancel_requested->load()) {
+		load_cancelled = true;
+		return;
+	}
 	if (progress != nullptr) progress->store(1.0f);
 
 	// printf("V: %ld, N: %ld, TC: %ld, T: %ld\n", V.rows(), N.rows(), TC.rows(), T.rows());

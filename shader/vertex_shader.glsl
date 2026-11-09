@@ -6,12 +6,14 @@ in vec3 vertex_normal;
 in vec2 tex_coord;
 in vec3 face_normal;
 in vec3 tangent;
+in float vertex_ao;
 
 out vec3 fs_vn;
 out vec2 fs_text_coord;
 out vec3 fs_fn;
 out vec3 fs_tangt;
 out vec4 fs_pos;
+out float fs_ao;
 
 // out vec3 f_color;
 
@@ -27,11 +29,13 @@ uniform float p;
 
 
 void main() {
-	gl_Position = view * proj * camera * model * vec4(position[0], position[1], position[2], 1.0);
-	fs_vn = vertex_normal;
+	vec4 world_position = model * vec4(position[0], position[1], position[2], 1.0);
+	gl_Position = view * proj * camera * world_position;
+	fs_vn = mat3(model) * vertex_normal;
 	fs_text_coord = vec2(tex_coord.x, tex_coord.y);
 
 	fs_fn = face_normal;
-	fs_tangt = tangent;
-	fs_pos = position;
+	fs_tangt = mat3(model) * tangent;
+	fs_pos = world_position;
+	fs_ao = vertex_ao;
 }

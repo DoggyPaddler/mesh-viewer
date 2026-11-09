@@ -69,11 +69,14 @@ public:
     nanogui::Button *open_mesh;
     int selectedIndex;
     std::function<void(int)> onDeleteRequest;
+    std::function<void(int)> onSelectRequest;
 
     MeshList(nanogui::Widget *parent, std::vector<std::string> item_names);
     nanogui::Button * addItem(const std::string item_name, int i);
     void removeItem(int index);
     void setDeleteCallback(std::function<void(int)> callback);
+    void setSelectCallback(std::function<void(int)> callback);
+    void setSelectedIndex(int index, bool close_popup);
     virtual bool scrollEvent(const Eigen::Vector2i &p, const Eigen::Vector2f &rel) override;
 
 protected:
@@ -127,7 +130,9 @@ class GUI {
 		nanogui::Window *uploadWindow;
         nanogui::ComboBox *render_mode;
         nanogui::ComboBox *texOrColor;
+        MeshList *environment_maps;
         nanogui::PopupButton *light_popup;
+        nanogui::PopupButton *light_submenu;
         nanogui::FloatBox<float> *light_position_x;
         nanogui::FloatBox<float> *light_position_y;
         nanogui::FloatBox<float> *light_position_z;

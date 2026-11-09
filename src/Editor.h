@@ -28,7 +28,11 @@ class Editor {
 		int cur_tex;
 		int render_mode;
 		int useTex;
+		unsigned int environment_texture;
+		unsigned int background_vao;
+		bool environment_enabled;
 		Vector3f light_pos;
+		Eigen::Matrix4f model;
 		Cursor* cursor;
 		Camera* cam;
 		ResourceManager *resources;
@@ -43,6 +47,7 @@ class Editor {
 		std::unique_ptr<Mesh> pending_uploaded_mesh;
 		std::thread mesh_upload_thread;
 		std::string pending_uploaded_mesh_name;
+		std::vector<std::string> environment_map_paths;
 
 		Editor(Eigen::Vector3f cam_init_pos, std::vector<std::string> obj_list, std::vector<std::string> tex_list); // Eigen::Vector3f 
 		~Editor();
@@ -53,6 +58,8 @@ class Editor {
 		void cancel_mesh_upload();
 		void poll_mesh_upload();
 		void add_tex(std::string foldername);
+		void delete_environment_map(int index);
+		bool setEnvironmentMap(const std::string &path);
 		void setGUICallbacks();
 
 };

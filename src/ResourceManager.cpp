@@ -51,11 +51,12 @@ void ResourceManager::loadMeshes(int i) {
 
     _usedEBOs[i]->bind();
     
-    _usedPrograms[0]->bindVertexAttribArray("position", *(_usedVBOs[i * 5]), *(_usedEBOs[i]));
-    _usedPrograms[0]->bindVertexAttribArray("vertex_normal",*(_usedVBOs[i* 5 + 1]), *(_usedEBOs[i]));
-    _usedPrograms[0]->bindVertexAttribArray("tex_coord",*(_usedVBOs[i* 5 + 2]), *(_usedEBOs[i]));
-    _usedPrograms[0]->bindVertexAttribArray("face_normal",*(_usedVBOs[i* 5 + 3]), *(_usedEBOs[i]));
-    _usedPrograms[0]->bindVertexAttribArray("tangent",*(_usedVBOs[i* 5 + 4]), *(_usedEBOs[i]));
+	_usedPrograms[0]->bindVertexAttribArray("position", *(_usedVBOs[i * 6]), *(_usedEBOs[i]));
+	_usedPrograms[0]->bindVertexAttribArray("vertex_normal",*(_usedVBOs[i* 6 + 1]), *(_usedEBOs[i]));
+	_usedPrograms[0]->bindVertexAttribArray("tex_coord",*(_usedVBOs[i* 6 + 2]), *(_usedEBOs[i]));
+	_usedPrograms[0]->bindVertexAttribArray("face_normal",*(_usedVBOs[i* 6 + 3]), *(_usedEBOs[i]));
+	_usedPrograms[0]->bindVertexAttribArray("tangent",*(_usedVBOs[i* 6 + 4]), *(_usedEBOs[i]));
+	_usedPrograms[0]->bindVertexAttribArray("vertex_ao",*(_usedVBOs[i* 6 + 5]), *(_usedEBOs[i]));
 
     // glBindVertexArray(0);
     // glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -63,19 +64,20 @@ void ResourceManager::loadMeshes(int i) {
 }
 
 void ResourceManager::loadTex(int i) {
-	activeTexture(i * 4 + 0);
-	activeTexture(i * 4 + 1);
-	activeTexture(i * 4 + 2);
-	activeTexture(i * 4 + 3);
-	// activeTexture(i * 4 + 4);
-	// printf("_usedTextures : %lu, i * 4 + 3: %d\n", _usedTextures.size(), i * 4 + 3);
-	// if (i == 0) activeTexture(i * 4 + 4);
-	// activeTexture(i * 5 + 4);
+	const int tex_start = i * 4;
+	if (tex_start < 0 || tex_start + 3 >= (int)_usedTextures.size()) {
+		return;
+	}
 
-    glUniform1i(_usedPrograms[0]->uniform("tex_normal1"), i * 4 + 0); // d
-    glUniform1i(_usedPrograms[0]->uniform("tex_normal2"), i * 4 + 1); // n
-    glUniform1i(_usedPrograms[0]->uniform("tex_normal3"), i * 4 + 2); // g
-    glUniform1i(_usedPrograms[0]->uniform("tex_normal4"), i * 4 + 3); // s
+	for (int slot = 0; slot < 4; ++slot) {
+		glActiveTexture(GL_TEXTURE0 + slot);
+		_usedTextures[tex_start + slot]->bind();
+	}
+
+    glUniform1i(_usedPrograms[0]->uniform("tex_normal1"), 0); // d
+    glUniform1i(_usedPrograms[0]->uniform("tex_normal2"), 1); // n
+    glUniform1i(_usedPrograms[0]->uniform("tex_normal3"), 2); // g
+    glUniform1i(_usedPrograms[0]->uniform("tex_normal4"), 3); // s
     // glUniform1i(_usedPrograms[0]->uniform("tex_normal5"), i * 5 + 5); // s
 }
 

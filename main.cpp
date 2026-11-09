@@ -1,6 +1,7 @@
 // #include <GLFW/glfw3.h>
 #include <Eigen/Core>
 #include <Eigen/Dense>
+#include <Eigen/Geometry>
 #include <algorithm>
 #include <iostream>
 #include <SOIL/SOIL.h>
@@ -58,21 +59,30 @@ void mouse_move_callback(GLFWwindow* window, double xpos, double ypos) {
     // Track the mouse positions
     editor->cursor->p0 = editor->cursor->p1;
     editor->cursor->p1 = pixel;
-    if (editor->cursor->right_key_pressed == 1) {
-        float a = editor->cursor->p1(0) - editor->cursor->p0(0);
-        float b = editor->cursor->p1(1) - editor->cursor->p0(1);
-        editor->cam->alpha_shift += 0.5 * a * M_PI/90.0;
-        editor->cam->beta_shift -= 0.5 * b * M_PI/90.0;
-    }
+    const float a = editor->cursor->p1(0) - editor->cursor->p0(0);
+    const float b = editor->cursor->p1(1) - editor->cursor->p0(1);
+    const float sensitivity = 0.5f * M_PI / 90.0f;
     bool shift_pressed = glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS ||
                          glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS;
-    if (shift_pressed) {
-        float dx = editor->cursor->p1(0) - editor->cursor->p0(0);
-        float dy = editor->cursor->p1(1) - editor->cursor->p0(1);
+    if (editor->cursor->right_key_pressed == 1 && shift_pressed) {
+        const float pole_limit = 0.5f * M_PI - 0.01f;
+        editor->cam->alpha_shift += a * sensitivity;
+        editor->cam->beta_shift = std::max(-pole_limit, std::min(pole_limit,
+            editor->cam->beta_shift + b * sensitivity));
+    } else if (editor->cursor->right_key_pressed == 1) {
+        const Eigen::Vector3f camera_right = editor->cam->camera.block<1, 3>(0, 0).transpose();
+        const Eigen::Matrix3f rotation_y = Eigen::AngleAxisf(
+            a * sensitivity, Eigen::Vector3f::UnitY()).toRotationMatrix();
+        const Eigen::Matrix3f rotation_vertical = Eigen::AngleAxisf(
+            -b * sensitivity, camera_right).toRotationMatrix();
+        const Eigen::Matrix3f updated_rotation = rotation_y * rotation_vertical * editor->model.block<3, 3>(0, 0);
+        editor->model.block<3, 3>(0, 0) = updated_rotation;
+    }
+    if (shift_pressed && editor->cursor->right_key_pressed != 1) {
         float movement_scale = editor->cam->radius / std::max(height, 1);
         Vector3f camera_right = editor->cam->camera.block<1, 3>(0, 0).transpose();
         Vector3f camera_up = editor->cam->camera.block<1, 3>(1, 0).transpose();
-        editor->light_pos += movement_scale * (dx * camera_right + dy * camera_up);
+        editor->light_pos += movement_scale * (a * camera_right + b * camera_up);
         editor->gui.setLightPosition(editor->light_pos);
     }
 }
@@ -105,9 +115,32 @@ void setWindowCallbacks() {
 }
 
 void renderer_draw() {
+    if (editor->environment_enabled && editor->environment_texture != 0) {
+        Program *background_program = editor->resources->_usedPrograms[1];
+        background_program->bind();
+        Eigen::Matrix4f inv_view_proj = (editor->cam->view * editor->cam->persp * editor->cam->camera).inverse();
+        glUniformMatrix4fv(background_program->uniform("inv_view_proj"), 1, GL_FALSE, inv_view_proj.data());
+        Vector3f background_camera_pos = editor->cam->cam_pos;
+        glUniform3f(background_program->uniform("camera_pos"), background_camera_pos(0), background_camera_pos(1), background_camera_pos(2));
+        const float base_radius = 12.0f;
+        const float environment_zoom = std::max(0.25f, std::min(2.0f, editor->cam->radius / base_radius));
+        glUniform1f(background_program->uniform("environment_zoom"), environment_zoom);
+        glUniform1i(background_program->uniform("environment_map"), 4);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, editor->environment_texture);
+        glBindVertexArray(editor->background_vao);
+        glDisable(GL_DEPTH_TEST);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glEnable(GL_DEPTH_TEST);
+        glActiveTexture(GL_TEXTURE0);
+    }
+
     editor->resources->_usedPrograms[0]->bind();
     glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("view"), 1, GL_FALSE, editor->cam->view.data());
     glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("camera"), 1, GL_FALSE, editor->cam->camera.data());
+    glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("model"), 1, GL_FALSE, editor->model.data());
+    glUniform1i(editor->resources->_usedPrograms[0]->uniform("environment_map"), 4);
+    glUniform1i(editor->resources->_usedPrograms[0]->uniform("use_environment_map"), editor->environment_enabled ? 1 : 0);
     Vector3f light_pos = editor->light_pos;
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("light_pos"), light_pos(0), light_pos(1),light_pos(2));
     Vector3f camera_pos = editor->cam->cam_pos;
@@ -116,6 +149,9 @@ void renderer_draw() {
     glUniform1i(editor->resources->_usedPrograms[0]->uniform("useTex"), editor->useTex);
 
     editor->resources->loadTex(editor->cur_tex);
+    glActiveTexture(GL_TEXTURE4);
+    glBindTexture(GL_TEXTURE_2D, editor->environment_texture);
+    glActiveTexture(GL_TEXTURE0);
 
     editor->resources->_usedVAOs[editor->cur_mesh]->bind();
     if (editor->cur_mesh != editor->gui.ml->selectedIndex) {
@@ -143,21 +179,21 @@ int main(int /* argc */, char ** /* argv */) {
 
     std::vector<std::string> obj_list = {"../models/bunny2.obj", "../models/sample2.obj", "../models/sample1.obj"};
     std::vector<std::string> tex_list = {"../textures/JT-19228", "../textures/black_Lc1", "../textures/fabric_0034", 
-                    "../textures/black_L10", "../textures/st_brown_L1", "../textures/orange_L3", "../textures/metal10"}; // "../textures/JT-19228", 
+                    "../textures/black_L10", "../textures/st_brown_L1", "../textures/orange_L3", "../textures/metal10"}; // "../textures/JT-19228", "../textures/black_Lc1",
 
     editor = new Editor(Eigen::Vector3f(12.0, 0.0, 0.0), obj_list, tex_list);
     editor->setGUICallbacks();
     // editor->gui.nanogui_init(editor->window);
 
     editor->resources->addProgram(new Program(),"../shader/vertex_shader.glsl","../shader/fragment_shader.glsl","outColor");
+    editor->resources->addProgram(new Program(),"../shader/background_vertex.glsl","../shader/background_fragment.glsl","outColor");
+    glGenVertexArrays(1, &editor->background_vao);
     editor->resources->_usedPrograms[0]->bind();
 
     for (std::string obj_file : obj_list) editor->insert_mesh(obj_file, 6);
     for (std::string tex_dir : tex_list) editor->add_tex(tex_dir + "/");
     // std::string file = pathname.substr(pathname.find_last_of("/") + 1, pathname.length());
 
-    Eigen::MatrixXf m = Eigen::MatrixXf::Identity(4, 4);
-    glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("model"), 1, GL_FALSE, m.data()); 
     glUniformMatrix4fv(editor->resources->_usedPrograms[0]->uniform("proj"), 1, GL_FALSE, editor->cam->persp.data());
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("diffuse"), 110,100,160);
     glUniform3f(editor->resources->_usedPrograms[0]->uniform("specular"), 100,100,100);

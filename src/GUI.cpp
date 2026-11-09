@@ -151,6 +151,10 @@ void MeshList::selectItem(int index, bool close_popup) {
     setCaption(names[selectedIndex]);
     cumulative_rel(1) = selectedIndex * 6.0;
 
+    if (onSelectRequest) {
+        onSelectRequest(selectedIndex);
+    }
+
     if (close_popup) {
         popup()->setVisible(false);
         setPushed(false);
@@ -191,6 +195,14 @@ void MeshList::removeItem(int index) {
 
 void MeshList::setDeleteCallback(std::function<void(int)> callback) {
     onDeleteRequest = callback;
+}
+
+void MeshList::setSelectCallback(std::function<void(int)> callback) {
+    onSelectRequest = callback;
+}
+
+void MeshList::setSelectedIndex(int index, bool close_popup) {
+    selectItem(index, close_popup);
 }
 
 bool MeshList::scrollEvent(const Eigen::Vector2i &p, const Eigen::Vector2f &rel) {
@@ -632,14 +644,24 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     light_popup->setFixedSize(Eigen::Vector2i(120, 20));
 
     nanogui::Popup *light_popup_page = light_popup->popup();
-    light_popup_page->setFixedWidth(230);
-    nanogui::GridLayout *light_layout = new nanogui::GridLayout(
-        nanogui::Orientation::Horizontal, 2, nanogui::Alignment::Middle, 15, 0);
-    light_layout->setColAlignment({nanogui::Alignment::Maximum, nanogui::Alignment::Fill});
-    light_popup_page->setLayout(light_layout);
+    // light_popup_page->setFixedWidth(120);
+    light_popup_page->setLayout(new nanogui::BoxLayout(
+        nanogui::Orientation::Vertical, nanogui::Alignment::Fill, 10, 0));
 
-    nanogui::Label *light_intensity_label = new nanogui::Label(light_popup_page, "Light Intensity", "sans");
-    nanogui::IntBox<int>* tb_light_intensity = new nanogui::IntBox<int>(light_popup_page);
+    environment_maps = new MeshList(light_popup_page, {"qwantani_dusk_2_2k.exr"});
+    environment_maps->setFixedSize(Eigen::Vector2i(120, 20));
+    environment_maps->setCaption("Env. Map");
+
+    light_submenu = new nanogui::PopupButton(light_popup_page, "Light");
+    light_submenu->setFixedSize(Eigen::Vector2i(120, 20));
+    nanogui::Popup *light_page = light_submenu->popup();
+    nanogui::GridLayout *light_layout = new nanogui::GridLayout(
+        nanogui::Orientation::Horizontal, 2, nanogui::Alignment::Fill, 10, 0);
+    light_layout->setColAlignment({nanogui::Alignment::Maximum, nanogui::Alignment::Fill});
+    light_page->setLayout(light_layout);
+
+    nanogui::Label *light_intensity_label = new nanogui::Label(light_page, "Intensity", "sans");
+    nanogui::IntBox<int>* tb_light_intensity = new nanogui::IntBox<int>(light_page);
     tb_light_intensity->setEditable(true);
     tb_light_intensity->setFixedSize(Eigen::Vector2i(120, 20));
     tb_light_intensity->setValue(50);
@@ -654,9 +676,9 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
     light_intensity = new Row(light_intensity_label, tb_light_intensity);
     light_intensity->setVisible(true);
 
-    auto create_position_box = [this, light_popup_page](const std::string &axis) {
-        new nanogui::Label(light_popup_page, axis, "sans");
-        nanogui::FloatBox<float> *box = new nanogui::FloatBox<float>(light_popup_page);
+    auto create_position_box = [this, light_page](const std::string &axis) {
+        new nanogui::Label(light_page, axis, "sans");
+        nanogui::FloatBox<float> *box = new nanogui::FloatBox<float>(light_page);
         box->setEditable(true);
         box->setSpinnable(true);
         box->setValueIncrement(0.1f);
@@ -666,9 +688,9 @@ void GUI::nanogui_init(GLFWwindow* window, std::vector<std::string> obj_list, st
         return box;
     };
 
-    light_position_x = create_position_box("Position X");
-    light_position_y = create_position_box("Position Y");
-    light_position_z = create_position_box("Position Z");
+    light_position_x = create_position_box("Pos X");
+    light_position_y = create_position_box("Pos Y");
+    light_position_z = create_position_box("Pos Z");
 
     lab = new nanogui::Label(nanoguiWindow, "Shineness", "sans");
     tb = new nanogui::IntBox<int>(nanoguiWindow);

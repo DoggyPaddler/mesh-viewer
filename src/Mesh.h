@@ -25,6 +25,7 @@ class Mesh {
 
 		Eigen::MatrixXf T;
 		Eigen::MatrixXf B;
+		Eigen::MatrixXf AO;
 
 		Eigen::MatrixXi Indices;
 
@@ -40,6 +41,7 @@ class Mesh {
 		void buildTC();
 		void buildBoxProjectionVT(std::atomic<float> *progress = nullptr, std::atomic<bool> *cancel_requested = nullptr);
 		void buildN();
+		void buildAO(std::atomic<float> *progress = nullptr, std::atomic<bool> *cancel_requested = nullptr);
 
 		void buildIndices();
 };

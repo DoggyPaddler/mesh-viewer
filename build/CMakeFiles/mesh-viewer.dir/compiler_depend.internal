@@ -4150,6 +4150,37 @@ CMakeFiles/mesh-viewer.dir/src/Editor.cpp.o
  /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/Mesh.h
  /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ReadObj.h
  /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/ResourceManager.h
+ /usr/local/include/OpenEXR/IexBaseExc.h
+ /usr/local/include/OpenEXR/IexExport.h
+ /usr/local/include/OpenEXR/IexNamespace.h
+ /usr/local/include/OpenEXR/IlmBaseConfig.h
+ /usr/local/include/OpenEXR/ImathBox.h
+ /usr/local/include/OpenEXR/ImathExc.h
+ /usr/local/include/OpenEXR/ImathExport.h
+ /usr/local/include/OpenEXR/ImathInt64.h
+ /usr/local/include/OpenEXR/ImathLimits.h
+ /usr/local/include/OpenEXR/ImathMath.h
+ /usr/local/include/OpenEXR/ImathNamespace.h
+ /usr/local/include/OpenEXR/ImathPlatform.h
+ /usr/local/include/OpenEXR/ImathVec.h
+ /usr/local/include/OpenEXR/ImfArray.h
+ /usr/local/include/OpenEXR/ImfCompression.h
+ /usr/local/include/OpenEXR/ImfExport.h
+ /usr/local/include/OpenEXR/ImfForward.h
+ /usr/local/include/OpenEXR/ImfFrameBuffer.h
+ /usr/local/include/OpenEXR/ImfHeader.h
+ /usr/local/include/OpenEXR/ImfInt64.h
+ /usr/local/include/OpenEXR/ImfLineOrder.h
+ /usr/local/include/OpenEXR/ImfName.h
+ /usr/local/include/OpenEXR/ImfNamespace.h
+ /usr/local/include/OpenEXR/ImfPixelType.h
+ /usr/local/include/OpenEXR/ImfRgba.h
+ /usr/local/include/OpenEXR/ImfRgbaFile.h
+ /usr/local/include/OpenEXR/ImfThreading.h
+ /usr/local/include/OpenEXR/ImfTileDescription.h
+ /usr/local/include/OpenEXR/OpenEXRConfig.h
+ /usr/local/include/OpenEXR/half.h
+ /usr/local/include/OpenEXR/halfExport.h
 
 CMakeFiles/mesh-viewer.dir/src/GLHelpers.cpp.o
  /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/src/GLHelpers.cpp
@@ -6473,6 +6504,11 @@ CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inner_product.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/log2.h
@@ -6697,6 +6733,7 @@ CMakeFiles/mesh-viewer.dir/src/Mesh.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print

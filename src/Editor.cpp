@@ -1,3 +1,5 @@
+#include <OpenEXR/ImfArray.h>
+#include <OpenEXR/ImfRgbaFile.h>
 #include "Editor.h"
 #include <nanogui/common.h>
 // #include "fileDialog.mm"
@@ -13,9 +15,13 @@ Editor::Editor(Eigen::Vector3f cam_init_pos, std::vector<std::string> obj_list, 
 	mesh_upload_cancel_requested.store(false);
 	mesh_upload_progress.store(0.0f);
 	mesh_upload_stage.store(0);
+	environment_texture = 0;
+	background_vao = 0;
+	environment_enabled = false;
 	cursor = new Cursor();
 	resources = new ResourceManager();
 	cam = new Camera(cam_init_pos);
+	model = Eigen::Matrix4f::Identity();
 	cam->view(0,0) = 400.0/600.0 * cam->view(1,1);
 	cur_mesh = 0;
 	cur_tex = 0;
@@ -117,14 +123,16 @@ void Editor::poll_mesh_upload() {
 	resources->addVBO(new VertexBufferObject());
 	resources->addVBO(new VertexBufferObject());
 	resources->addVBO(new VertexBufferObject());
+	resources->addVBO(new VertexBufferObject());
 	resources->addEBO(new ElementBufferObject());
 
 	resources->_usedVAOs[n]->bind();
-	resources->_usedVBOs[n*5]->update(completed_mesh->V.transpose());
-	resources->_usedVBOs[n*5+1]->update(completed_mesh->VN.transpose());
-	resources->_usedVBOs[n*5+2]->update(completed_mesh->TC.transpose());
-	resources->_usedVBOs[n*5+3]->update(completed_mesh->N.transpose());
-	resources->_usedVBOs[n*5+4]->update(completed_mesh->T.transpose());
+	resources->_usedVBOs[n*6]->update(completed_mesh->V.transpose());
+	resources->_usedVBOs[n*6+1]->update(completed_mesh->VN.transpose());
+	resources->_usedVBOs[n*6+2]->update(completed_mesh->TC.transpose());
+	resources->_usedVBOs[n*6+3]->update(completed_mesh->N.transpose());
+	resources->_usedVBOs[n*6+4]->update(completed_mesh->T.transpose());
+	resources->_usedVBOs[n*6+5]->update(completed_mesh->AO.transpose());
 	resources->_usedEBOs[n]->update(completed_mesh->Indices.transpose());
 
 	mesh_vector.push_back(*completed_mesh);
@@ -154,15 +162,17 @@ void Editor::insert_mesh(std::string filename, float scale) {
 	resources->addVBO(new VertexBufferObject());//tc
 	resources->addVBO(new VertexBufferObject());//fn
 	resources->addVBO(new VertexBufferObject());//tngt
+	resources->addVBO(new VertexBufferObject());//ao
 
 	resources->addEBO(new ElementBufferObject());//ebo
 
 	resources->_usedVAOs[n]->bind();
-	resources->_usedVBOs[n*5]->update(new_mesh.V.transpose());
-	resources->_usedVBOs[n*5+1]->update(new_mesh.VN.transpose());
-	resources->_usedVBOs[n*5+2]->update(new_mesh.TC.transpose());
-	resources->_usedVBOs[n*5+3]->update(new_mesh.N.transpose());
-	resources->_usedVBOs[n*5+4]->update(new_mesh.T.transpose());
+	resources->_usedVBOs[n*6]->update(new_mesh.V.transpose());
+	resources->_usedVBOs[n*6+1]->update(new_mesh.VN.transpose());
+	resources->_usedVBOs[n*6+2]->update(new_mesh.TC.transpose());
+	resources->_usedVBOs[n*6+3]->update(new_mesh.N.transpose());
+	resources->_usedVBOs[n*6+4]->update(new_mesh.T.transpose());
+	resources->_usedVBOs[n*6+5]->update(new_mesh.AO.transpose());
 	resources->_usedEBOs[n]->update(new_mesh.Indices.transpose());
 
 	mesh_vector.push_back(new_mesh);
@@ -184,8 +194,8 @@ void Editor::delete_mesh(int index) {
 	delete vao;
 	resources->_usedVAOs.erase(resources->_usedVAOs.begin() + index);
 
-	int vbo_start = index * 5;
-	for (int k = 0; k < 5; ++k) {
+	int vbo_start = index * 6;
+	for (int k = 0; k < 6; ++k) {
 		VertexBufferObject *vbo = resources->_usedVBOs[vbo_start];
 		vbo->free();
 		delete vbo;
@@ -267,8 +277,85 @@ void Editor::add_tex(std::string foldername) {
 
 }
 
+void Editor::delete_environment_map(int index) {
+	if (index < 0 || index >= (int)environment_map_paths.size()) {
+		return;
+	}
+
+	environment_map_paths.erase(environment_map_paths.begin() + index);
+	gui.environment_maps->removeItem(index);
+	if (gui.environment_maps->items.empty()) {
+		environment_enabled = false;
+	}
+	gui.screen->performLayout();
+}
+
+bool Editor::setEnvironmentMap(const std::string &path) {
+	try {
+		Imf::RgbaInputFile file(path.c_str());
+		const Imath::Box2i data_window = file.dataWindow();
+		const int width = data_window.max.x - data_window.min.x + 1;
+		const int height = data_window.max.y - data_window.min.y + 1;
+		Imf::Array2D<Imf::Rgba> pixels;
+		pixels.resizeErase(height, width);
+		file.setFrameBuffer(&pixels[0][0] - data_window.min.x - data_window.min.y * width, 1, width);
+		file.readPixels(data_window.min.y, data_window.max.y);
+
+		if (environment_texture == 0) {
+			glGenTextures(1, &environment_texture);
+		}
+		glActiveTexture(GL_TEXTURE4);
+		glBindTexture(GL_TEXTURE_2D, environment_texture);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA16F, width, height, 0, GL_RGBA, GL_HALF_FLOAT, &pixels[0][0]);
+		glGenerateMipmap(GL_TEXTURE_2D);
+		glActiveTexture(GL_TEXTURE0);
+		environment_enabled = true;
+		return true;
+	} catch (const std::exception &error) {
+		std::cerr << "Failed to load environment map " << path << ": " << error.what() << std::endl;
+		return false;
+	}
+}
+
 void Editor::setGUICallbacks() {
 	gui.setLightPosition(light_pos);
+	gui.light_submenu->setCallback([this]() {
+		environment_enabled = false;
+	});
+	gui.environment_maps->open_mesh->setCallback([this]() {
+		std::string pathname = nanogui::file_dialog({{"exr", "OpenEXR Image"}}, false);
+		if (pathname.empty() || !setEnvironmentMap(pathname)) return;
+
+		std::string filename = pathname.substr(pathname.find_last_of("/\\") + 1);
+		gui.environment_maps->addItem(filename, (int)gui.environment_maps->names.size());
+		gui.environment_maps->names.push_back(filename);
+		environment_map_paths.push_back(pathname);
+		gui.environment_maps->setSelectedIndex((int)gui.environment_maps->names.size() - 1, true);
+		gui.screen->performLayout();
+	});
+	gui.environment_maps->setSelectCallback([this](int index) {
+		if (index < 0 || index >= (int)environment_map_paths.size()) {
+			environment_enabled = false;
+			return;
+		}
+		setEnvironmentMap(environment_map_paths[index]);
+	});
+	gui.environment_maps->setDeleteCallback([this](int index) {
+		delete_environment_map(index);
+	});
+
+	const std::string default_environment_path = "../environment/qwantani_dusk_2_2k.exr";
+	environment_map_paths.clear();
+	environment_map_paths.push_back(default_environment_path);
+	if (setEnvironmentMap(default_environment_path)) {
+		gui.environment_maps->setSelectedIndex(0, false);
+	} else {
+		environment_enabled = false;
+	}
 
 	gui.render_mode->setCallback([this](int a) {
 		this->gui.render_mode->setSelectedIndex(a);

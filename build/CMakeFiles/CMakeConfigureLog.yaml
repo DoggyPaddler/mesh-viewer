@@ -38,7 +38,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
@@ -65,9 +64,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -118,7 +114,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
@@ -138,7 +133,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/gmake"
       - "/usr/local/mysql/bin/gmake"
       - "/Users/xiezili/maven/bin/gmake"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/gmake"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
       - "/usr/local/bin/make"
@@ -164,9 +158,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -215,7 +206,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/cc"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/cc"
@@ -242,9 +232,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -294,9 +281,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -402,7 +386,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
@@ -424,9 +407,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -469,7 +449,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
@@ -491,9 +470,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -536,7 +512,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
@@ -558,9 +533,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -603,7 +575,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
@@ -625,9 +596,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -670,7 +638,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
@@ -692,9 +659,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -737,7 +701,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
@@ -759,9 +722,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -804,7 +764,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/objcopy"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
@@ -824,7 +783,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/objcopy"
       - "/usr/local/mysql/bin/objcopy"
       - "/Users/xiezili/maven/bin/objcopy"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/objcopy"
     found: false
     search_context:
       ENV{PATH}:
@@ -846,9 +804,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -891,7 +846,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/readelf"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
@@ -911,7 +865,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/readelf"
       - "/usr/local/mysql/bin/readelf"
       - "/Users/xiezili/maven/bin/readelf"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/readelf"
     found: false
     search_context:
       ENV{PATH}:
@@ -933,9 +886,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -978,7 +928,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
@@ -998,7 +947,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/dlltool"
       - "/usr/local/mysql/bin/dlltool"
       - "/Users/xiezili/maven/bin/dlltool"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -1020,9 +968,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -1065,7 +1010,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/addr2line"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
@@ -1085,7 +1029,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/addr2line"
       - "/usr/local/mysql/bin/addr2line"
       - "/Users/xiezili/maven/bin/addr2line"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/addr2line"
     found: false
     search_context:
       ENV{PATH}:
@@ -1107,9 +1050,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -1152,7 +1092,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
@@ -1172,7 +1111,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/tapi"
       - "/usr/local/mysql/bin/tapi"
       - "/Users/xiezili/maven/bin/tapi"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -1194,9 +1132,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -1251,9 +1186,6 @@ events:
         - "/Users/xiezili/anaconda3/condabin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
   -
@@ -1301,9 +1233,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -1409,7 +1338,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/install_name_tool"
       - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/install_name_tool"
@@ -1438,9 +1366,6 @@ events:
         - "/Users/xiezili/anaconda3/condabin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
@@ -1453,8 +1378,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV"
-      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV"
+      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg"
+      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -1466,18 +1391,18 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV'
+        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg'
         
-        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48e79/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48e79.dir/build.make CMakeFiles/cmTC_48e79.dir/build
-        Building C object CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -Wl,-v -MD -MT CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_88808/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_88808.dir/build.make CMakeFiles/cmTC_88808.dir/build
+        Building C object CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -Wl,-v -MD -MT CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: x86_64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c
         clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target x86_64-apple-darwin24.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"
@@ -1490,13 +1415,13 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_48e79
-        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48e79.dir/link.txt --verbose=1
+        Linking C executable cmTC_88808
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88808.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: x86_64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_48e79 -L/usr/local/lib -v CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_88808 -L/usr/local/lib -v CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.5
         BUILD 01:44:07 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -1509,7 +1434,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -o cmTC_48e79
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -o cmTC_88808
         
       exitCode: 0
   -
@@ -1553,18 +1478,18 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV']
+        ignore line: [Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg']
         ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48e79/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48e79.dir/build.make CMakeFiles/cmTC_48e79.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -Wl -v -MD -MT CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_88808/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_88808.dir/build.make CMakeFiles/cmTC_88808.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -Wl -v -MD -MT CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: x86_64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-mppWOV -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qMOQKg -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target x86_64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"]
@@ -1577,14 +1502,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_48e79]
-        ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48e79.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_88808]
+        ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88808.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: x86_64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_48e79 -L/usr/local/lib -v CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_48e79 -L/usr/local/lib -v CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_88808 -L/usr/local/lib -v CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_88808 -L/usr/local/lib -v CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1601,10 +1526,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_48e79] ==> ignore
+          arg [cmTC_88808] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_48e79.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_88808.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld 
@@ -1647,8 +1572,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L"
-      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L"
+      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB"
+      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -1661,24 +1586,23 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L'
+        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB'
         
-        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cc1c2/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cc1c2.dir/build.make CMakeFiles/cmTC_cc1c2.dir/build
-        Building CXX object CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_657c3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_657c3.dir/build.make CMakeFiles/cmTC_657c3.dir/build
+        Building CXX object CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: x86_64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target x86_64-apple-darwin24.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        ignoring duplicate directory "/Users/xiezili/anaconda3/include/python3.7m"
         ignoring duplicate directory "/Users/xiezili/anaconda3/include/python3.7m"
         #include "..." search starts here:
         #include <...> search starts here:
@@ -1691,13 +1615,13 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_cc1c2
-        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc1c2.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_657c3
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_657c3.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: x86_64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_cc1c2 -L/usr/local/lib -v CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_657c3 -L/usr/local/lib -v CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.5
         BUILD 01:44:07 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -1710,7 +1634,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cc1c2
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_657c3
         
       exitCode: 0
   -
@@ -1760,24 +1684,23 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L']
+        ignore line: [Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB']
         ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cc1c2/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cc1c2.dir/build.make CMakeFiles/cmTC_cc1c2.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_657c3/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_657c3.dir/build.make CMakeFiles/cmTC_657c3.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: x86_64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-PfCX9L -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9ePOxB -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -cxx-isystem . -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -cxx-isystem /Users/xiezili/anaconda3/include/python3.7m -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-4.4/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target x86_64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
-        ignore line: [ignoring duplicate directory "/Users/xiezili/anaconda3/include/python3.7m"]
         ignore line: [ignoring duplicate directory "/Users/xiezili/anaconda3/include/python3.7m"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
@@ -1790,14 +1713,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_cc1c2]
-        ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc1c2.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_657c3]
+        ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_657c3.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: x86_64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_cc1c2 -L/usr/local/lib -v CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_cc1c2 -L/usr/local/lib -v CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_657c3 -L/usr/local/lib -v CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_657c3 -L/usr/local/lib -v CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1814,10 +1737,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_cc1c2] ==> ignore
+          arg [cmTC_657c3] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_cc1c2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_657c3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -1884,7 +1807,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -1918,9 +1840,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -1983,7 +1902,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2017,9 +1935,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2061,8 +1976,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-fERyaM"
-      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-fERyaM"
+      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qGE5Oc"
+      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qGE5Oc"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: " -Wno-deprecated-declarations"
@@ -2075,15 +1990,15 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-fERyaM'
+        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qGE5Oc'
         
-        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e574a/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e574a.dir/build.make CMakeFiles/cmTC_e574a.dir/build
-        Building C object CMakeFiles/cmTC_e574a.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -Wno-deprecated-declarations  -MD -MT CMakeFiles/cmTC_e574a.dir/src.c.o -MF CMakeFiles/cmTC_e574a.dir/src.c.o.d -o CMakeFiles/cmTC_e574a.dir/src.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-fERyaM/src.c
-        Linking C executable cmTC_e574a
-        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e574a.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wno-deprecated-declarations  CMakeFiles/cmTC_e574a.dir/src.c.o -o cmTC_e574a
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_40b9d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_40b9d.dir/build.make CMakeFiles/cmTC_40b9d.dir/build
+        Building C object CMakeFiles/cmTC_40b9d.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -Wno-deprecated-declarations  -MD -MT CMakeFiles/cmTC_40b9d.dir/src.c.o -MF CMakeFiles/cmTC_40b9d.dir/src.c.o.d -o CMakeFiles/cmTC_40b9d.dir/src.c.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-qGE5Oc/src.c
+        Linking C executable cmTC_40b9d
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40b9d.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-deprecated-declarations  CMakeFiles/cmTC_40b9d.dir/src.c.o -o cmTC_40b9d
         
       exitCode: 0
   -
@@ -2124,7 +2039,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/include/"
@@ -2173,7 +2087,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/vulkan.framework/Headers/vulkan.h"
       - "/usr/local/mysql/bin/vulkan.framework/Headers/vulkan.h"
       - "/Users/xiezili/maven/bin/vulkan.framework/Headers/vulkan.h"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/vulkan.framework/Headers/vulkan.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/vulkan.framework/Headers/vulkan.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/vulkan.framework/Headers/vulkan.h"
       - "/usr/local/include/vulkan.framework/Headers/vulkan.h"
@@ -2221,7 +2134,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/vulkan/vulkan.h"
       - "/usr/local/mysql/bin/vulkan/vulkan.h"
       - "/Users/xiezili/maven/bin/vulkan/vulkan.h"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/vulkan/vulkan.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/vulkan/vulkan.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/vulkan/vulkan.h"
       - "/usr/local/include/vulkan/vulkan.h"
@@ -2271,9 +2183,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2337,7 +2246,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2365,7 +2273,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2399,9 +2306,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2464,7 +2368,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2498,9 +2401,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2563,7 +2463,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2597,9 +2496,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2662,7 +2558,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2696,9 +2591,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2761,7 +2653,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2795,9 +2686,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -2836,8 +2724,8 @@ events:
       - "lib/nanogui/CMakeLists.txt:62 (check_cxx_source_runs)"
       - "lib/nanogui/CMakeLists.txt:187 (CHECK_CXX_COMPILER_AND_LINKER_FLAGS)"
     directories:
-      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-DwEdlb"
-      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-DwEdlb"
+      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-XVmQRR"
+      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-XVmQRR"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2849,22 +2737,22 @@ events:
       variable: "HAS_LIBCPP_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-DwEdlb'
+        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-XVmQRR'
         
-        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8d2cd/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8d2cd.dir/build.make CMakeFiles/cmTC_8d2cd.dir/build
-        Building CXX object CMakeFiles/cmTC_8d2cd.dir/src.cxx.o
-        /usr/bin/c++ -DHAS_LIBCPP  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ -MD -MT CMakeFiles/cmTC_8d2cd.dir/src.cxx.o -MF CMakeFiles/cmTC_8d2cd.dir/src.cxx.o.d -o CMakeFiles/cmTC_8d2cd.dir/src.cxx.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-DwEdlb/src.cxx
-        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-DwEdlb/src.cxx:1:14: warning: unused parameter 'argc' [-Wunused-parameter]
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2e6f9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2e6f9.dir/build.make CMakeFiles/cmTC_2e6f9.dir/build
+        Building CXX object CMakeFiles/cmTC_2e6f9.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_LIBCPP  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ -MD -MT CMakeFiles/cmTC_2e6f9.dir/src.cxx.o -MF CMakeFiles/cmTC_2e6f9.dir/src.cxx.o.d -o CMakeFiles/cmTC_2e6f9.dir/src.cxx.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-XVmQRR/src.cxx
+        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-XVmQRR/src.cxx:1:14: warning: unused parameter 'argc' [-Wunused-parameter]
             1 | int main(int argc, char **argv) { return 0; }
               |              ^
-        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-DwEdlb/src.cxx:1:27: warning: unused parameter 'argv' [-Wunused-parameter]
+        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-XVmQRR/src.cxx:1:27: warning: unused parameter 'argv' [-Wunused-parameter]
             1 | int main(int argc, char **argv) { return 0; }
               |                           ^
         2 warnings generated.
-        Linking CXX executable cmTC_8d2cd
-        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d2cd.dir/link.txt --verbose=1
-        /usr/bin/c++  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ CMakeFiles/cmTC_8d2cd.dir/src.cxx.o -o cmTC_8d2cd  -stdlib=libc++
+        Linking CXX executable cmTC_2e6f9
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e6f9.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ CMakeFiles/cmTC_2e6f9.dir/src.cxx.o -o cmTC_2e6f9  -stdlib=libc++
         
       exitCode: 0
     runResult:
@@ -2881,8 +2769,8 @@ events:
       - "lib/nanogui/CMakeLists.txt:62 (check_cxx_source_runs)"
       - "lib/nanogui/CMakeLists.txt:192 (CHECK_CXX_COMPILER_AND_LINKER_FLAGS)"
     directories:
-      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-5NsBjU"
-      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-5NsBjU"
+      source: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9FMAzd"
+      binary: "/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9FMAzd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2894,22 +2782,22 @@ events:
       variable: "HAS_LIBCPPABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-5NsBjU'
+        Change Dir: '/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9FMAzd'
         
-        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_57751/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_57751.dir/build.make CMakeFiles/cmTC_57751.dir/build
-        Building CXX object CMakeFiles/cmTC_57751.dir/src.cxx.o
-        /usr/bin/c++ -DHAS_LIBCPPABI  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ -stdlib=libc++ -MD -MT CMakeFiles/cmTC_57751.dir/src.cxx.o -MF CMakeFiles/cmTC_57751.dir/src.cxx.o.d -o CMakeFiles/cmTC_57751.dir/src.cxx.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-5NsBjU/src.cxx
-        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-5NsBjU/src.cxx:1:14: warning: unused parameter 'argc' [-Wunused-parameter]
+        Run Build Command(s): /Applications/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_31c83/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_31c83.dir/build.make CMakeFiles/cmTC_31c83.dir/build
+        Building CXX object CMakeFiles/cmTC_31c83.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_LIBCPPABI  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ -stdlib=libc++ -MD -MT CMakeFiles/cmTC_31c83.dir/src.cxx.o -MF CMakeFiles/cmTC_31c83.dir/src.cxx.o.d -o CMakeFiles/cmTC_31c83.dir/src.cxx.o -c /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9FMAzd/src.cxx
+        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9FMAzd/src.cxx:1:14: warning: unused parameter 'argc' [-Wunused-parameter]
             1 | int main(int argc, char **argv) { return 0; }
               |              ^
-        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-5NsBjU/src.cxx:1:27: warning: unused parameter 'argv' [-Wunused-parameter]
+        /Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/build/CMakeFiles/CMakeScratch/TryCompile-9FMAzd/src.cxx:1:27: warning: unused parameter 'argv' [-Wunused-parameter]
             1 | int main(int argc, char **argv) { return 0; }
               |                           ^
         2 warnings generated.
-        Linking CXX executable cmTC_57751
-        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57751.dir/link.txt --verbose=1
-        /usr/bin/c++  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ -stdlib=libc++  -stdlib=libc++  CMakeFiles/cmTC_57751.dir/src.cxx.o -o cmTC_57751  -stdlib=libc++ -lc++abi
+        Linking CXX executable cmTC_31c83
+        /Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31c83.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wno-deprecated-declarations -Wno-unused-function -Wall -Wextra -stdlib=libc++ -stdlib=libc++  -stdlib=libc++  CMakeFiles/cmTC_31c83.dir/src.cxx.o -o cmTC_31c83  -stdlib=libc++ -lc++abi
         
       exitCode: 0
     runResult:
@@ -2950,7 +2838,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -2984,9 +2871,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -3049,7 +2933,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -3083,9 +2966,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -3148,7 +3028,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -3182,9 +3061,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -3247,7 +3123,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -3281,9 +3156,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -3350,7 +3222,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
@@ -3403,9 +3274,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -3465,7 +3333,6 @@ events:
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
@@ -3521,9 +3388,6 @@ events:
         - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
@@ -3588,9 +3452,6 @@ events:
         - "/Users/xiezili/anaconda3/condabin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
-        - "/Users/xiezili/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-x64/bundled/scripts/noConfigScripts"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
@@ -3619,14 +3480,10 @@ events:
         - "/Library/Frameworks"
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:9 (find_path)"
+      - "CMakeLists.txt:30 (find_path)"
     mode: "path"
     variable: "OPENEXR_INCLUDE_DIR"
     description: "Path to a file."
@@ -3639,144 +3496,126 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "ImfRgbaFile.h"
+      - "OpenEXR/ImfRgbaFile.h"
     candidate_directories:
-      - "/usr/local/bin/OpenEXR/"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/OpenEXR/"
       - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/OpenEXR/"
       - "/usr/bin/"
-      - "/bin/OpenEXR/"
       - "/bin/"
-      - "/usr/sbin/OpenEXR/"
       - "/usr/sbin/"
-      - "/sbin/OpenEXR/"
       - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/OpenEXR/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/OpenEXR/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/OpenEXR/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/share/dotnet/OpenEXR/"
       - "/usr/local/share/dotnet/"
-      - "/Users/xiezili/.dotnet/tools/OpenEXR/"
       - "/Users/xiezili/.dotnet/tools/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/OpenEXR/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/OpenEXR/"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/"
-      - "/Users/xiezili/anaconda3/bin/OpenEXR/"
       - "/Users/xiezili/anaconda3/bin/"
-      - "/Users/xiezili/anaconda3/condabin/OpenEXR/"
       - "/Users/xiezili/anaconda3/condabin/"
-      - "/usr/local/mysql/bin/OpenEXR/"
       - "/usr/local/mysql/bin/"
-      - "/Users/xiezili/maven/bin/OpenEXR/"
       - "/Users/xiezili/maven/bin/"
-      - "/Applications/ChatGPT.app/Contents/Resources/OpenEXR/"
-      - "/Applications/ChatGPT.app/Contents/Resources/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/OpenEXR/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/OpenEXR/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-      - "/usr/local/include/OpenEXR/"
       - "/usr/local/include/"
-      - "/usr/local/OpenEXR/"
       - "/usr/local/"
-      - "/usr/include/OpenEXR/"
       - "/usr/include/"
-      - "/usr/OpenEXR/"
       - "/usr/"
-      - "/include/OpenEXR/"
       - "/include/"
-      - "/Applications/CMake.app/Contents/include/OpenEXR/"
       - "/Applications/CMake.app/Contents/include/"
-      - "/Applications/CMake.app/Contents/OpenEXR/"
       - "/Applications/CMake.app/Contents/"
-      - "/usr/X11R6/include/OpenEXR/"
       - "/usr/X11R6/include/"
-      - "/usr/X11R6/OpenEXR/"
       - "/usr/X11R6/"
-      - "/usr/pkg/include/OpenEXR/"
       - "/usr/pkg/include/"
-      - "/usr/pkg/OpenEXR/"
       - "/usr/pkg/"
-      - "/opt/include/OpenEXR/"
       - "/opt/include/"
-      - "/opt/OpenEXR/"
       - "/opt/"
-      - "/sw/include/OpenEXR/"
       - "/sw/include/"
-      - "/sw/OpenEXR/"
       - "/sw/"
-      - "/opt/local/include/OpenEXR/"
       - "/opt/local/include/"
-      - "/opt/local/OpenEXR/"
       - "/opt/local/"
-      - "/usr/include/X11/OpenEXR/"
       - "/usr/include/X11/"
-      - "/Users/xiezili/Library/Frameworks/OpenEXR/"
       - "/Users/xiezili/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/OpenEXR/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/OpenEXR/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenEXR/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/Library/Frameworks/OpenEXR/"
       - "/Library/Developer/CommandLineTools/Library/Frameworks/"
-      - "/Library/Frameworks/OpenEXR/"
       - "/Library/Frameworks/"
-      - "/Network/Library/Frameworks/OpenEXR/"
       - "/Network/Library/Frameworks/"
-      - "/System/Library/Frameworks/OpenEXR/"
       - "/System/Library/Frameworks/"
     searched_directories:
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/local/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/System/Cryptexes/App/usr/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/sbin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/sbin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/local/share/dotnet/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/.dotnet/tools/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/anaconda3/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/anaconda3/condabin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/local/mysql/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/maven/bin/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/local/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/local/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Applications/CMake.app/Contents/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Applications/CMake.app/Contents/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/X11R6/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/X11R6/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/pkg/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/pkg/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/opt/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/opt/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/sw/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/sw/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/opt/local/include/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/opt/local/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/usr/include/X11/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Network/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/System/Library/Frameworks/OpenEXR.framework/Headers/ImfRgbaFile.h"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/OpenEXR/ImfRgbaFile.h"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/OpenEXR/ImfRgbaFile.h"
       - "/usr/local/bin/OpenEXR/ImfRgbaFile.h"
-      - "/usr/local/bin/ImfRgbaFile.h"
       - "/System/Cryptexes/App/usr/bin/OpenEXR/ImfRgbaFile.h"
-      - "/System/Cryptexes/App/usr/bin/ImfRgbaFile.h"
       - "/usr/bin/OpenEXR/ImfRgbaFile.h"
-      - "/usr/bin/ImfRgbaFile.h"
       - "/bin/OpenEXR/ImfRgbaFile.h"
-      - "/bin/ImfRgbaFile.h"
       - "/usr/sbin/OpenEXR/ImfRgbaFile.h"
-      - "/usr/sbin/ImfRgbaFile.h"
       - "/sbin/OpenEXR/ImfRgbaFile.h"
-      - "/sbin/ImfRgbaFile.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/OpenEXR/ImfRgbaFile.h"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ImfRgbaFile.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/OpenEXR/ImfRgbaFile.h"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ImfRgbaFile.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/OpenEXR/ImfRgbaFile.h"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ImfRgbaFile.h"
       - "/usr/local/share/dotnet/OpenEXR/ImfRgbaFile.h"
-      - "/usr/local/share/dotnet/ImfRgbaFile.h"
       - "/Users/xiezili/.dotnet/tools/OpenEXR/ImfRgbaFile.h"
-      - "/Users/xiezili/.dotnet/tools/ImfRgbaFile.h"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/OpenEXR/ImfRgbaFile.h"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/ImfRgbaFile.h"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/OpenEXR/ImfRgbaFile.h"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/ImfRgbaFile.h"
       - "/Users/xiezili/anaconda3/bin/OpenEXR/ImfRgbaFile.h"
-      - "/Users/xiezili/anaconda3/bin/ImfRgbaFile.h"
       - "/Users/xiezili/anaconda3/condabin/OpenEXR/ImfRgbaFile.h"
-      - "/Users/xiezili/anaconda3/condabin/ImfRgbaFile.h"
       - "/usr/local/mysql/bin/OpenEXR/ImfRgbaFile.h"
-      - "/usr/local/mysql/bin/ImfRgbaFile.h"
       - "/Users/xiezili/maven/bin/OpenEXR/ImfRgbaFile.h"
-      - "/Users/xiezili/maven/bin/ImfRgbaFile.h"
-      - "/Applications/ChatGPT.app/Contents/Resources/OpenEXR/ImfRgbaFile.h"
-      - "/Applications/ChatGPT.app/Contents/Resources/ImfRgbaFile.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/OpenEXR/ImfRgbaFile.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ImfRgbaFile.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/OpenEXR/ImfRgbaFile.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/ImfRgbaFile.h"
-    found: "/usr/local/include/OpenEXR/"
+    found: "/usr/local/include/"
     search_context:
       ENV{PATH}:
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -3789,12 +3628,12 @@ events:
         - "/usr/local/share/dotnet"
         - "~/.dotnet/tools"
         - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc"
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
-        - "/Applications/ChatGPT.app/Contents/Resources"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
@@ -3826,7 +3665,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:10 (find_library)"
+      - "CMakeLists.txt:31 (find_library)"
     mode: "library"
     variable: "OPENEXR_LIBRARY"
     description: "Path to a library."
@@ -3842,6 +3681,8 @@ events:
       - "IlmImf"
       - "OpenEXR"
     candidate_directories:
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/usr/bin/"
@@ -3850,12 +3691,10 @@ events:
       - "/sbin/"
       - "/usr/local/share/dotnet/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/"
       - "/Users/xiezili/anaconda3/bin/"
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Applications/ChatGPT.app/Contents/Resources/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/usr/local/lib/"
@@ -3869,6 +3708,8 @@ events:
       - "/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/usr/bin/"
@@ -3877,17 +3718,17 @@ events:
       - "/sbin/"
       - "/usr/local/share/dotnet/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/"
       - "/Users/xiezili/anaconda3/bin/"
       - "/Users/xiezili/anaconda3/condabin/"
       - "/usr/local/mysql/bin/"
       - "/Users/xiezili/maven/bin/"
-      - "/Applications/ChatGPT.app/Contents/Resources/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
     found: "/usr/local/lib/libIlmImf.dylib"
     search_context:
       ENV{PATH}:
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -3900,126 +3741,12 @@ events:
         - "/usr/local/share/dotnet"
         - "~/.dotnet/tools"
         - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc"
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/xiezili/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/xiezili/anaconda3/bin"
         - "/Users/xiezili/anaconda3/condabin"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
-        - "/Applications/ChatGPT.app/Contents/Resources"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/usr/local"
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/Applications/CMake.app/Contents"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-        - "/sw"
-        - "/opt/local"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-      CMAKE_SYSTEM_FRAMEWORK_PATH:
-        - "~/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Frameworks"
-        - "/Network/Library/Frameworks"
-        - "/System/Library/Frameworks"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "CMakeLists.txt:11 (find_library)"
-    mode: "library"
-    variable: "OPENEXR_HALF_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "Half"
-    candidate_directories:
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/usr/local/share/dotnet/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/"
-      - "/Users/xiezili/anaconda3/bin/"
-      - "/Users/xiezili/anaconda3/condabin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/xiezili/maven/bin/"
-      - "/Applications/ChatGPT.app/Contents/Resources/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/Applications/CMake.app/Contents/"
-      - "/opt/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
-      - "/Library/Frameworks/"
-      - "/System/Library/Frameworks/"
-    searched_directories:
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/usr/local/share/dotnet/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc/"
-      - "/Users/xiezili/anaconda3/bin/"
-      - "/Users/xiezili/anaconda3/condabin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/xiezili/maven/bin/"
-      - "/Applications/ChatGPT.app/Contents/Resources/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-    found: "/usr/local/lib/libHalf.dylib"
-    search_context:
-      ENV{PATH}:
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/share/dotnet"
-        - "~/.dotnet/tools"
-        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/xiezili/.codex/tmp/arg0/codex-arg0gXkBnc"
-        - "/Users/xiezili/anaconda3/bin"
-        - "/Users/xiezili/anaconda3/condabin"
-        - "/usr/local/mysql/bin"
-        - "/Users/xiezili/maven/bin"
-        - "/Applications/ChatGPT.app/Contents/Resources"
         - "/usr/local/mysql/bin"
         - "/Users/xiezili/maven/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"

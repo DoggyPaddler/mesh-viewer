@@ -311,11 +311,8 @@ NanoGUI_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 NanoGUI_SOURCE_DIR:STATIC=/Users/xiezili/Desktop/Project-3D-Viewer/Git2/mesh-viewer/lib/nanogui
 
-//Path to a library.
-OPENEXR_HALF_LIBRARY:FILEPATH=/usr/local/lib/libHalf.dylib
-
 //Path to a file.
-OPENEXR_INCLUDE_DIR:PATH=/usr/local/include/OpenEXR
+OPENEXR_INCLUDE_DIR:PATH=/usr/local/include
 
 //Path to a library.
 OPENEXR_LIBRARY:FILEPATH=/usr/local/lib/libIlmImf.dylib
